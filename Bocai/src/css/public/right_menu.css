@@ -83,6 +83,7 @@
 }
 
 .menu-footer a {
+    display: block;
     text-decoration: none;
     color: #fff;
     font-size: 15px;
