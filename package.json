@@ -1,0 +1,22 @@
+{
+  "name": "bocai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linyuan0201/bocai.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linyuan0201/bocai/issues"
+  },
+  "homepage": "https://github.com/linyuan0201/bocai#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
