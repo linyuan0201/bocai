@@ -3,35 +3,118 @@ body {
   padding-top: 100px;
 }
 .max-tu {
-  height: 600px;
   background-color: #333;
   background-image: url("../../../../../../博采图片仓库/ban_website1.jpg");
   color: #fff;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 105px;
+  padding-bottom: 90px;
+  position: relative;
 }
-.max-tu .biaoti {
-  margin-top: 140px;
+.max-news {
+  line-height: 50px;
+  color: #fff;
+  top: -50px;
+  height: 50px;
+  position: relative;
+  bottom: 0;
+  background-color: rgba(10, 10, 10, 0.25);
+  overflow: hidden;
 }
-@media (max-width: 480px) {
+.max-news .col-lg-8 a {
+  width: 90%;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.max-news .col-lg-8 a div {
+  list-style-type: none;
+}
+.max-news .col-lg-8 a div span {
+  margin-left: 15px;
+  color: #999;
+}
+.max-news .col-lg-8 .max-zixun .fg {
+  border-right: 1px solid #fff;
+}
+.max-news .qiehuan img {
+  padding: 10px;
+}
+.max-news .qiehuan img:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
   .max-tu .biaoti h1 {
     font-size: 30px;
   }
+  .max-tu .biaoti h2 {
+    font-size: 18px;
+  }
+  .max-tu .shuzi {
+    margin-top: 60px;
+  }
+  .max-tu .shuzi p {
+    font-size: 14px;
+  }
+  .max-tu .shuzi span {
+    font-size: 30px;
+    font-family: serif;
+  }
 }
-@media (max-width: 780px) {
+@media screen and (max-width: 780px) and (min-width: 480px) {
   .max-tu .biaoti h1 {
-    font-size: 32px;
+    font-size: 44px;
     line-height: 60px;
   }
-}
-@media (max-width: 900px) {
-  .max-tu .biaoti h1 {
-    font-size: 42px;
+  .max-tu .biaoti h2 {
+    font-size: 26px;
+  }
+  .max-tu .shuzi {
+    margin-top: 60px;
+  }
+  .max-tu .shuzi p {
+    font-size: 18px;
+  }
+  .max-tu .shuzi span {
+    font-size: 55px;
+    font-family: serif;
   }
 }
-@media (max-width: 1300px) {
+@media screen and (min-width: 780px) and (max-width: 1300px) {
+  .max-tu .biaoti h1 {
+    font-size: 60px;
+  }
+  .max-tu .biaoti h2 {
+    font-size: 36px;
+  }
+  .max-tu .shuzi {
+    margin-top: 60px;
+  }
+  .max-tu .shuzi p {
+    font-size: 23px;
+  }
+  .max-tu .shuzi span {
+    font-size: 60px;
+    font-family: serif;
+  }
+}
+@media screen and (min-width: 1300px) {
   .max-tu .biaoti h1 {
     font-size: 78px;
     line-height: 94px;
+  }
+  .max-tu .biaoti h2 {
+    font-size: 48px;
+  }
+  .max-tu .shuzi {
+    margin-top: 60px;
+  }
+  .max-tu .shuzi p {
+    font-size: 25px;
+  }
+  .max-tu .shuzi span {
+    font-size: 80px;
+    font-family: serif;
   }
 }

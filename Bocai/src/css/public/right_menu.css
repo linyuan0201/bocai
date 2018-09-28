@@ -2,14 +2,14 @@
 
 /*右侧菜单样式*/
 
-.hidden-xs {
+.menu-r {
     width: 200px;
     position: fixed;
     right: -125px;
     top: 190px;
 }
 
-.hidden-xs>a {
+.menu-r>a {
     display: block;
     /* position: absolute; */
     height: 57px;
@@ -24,40 +24,40 @@
     text-decoration: none;
 }
 
-.hidden-xs>a:hover {
+.menu-r>a:hover {
     margin-left: -10px;
 }
 
-.hidden-xs>a .iconfont {
+.menu-r>a .iconfont {
     font-size: 24px;
 }
 
-.hidden-xs>a>div {
+.menu-r>a>div {
     display: inline-block;
 }
 
-.hidden-xs>.phone {
+.menu-r>.phone {
     width: 200px;
     margin-right: -110px;
 }
 
-.hidden-xs>.phone strong {
+.menu-r>.phone strong {
     position: relative;
     font-size: 16px;
     top: -15px;
 }
 
-.hidden-xs>.phone:hover {
+.menu-r>.phone:hover {
     margin-left: -120px;
 }
 
-.hidden-xs>.phone .left {
+.menu-r>.phone .left {
     margin-right: 10px;
     display: inline-block;
     vertical-align: center;
 }
 
-.hidden-xs>a:last-child span {
+.menu-r>a:last-child span {
     border-radius: 50%;
     border: 2px solid #fff;
     display: inline-block;
@@ -65,7 +65,7 @@
     margin-top: 4px;
 }
 
-.hidden-xs>a:last-child .iconfont {
+.menu-r>a:last-child .iconfont {
     font-size: 14px;
 }
 

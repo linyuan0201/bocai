@@ -3,38 +3,134 @@ body {
     padding-top: 100px;
 }
 
+
+// 大图部分样式
 .max-tu {
-    height: 600px;
+   
     background-color: #333;
     background-image: url("../../../../../../博采图片仓库/ban_website1.jpg");
     color: #fff;
     background-position: center;
     background-repeat: no-repeat;
-    .biaoti{
-        margin-top:140px;
-     
-    }
+    padding-top:105px;
+    padding-bottom:90px;
+    position: relative;
+
 }
-@media (max-width:480px){
-    .max-tu .biaoti h1{
+
+  //大图新闻轮播
+  .max-news {
+      line-height: 50px;
+    color:#fff;
+      top:-50px;
+      height: 50px;
+    position: relative;
+    bottom:0;
+    background-color: rgba(10,10,10,0.25);
+    overflow: hidden;
+    .col-lg-8 a{
+        width: 90%;
+        display: block;
+        text-decoration: none;
+        color:#fff;
+        div{
+            list-style-type: none;
+            span{
+                margin-left: 15px;
+                color:#999;
+            }
+        }
+    }
+    .col-lg-8 .max-zixun{
+        .fg{
+            border-right: 1px solid #fff;
+        }
+    }
+    .qiehuan {
+        img{
+           padding:10px;
+           &:hover{
+               cursor:pointer;
+           }
+        }
+    }
+
+} 
+
+@media screen and (max-width: 480px) {
+    .max-tu .biaoti h1 {
         font-size: 30px;
-        
+    }
+    .max-tu .biaoti h2 {
+        font-size: 18px;
+    }
+    .max-tu  .shuzi{
+        margin-top:60px;
+        p{
+            font-size: 14px;
+        }
+        span{
+           font-size:  30px;
+           font-family: serif;
+        }
     }
 }
-@media (max-width:780px){
-    .max-tu .biaoti h1{
-        font-size: 32px;
+
+@media screen and (max-width: 780px) and (min-width:480px) {
+    .max-tu .biaoti h1 {
+        font-size: 44px;
         line-height: 60px;
     }
-}
-@media (max-width:900px){
-    .max-tu .biaoti h1{
-        font-size: 42px;
+    .max-tu .biaoti h2 {
+        font-size: 26px;
+    }
+    .max-tu  .shuzi{
+        margin-top:60px;
+        p{
+            font-size: 18px;
+        }
+        span{
+           font-size:  55px;
+           font-family: serif;
+        }
     }
 }
-@media (max-width:1300px){
-    .max-tu .biaoti h1{
+
+@media screen and (min-width: 780px) and (max-width:1300px) {
+    .max-tu .biaoti h1 {
+        font-size: 60px;
+    }
+    .max-tu .biaoti h2 {
+        font-size: 36px;
+    }
+    .max-tu  .shuzi{
+        margin-top:60px;
+        p{
+            font-size: 23px;
+        }
+        span{
+           font-size:  60px;
+           font-family: serif;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .max-tu .biaoti h1 {
         font-size: 78px;
         line-height: 94px;
+    }
+    .max-tu .biaoti h2 {
+        font-size: 48px;
+    }
+    .max-tu  .shuzi{
+        margin-top:60px;
+        p{
+            font-size: 25px;
+        }
+        span{
+           font-size:  80px;
+           font-family: serif;
+        }
     }
 }
