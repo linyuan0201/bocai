@@ -15,6 +15,10 @@ html {
     color: #777;
 }
 
+a {
+    text-decoration: none;
+}
+
 .content {
     width: 100%;
     position: relative;
@@ -104,6 +108,18 @@ html {
     margin-top: 42px;
     position: relative;
     width: 100%;
+}
+
+.box {
+    width: 31.5%;
+    background-color: #fff;
+    float: left;
+}
+
+.sign-a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
 }
 
 @media(max-width:1440px) {
