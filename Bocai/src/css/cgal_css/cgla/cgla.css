@@ -2,15 +2,35 @@
 body {
   padding-top: 100px;
 }
+.animated {
+  animation-duration: 0.3s;
+}
 .max-tu {
   background-color: #333;
-  background-image: url("../../../../../../博采图片仓库/ban_website1.jpg");
+  background-image: url("../../../images/cgal_img/cgla/ban_website1.jpg");
   color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 105px;
   padding-bottom: 90px;
   position: relative;
+}
+.max-tu .shuzi {
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0;
+}
+.max-tu .shuzi span {
+  font-family: 'Times New Roman', Times, serif;
+}
+.max-tu .biaoti h1,
+.max-tu .biaoti h2 {
+  opacity: 0;
+}
+@media screen and (max-width: 480px) {
+  .max-tu {
+    padding-bottom: 140px;
+  }
 }
 .max-news {
   line-height: 50px;
@@ -35,8 +55,13 @@ body {
   margin-left: 15px;
   color: #999;
 }
-.max-news .col-lg-8 .max-zixun .fg {
+.max-news .max-zixun .fg {
+  display: inline-block;
+  height: 20px;
+  top: 4px;
+  left: 20%;
   border-right: 1px solid #fff;
+  position: relative;
 }
 .max-news .qiehuan img {
   padding: 10px;
@@ -54,12 +79,15 @@ body {
   .max-tu .shuzi {
     margin-top: 60px;
   }
+  .max-tu .shuzi .shuzi-mid {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+  }
   .max-tu .shuzi p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .max-tu .shuzi span {
     font-size: 30px;
-    font-family: serif;
   }
 }
 @media screen and (max-width: 780px) and (min-width: 480px) {
@@ -73,12 +101,15 @@ body {
   .max-tu .shuzi {
     margin-top: 60px;
   }
+  .max-tu .shuzi .shuzi-mid {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+  }
   .max-tu .shuzi p {
     font-size: 18px;
   }
   .max-tu .shuzi span {
     font-size: 55px;
-    font-family: serif;
   }
 }
 @media screen and (min-width: 780px) and (max-width: 1300px) {
@@ -91,12 +122,15 @@ body {
   .max-tu .shuzi {
     margin-top: 60px;
   }
+  .max-tu .shuzi .shuzi-mid {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+  }
   .max-tu .shuzi p {
     font-size: 23px;
   }
   .max-tu .shuzi span {
     font-size: 60px;
-    font-family: serif;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -115,6 +149,10 @@ body {
   }
   .max-tu .shuzi span {
     font-size: 80px;
-    font-family: serif;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .max-zixun .fg {
+    display: none;
   }
 }
