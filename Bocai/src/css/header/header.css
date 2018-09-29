@@ -185,6 +185,7 @@ header .navbar .logo {
 @media (min-width: 1050px) {
   header {
     position: fixed;
+    z-index: 99;
     height: 100px;
     width: 100%;
     padding: 24px 0 0;
@@ -231,6 +232,7 @@ header .navbar .logo {
   header .navbar .sub-li .rank {
     width: 100%;
     position: fixed;
+    z-index: 99;
     top: 100px;
     left: 0;
     overflow: hidden;
