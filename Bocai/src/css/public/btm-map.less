@@ -1,0 +1,245 @@
+@charset "utf-8";
+html,body{
+    width: 100%;
+}
+.btm-map{
+    padding: 30px 0;
+    background-color: #f6f6f6;
+    width: 100%;
+    .btm-mapbox{
+        width: 88%;
+        margin: 0 auto;
+        >div{
+            // 在移动端先让每个都消失
+            display: none;
+        }
+        .mbox2{
+            // 选中一个或多个可见的盒子
+            display: block;
+            width: 100%;
+            h4{
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: bold;
+                padding: 0 0 13px;
+                margin: 0;
+                border-bottom: 1px solid #e3e3e3;
+            }
+            div{
+                // 不同的地址对应不同的地图搜素在此执行这个特性
+                display: none;
+                padding: 25px 0 0;
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                    color:#666;
+                    margin: 0;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+                p:last-of-type{
+                    font-weight: bold;
+                }
+                a{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url("../../images/btm-map/ico_13.png");
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    margin: 8px 0 0;
+                    &:hover{
+                        background-image: url("../../images/btm-map/ico_13_h.png");
+                        background-color: #000000;
+                    }
+                }
+            }
+            .map-show{
+                // 选中对应的地址
+                display: block;
+            }
+        }
+    }
+}
+
+// 480px的宽度
+@media(min-width:480px){
+    .btm-map{
+        width: 100%;
+        .btm-mapbox{
+            width: 92%;
+            .mbox2{
+                width: 290px;
+            }
+        }
+    }
+}
+
+// 1050px的宽度
+@media(min-width:1050px){
+    .btm-map{
+        padding: 50px 0;
+        overflow: hidden;
+        .btm-mapbox{
+            width: 82.8%;
+            >div{
+                display: block;
+                float: left;
+                h4{
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: bold;
+                    padding: 0 0 13px;
+                    border-bottom: 1px solid #e3e3e3;
+                    margin: 0;
+                }
+            }
+            .mbox1{
+                width: 166px;
+                margin:0 100px 0 0;
+                ul{
+                    list-style: none;
+                    width: 100%;
+                    li{
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #c5c5c5;
+                        cursor: pointer;
+                        font-weight: bold;
+                        transition: color 0.3s;
+                        &:hover{
+                            color: #333;
+                        }
+                    }
+                    .bld{
+                        color: #333;
+                    }
+                }
+            }
+            .mbox2{
+                margin-right: 32px;
+                width: 290px;
+            }
+            .mbox3{
+                margin-right: 32px;
+                width:180px;
+                h4{
+                    margin-bottom: 26px;
+                }
+            }
+            .mbox4{
+                width: 180px;
+                margin: 0;
+                h4{
+                    margin-bottom: 26px;
+                }
+                a{
+                    display: inline-block;
+                    width: 115px;
+                    line-height: 34px;color: #777;
+                    font-size: 12px;
+                    border: 1px solid #e3e3e3;
+                    text-decoration: none;
+                    margin: 0 0 10px;   
+                    transition: all 0.3s ease 0s;
+                    padding: 0 0 0 40px;
+                    background-image: url("../../images/btm-map/ico_14.png");
+                    background-repeat: no-repeat;
+                    background-position: 17px center;
+                    &:hover{
+                        background-color: #000000;
+                        color: #fff;
+                        background-image: url("../../images/btm-map/ico_14_h.png");
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 1440px的宽度
+@media(min-width:1440px){
+    .btm-map{
+        padding: 50px 0;
+        overflow: hidden;
+        .btm-mapbox{
+            width: 82.8%;
+            >div{
+                display: block;
+                float: left;
+                h4{
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: bold;
+                    padding: 0 0 13px;
+                    border-bottom: 1px solid #e3e3e3;
+                    margin: 0;
+                }
+            }
+            .mbox1{
+                width: 166px;
+                margin:0 100px 0 0;
+                ul{
+                    list-style: none;
+                    width: 100%;
+                    li{
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #c5c5c5;
+                        cursor: pointer;
+                        font-weight: bold;
+                        transition: color 0.3s;
+                        &:hover{
+                            color: #333;
+                        }
+                    }
+                    .bld{
+                        color: #333;
+                    }
+                }
+            }
+            .mbox2{
+                margin-right: 132px;
+                width: 300px;
+                h4{
+                    font-size: 18px;
+                }
+            }
+            .mbox3{
+                margin-right: 100px;
+                width:240px;
+                h4{
+                    margin-bottom: 26px;
+                }
+            }
+            .mbox4{
+                width: 205px;
+                margin: 0;
+                h4{
+                    margin-bottom: 26px;
+                }
+                a{
+                    display: inline-block;
+                    width: 115px;
+                    line-height: 34px;color: #777;
+                    font-size: 12px;
+                    border: 1px solid #e3e3e3;
+                    text-decoration: none;
+                    margin: 0 0 10px;   
+                    transition: all 0.3s ease 0s;
+                    padding: 0 0 0 40px;
+                    background-image: url("../../images/btm-map/ico_14.png");
+                    background-repeat: no-repeat;
+                    background-position: 17px center;
+                    &:hover{
+                        background-color: #000000;
+                        color: #fff;
+                        background-image: url("../../images/btm-map/ico_14_h.png");
+                    }
+                }
+            }
+        }
+    }
+
+}
