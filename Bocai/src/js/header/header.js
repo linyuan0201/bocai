@@ -1,6 +1,6 @@
 $(function() {
     var btn = $("header .navbar .navbar-header button"),
-        headerphone = $("body");
+        headerphone = $("body header");
     // console.log(btn);
 
     // // phone的高度调整
@@ -12,8 +12,13 @@ $(function() {
     // console.log($("btn"));
     //首页按钮点击事件
     btn.on('click', function() {
+            console.log(headerphone);
             headerphone.animate({
                 "left": "-66%",
+                // "background-color": "#000",
+            }, 300);
+            $(".phone").animate({
+                "left": "34%",
             }, 300);
             $("header .navbar .navbar-header button .icon-bar").animate({
                 "width": "22px",
@@ -23,6 +28,9 @@ $(function() {
     $("  .phone .clo").on("click", function() {
         headerphone.animate({
             "left": "0",
+        }, 300);
+        $(".phone").animate({
+            "left": "100%",
         }, 300);
         $("header .navbar .navbar-header button .icon-bar").first().animate({
             "width": "11px",
