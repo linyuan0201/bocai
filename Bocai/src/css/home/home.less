@@ -1,0 +1,1228 @@
+@charset "utf-8";
+html,body{
+    width: 100%;
+}
+header{
+    height: 100px;
+}
+.banner{
+    width: 100%;
+    height: 540px;
+    .carousel{
+        height: 100%;
+        .carousel-inner{
+            height: 100%;
+        }
+    }
+    .item{
+        // position: relative;
+        width: 100%;
+        height:100%;
+        background-image: url("../../images/home/15169475160812jvipz.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            // height: 100%;
+        }
+        .carousel-caption{
+            position: absolute;
+            top: 50px;
+            left:5.5%;
+            width: 504px;
+            height: 262px;
+            padding: 0;
+            text-align: left;
+            h2{   
+                font-size: 22px;
+                line-height: 32px;
+                margin: 0;
+                text-align: left;
+            }
+            span{
+                display: inline-block;
+                width: 42px;
+                position: relative;
+                height: 42px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                margin: 50px 0 0;
+                cursor: pointer;
+                i{
+                    display: inline-block;
+                    width: 42px;
+                    height: 42px;
+                    background-image: url("../../images/home/ico_16.png");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    animation: animations 1.5s ease-out infinite;
+                }
+                @keyframes animations{
+                    0%{top:-50%;opacity: 0;};
+                    50%{top:0;opacity: 1;};
+                    100%{top:50%;opacity: 0;};
+                }
+            }
+        }
+    }
+    // .item:nth-of-type(1){
+    //     .carousel-caption{
+    //         span{
+    //             margin: 100px 0 0;
+    //         }
+    //     }
+    // }
+    .item:nth-of-type(2){
+        background-image: url("../../images/home/1488362321473guuzh.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .item:nth-of-type(3){
+        background-image: url("../../images/home/14883623104219fitpj.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    ol{
+        width: 180px;
+        height: 2px;
+        left: 5.5%;
+        bottom: 76px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        li{
+            float: left;
+            width: 50px;
+            height: 2px;
+            margin: 0 10px 0 0;
+            background-color: #3a333f;
+            border: 0;
+        }
+        .active{
+            width: 50px;
+            height: 2px;
+            margin: 0 10px 0 0;
+            background-color: #3a333f;
+            i{
+                display: inline-block;
+                height: 100%;
+                background-color: #918c94;
+            } 
+        }
+    }
+}
+.box{
+    width: 100%;
+    background-color: #eaeaea;
+    a{
+        text-decoration: none;
+        color: #777;
+    }
+    .container-fluid{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        // 底部通用
+        .title-btm{
+            display: block;
+            margin:20px 0 0;
+            border-top: 1px solid #e3e3e3;
+            line-height: 56px;
+            font-size: 16px;
+            color: #777;
+            transition: color 0.3s ease 0s;
+            text-decoration: none;
+            &:hover{
+                span{
+                    color: #333;
+                }
+                span:last-of-type{
+                    background-image: url("../../images/home/ico_08_h.png");
+                }
+            }
+            span:last-of-type{
+                float: right;
+                width: 24px;
+                height: 56px;
+                background: url(../../images/home/ico_08.png) no-repeat center;
+                transition: color 0.3s ease 0s;
+            }
+        }
+        // 线条
+        .line{
+            display: inline-block;
+            width: 10px;
+            height: 2px;
+            background-color: #9a9a9a;
+            margin: 10px 0 0;
+        }
+        // 通用圆形22222
+        .circle-2{
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            width:38px;
+            display: inline-block;
+            height: 38px;
+            margin: 30px 0 0;
+            border-radius: 50%;
+            transition: background 0.3s ease 0s;
+            position: relative;
+            background-image: url("../../images/home/ico_05.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            span{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 0;
+                height: 0;
+                background: #333333;
+                border-radius: 50%;
+                transition: all 0.3s ease 0s;
+            }
+            &:hover{
+                span{
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+        // 通用动画
+        .ty-clip{
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            >div{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transition: all 0.6s ease 0s;
+                z-index: 3;
+                background-color: rgba(0, 0, 0, 0);
+                >span{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #fff;
+                    opacity: 0;
+                    transition: all 0.6s;
+                    i{
+                        position: absolute;
+                        left:50%;
+                        transform: translateX(-50%);
+                        transition: all 0.6s ease 0s;
+                        background-color: #f2f2f2;
+                        width: 100px;
+                        height: 1px;
+                    }
+                }
+                
+            }
+            img{
+                width: 100%;
+                transition: all 0.6s ease 0s;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+                >div{
+                    background-color:rgba(0,0,0,.5);
+                    span{
+                        opacity: 1;
+                        i{
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        // 数字营销
+        .sem{
+            background-color: #fff;
+            // overflow: hidden;
+            margin: 0 0 16px 0;
+            // 两个通用的圆
+            .circle{
+                display: block;
+                margin:40px 0 0;
+                width:38px;
+                height:38px;
+                border: 1px solid #aaa;
+                border-radius: 50%;
+                position: relative;
+                background-image: url(".././../images/home/ico_07.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                // background-color: #000000;
+                span{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 0;
+                    height: 0;
+                    background: #333333;
+                    border-radius: 50%;
+                    transition: all 0.3s ease 0s;
+                }
+                &:hover{
+                    span{
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
+            >div{
+                width: 100%;
+                margin: 0;
+                .to-up{
+                    width: 100%;
+                    padding: 16px 6% 0;
+                    // height: 356px;
+                    // overflow: hidden;
+                    position: relative;
+                    h3{
+                        font-size: 36px;
+                        line-height: 60px;
+                        color: #333;
+                        font-family: "Base-font";
+                        font-weight: 600;
+                        margin: 0;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 26px;
+                        margin: 12px 0 0;
+                        color: #777;
+                    }
+                    // .circle{
+                    //     display: block;
+                    //     margin:40px 0 0;
+                    //     width:38px;
+                    //     height:38px;
+                    //     border: 1px solid #aaa;
+                    //     border-radius: 50%;
+                    //     position: relative;
+                    //     background-image: url(".././../images/home/ico_07.png");
+                    //     background-repeat: no-repeat;
+                    //     background-position: center center;
+                    //     // background-color: #000000;
+                    //     span{
+                    //         position: absolute;
+                    //         left: 50%;
+                    //         top: 50%;
+                    //         width: 0;
+                    //         height: 0;
+                    //         background: #333333;
+                    //         border-radius: 50%;
+                    //         transition: all 0.3s ease 0s;
+                    //     }
+                    //     &:hover{
+                    //         span{
+                    //             height: 100%;
+                    //             width: 100%;
+                    //             left: 0;
+                    //             top: 0;
+                    //         }
+                    //     }
+                    // }
+                }
+                >a{
+                    display: inline-block;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        border: 0;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+            }
+            .sem-lt{
+                width: 100%;
+                position: relative;
+                padding: 0 0 38px 0;
+                .num-box{
+                    display: none;
+                }
+                .nmb{
+                    width: 86%;
+                    margin: 30px 7% 0;
+                    h2{
+                        font-size: 26px;
+                        line-height: 46px;
+                        margin: 0;
+                        padding: 0;
+                        a{
+                            color: #333;
+                            transition: color 0.3s ease 0s
+                        }
+                    }
+                    h3{
+                        margin: 6px 0 0;
+                        color: #444444;
+                        font-size: 16px;
+                        line-height: 36px;
+                    }
+                    p{
+                        margin: 10px 0 0;
+                        font-size: 12px;
+                        line-height: 24px;
+                        color: #777;
+                    }
+                    .circle{
+                        background-image: url("../../images/home/ico_06.png");
+                    }
+                }
+            }
+        }
+        // 解决方案
+        .selution{
+            width: 100%;
+            background-color: #2f2f2f;
+            margin: 0 0 16px;
+            // >a{
+            //     width: 100%;
+            //     position: relative;
+            //     overflow: hidden;
+            //     .ty-clip{
+            //         position: absolute;
+            //         width: 100%;
+            //         height: 100%;
+            //         transition: all 0.6s ease 0s;
+            //         z-index: 3;
+            //         background-color: rgba(0, 0, 0, 0);
+            //         >span{
+            //             position: absolute;
+            //             left: 50%;
+            //             top: 50%;
+            //             transform: translate(-50%,-50%);
+            //             font-size: 16px;
+            //             line-height: 30px;
+            //             color: #fff;
+            //             opacity: 0;
+            //             transition: all 0.6s;
+            //             i{
+            //                 position: absolute;
+            //                 left:50%;
+            //                 transform: translateX(-50%);
+            //                 transition: all 0.6s ease 0s;
+            //                 background-color: #f2f2f2;
+            //                 width: 100px;
+            //                 height: 1px;
+            //             }
+            //         }
+                    
+            //     }
+            //     img{
+            //         width: 100%;
+            //         transition: all 0.6s ease 0s;
+            //     }
+            //     &:hover{
+            //         img{
+            //             transform: scale(1.1);
+            //         }
+            //         >div{
+            //             background-color:rgba(0,0,0,.3);
+            //             span{
+            //                 opacity: 1;
+            //                 i{
+            //                     width: 10px;
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
+            .slt-gt{
+                width:86%;
+                margin: 0 auto;
+                position: relative;
+                padding: 26px 0 38px 0;
+                h2{
+                    font-size: 26px;
+                    line-height: 60px;
+                    font-weight: 600;
+                    margin: 0;
+                    a{  
+                        color: #fff;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #cdcdcd;
+                    margin: 6px 0 0;
+                }
+                >div{
+                    margin: 40px 0 0;
+                    a{
+                        display: inline-block;
+                        border: 1px solid #828282;
+                        font-size: 13px;
+                        line-height: 26px;
+                        margin: 0 10px 14px 0;
+                        padding: 0 12px;
+                        border-radius: 18px;
+                        transition: all 0.3s ease 0s;
+                        color: #fff;
+                        &:hover{
+                            background-color: #fff;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+        // 成功案例
+        .eg-win{
+            margin: 0 0 16px 0;
+            padding: 32px 6% 35px ;
+            width: 100%;
+            background-color: #fff;
+            h2{
+                font-size: 26px;
+                line-height: 36px;
+                color: #333;
+                margin: 0;
+
+            }
+            p{
+                font-size: 15px;
+                line-height: 26px;
+                margin: 6px 0 0;
+                color: #999;
+            }
+            .eg-chose{
+                margin: 24px 0 0;
+                overflow: hidden;
+                span{
+                    display:none;
+                }
+                .eg-c-gt{
+                    display: none;
+                }
+                a{
+                    margin: 0 5px 5px 0;
+                    display: inline-block;
+                    background-color: #f5f5f5;
+                    padding: 0 22px;
+                    font-size: 14px;
+                    line-height: 50px;
+                    color: #000;
+                    transition: all 0.5s ease 0s;
+                }
+                .spc{
+                    padding: 0 30px 0 50px;
+                }
+                .spc{
+                    background-image: url("../../images/home/ico_71.png");
+                    background-repeat: no-repeat;
+                    background-position: 25px  center;
+                }
+            }
+            // 移动端轮播效果
+            .eg-result2{
+                margin: 30px 0 0;
+                padding: 0 0 30px 0;
+                .carousel{
+                    position:static;
+                    background-color: #fff;
+                    .item{
+                        .ty-clip{
+                            vertical-align: middle;
+                        }
+                        >div{
+                            padding: 20px 6.4% 0;
+                            h3{
+                                margin: 0;
+                                font-size: 18px;
+                                line-height: 32px;
+                                a{
+                                    color: #333;
+                                }
+                            }
+                            p{
+                                height: 52px;
+                                font-size: 12px;
+                                line-height: 22px;
+                                margin: 0;
+                            }
+                            .title-btm{
+                                margin: 0;
+                                font-size: 14px;
+                                line-height: 40px;
+                                span:last-of-type{
+                                    height: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // 选项卡效果
+            .eg-result{
+                display: none;
+                margin: 45px 0 0;
+                overflow: hidden;
+                >div{
+                    width: 31.7%;
+                    margin: 0 1.6% 20px 0;
+                    float: left;
+                    .ty-clip{
+                        vertical-align:middle;
+                    }
+                    >div{
+                        padding: 20px 6.5% 0;
+                        width: 100%;
+                        border: 1px solid #f2f2f2;
+                        h3{
+                            font-size: 18px;
+                            line-height: 32px;
+                            margin: 0;
+                            a{
+                                color:#000;
+                            }
+                        }
+                        p{
+                            height: 52px;
+                            font-size: 12px;
+                            line-height: 22px;
+                            margin: 0;
+                        }
+                        .title-btm{
+                            margin: 0;
+                            font-size: 14px;
+                            line-height: 40px;
+                            span:last-of-type{
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 数字营销222222
+        .sem-two{
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            margin: 0 0 16px 0;
+            .sem-t-gt{
+                width: 100%;
+                .ty-clip{
+                    vertical-align: middle;
+                }
+            }
+            .sem-t-lt{
+                width: 86%;
+                margin: 0 auto;
+                color:#fff;
+                background-color: #333;
+                padding: 26px 0 36px 0;
+                h2{
+                    margin: 0;
+                    font-size: 26px;
+                    line-height: 46px;
+                    font-weight: bold;
+                }
+                h3{
+                    font-size: 16px;
+                    line-height: 36px;
+                    margin: 6px 0 0;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 24px;
+                    margin: 10px 0 0;
+                    opacity: 0.4;
+                }
+            }
+        }
+        // 地产执着 h5开发
+        .make-h5{
+            width: 100%;
+            position: relative;
+            margin: 0 0 16px;
+            overflow: hidden;
+            .mh-lt{
+                margin: 0 0 16px;
+            }
+            >div{
+                overflow: hidden;
+                background-color: #fff;
+                >div:first-child{
+                    width: 100%;
+                    position: relative;
+                }
+                >div:last-of-type{
+                    width: 87.3%;
+                    margin: 0 auto;
+                    padding: 22px 0 8px;
+                    h2{
+                        font-size: 24px;
+                        line-height: 40px;
+                        margin: 0;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 30px;
+                        height: 60px;
+                        margin:0;
+                    }
+                    >div{
+                        border-top: 1px solid #e5e5e5;
+                        overflow: hidden;
+                        div{
+                            float: left;
+                            a{
+                                display: inline-block;
+                                margin: 0 0 0 36px; 
+                                font-size: 14px;
+                                line-height: 60px;
+                                color: #777;
+                                transition: color 0.3s ease 0s;
+                                &:hover{
+                                    color:#000;
+                                }
+                            }
+                            a:first-of-type{
+                                margin: 0;
+                            }
+                        }
+                        .mh-last{
+                            display: block;
+                            float: right;
+                            width: 24px;
+                            height: 35px;
+                            background-image: url("../../images/home/ico_08.png");
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            margin: 13px 0 0 ;
+                        }
+                    }
+                }
+            }
+        }
+        // 社会化营销
+        .society{
+            width: 100%;
+            margin: 0 0 16px;
+            position: relative;
+            overflow: hidden;
+            background-color: #2f2f2f;
+            .society-lt{
+                width: 100%;
+                position: relative;
+
+            }
+            .society-gt{
+                width: 100%;
+                padding: 26px 7% 38px;
+                color: #fff;
+                h2{
+                    font-size: 26px;
+                    line-height: 46px;
+                    font-weight: bold;
+                    margin:0;
+                }
+                h3{
+                    margin: 6px 0 0;
+                    font-size: 16px;
+                    line-height: 36px;
+                    color: #cdcdcd;
+                }
+                p{
+                    margin: 10px  0 0;
+                    font-size: 12px;
+                    opacity: 0.5;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:480px){
+    .box{
+        .container-fluid{
+        .eg-win{
+            padding: 32px 7.25% 35px ;
+            .eg-chose{
+                span{
+                    display: block;
+                    width: 75px;
+                    font-size: 14px;
+                    line-height: 50px;
+                    background-color: #333;
+                    color:#fff;
+                    text-align: center;
+                    float: left;
+                    margin: 0 2px 2px 0;
+                }
+                a{
+                    vertical-align: top;
+                    margin: 0 2px 2px 0;
+                    float: left;
+                    padding: 0 30px 0 50px;
+                    background-repeat: no-repeat;
+                    background-position: 25px  center;
+                }
+                a:nth-of-type(1){
+                    background-image: url("../../images/home/ico_10.png");
+                }
+                a:nth-of-type(2){
+                    background-image: url("../../images/home/ico_12.png");
+                }
+            }
+        }
+        // 
+        .sem-two{
+            .sem-t-lt{
+                width: 92%;
+            }
+        }
+        // 
+        .make-h5{
+            >div{
+                width: 49%;
+                margin: 0 1% 0 0;
+            }
+            .mh-lt{
+                float: left;
+            }
+            .mh-gt{
+                float: right;
+            }
+        }
+    }
+    }
+}
+
+@media(min-width:768px){
+    .box{
+        .container-fluid{
+            .sem{
+                .sem-gt{
+                    .to-up{
+                        height: 394px;
+                        position: relative;
+                        p{
+                            width: 71%;
+                        }
+                        .title-btm{
+                            position: absolute;
+                            bottom: 0;
+                            width: 88%;
+                        }
+                    }
+                }
+            }
+            .selution{
+                .slt-gt{
+                    width:92%;
+                }
+            }
+            .eg-win{
+                margin: 0 0 16px 0;
+                padding: 44px 2.8% 46px ;
+                .eg-chose{
+                    .eg-c-gt{
+                        display: block;
+                        float: right;   
+                         font-size: 14px;
+                        line-height: 42px;
+                        color: #777;
+                        background: url("../../images/home/ico_09.png") no-repeat left center;
+                        padding-left: 22px;
+                        transition: all 0.3s ease 0s;
+                    }
+                }
+                .eg-result2{
+                    display: none;
+                }
+                .eg-result{
+                    display:block;
+                    >div{
+                        width: 48%;
+                        margin: 0 2% 20px 0;
+                    }
+                    >div:nth-of-type(3){
+                        display: none;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media(min-width:1050px){
+    header{
+        height: 100px;
+    }
+    .banner{
+        width: 100%;
+        height: 700px;
+        .item{
+            // position: relative;
+            // width: 100%;
+            height: 100%;
+            background-image: url("../../images/home/15169475160812jvipz.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            video{
+                position: absolute;
+                top: 0;
+                left: 0;
+                // height: 100%;
+            }
+            .carousel-caption{
+                position: absolute;
+                top: 50px;
+                left:5.5%;
+                width: 504px;
+                height: 262px;
+                padding: 0;
+                text-align: left;
+                h2{   
+                    font-size: 36px;
+                    line-height: 56px;
+                    margin: 0;
+                    text-align: left;
+                }
+                span{
+                    display: inline-block;
+                    width: 42px;
+                    position: relative;
+                    height: 42px;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    margin: 50px 0 0;
+                    cursor: pointer;
+                    i{
+                        display: inline-block;
+                        width: 42px;
+                        height: 42px;
+                        background-image: url("../../images/home/ico_16.png");
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        animation: animations 1.5s ease-out infinite;
+                    }
+                    @keyframes animations{
+                        0%{top:-50%;opacity: 0;};
+                        50%{top:0;opacity: 1;};
+                        100%{top:50%;opacity: 0;};
+                    }
+                }
+            }
+        }
+        // .item:nth-of-type(1){
+        //     .carousel-caption{
+        //         span{
+        //             margin: 100px 0 0;
+        //         }
+        //     }
+        // }
+        .item:nth-of-type(2){
+            background-image: url("../../images/home/1488362321473guuzh.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .item:nth-of-type(3){
+            background-image: url("../../images/home/14883623104219fitpj.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        ol{
+            width: 180px;
+            height: 2px;
+            left: 5.5%;
+            bottom: 76px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            li{
+                float: left;
+                width: 50px;
+                height: 2px;
+                margin: 0 10px 0 0;
+                background-color: #3a333f;
+                border: 0;
+            }
+            .active{
+                width: 50px;
+                height: 2px;
+                margin: 0 10px 0 0;
+                background-color: #3a333f;
+                i{
+                    display: inline-block;
+                    height: 100%;
+                    background-color: #918c94;
+                } 
+            }
+        }
+    }
+    .box{
+        position: relative;
+        z-index: 9;
+        .container-fluid{
+            width: 89%;
+            .sem{
+                margin: 0 0 16px 0;
+                &:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; };
+               .sem-gt{
+                   width: 50%;
+                   float: right;
+                   position: relative;
+                   .to-up{
+                       margin: -190px 0 0;
+                    //    position: absolute;
+                       background-color: #fff;
+                    //    z-index: 98;
+                   }
+               } 
+               .sem-lt{
+                   float: left;
+                   width: 50%;
+                   position: relative;
+                   .nmb{
+                    position: absolute;
+                    left: 6%;
+                    top: 100px;
+                    width: 62%;
+                    margin: 0;
+                   }
+                   .num-box{
+                       display: block;
+                       width: 150px; 
+                       height: 150px;
+                       background-color: #f0f0f0;
+                       position: absolute;
+                       right: 0;
+                       top: 0;
+                    p{
+                        display: inline-block;
+                        margin: 40px 0 0;
+                        font-size: 26px;
+                        line-height: 58px;
+                        color: #999;
+                        font-weight: 600;
+                    }
+                   }
+               }
+            }
+            .selution{
+                .ty-clip{
+                    width: 64%;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .slt-gt{
+                    width: 29%;
+                    float: right;
+                    margin: 0 3.9% 0 0;
+                    padding-top: 50px ;
+                }
+            }
+            .eg-win{
+                .eg-chose{
+                    a{
+                        transition: all 0.5s ease 0s; 
+                        &:hover{
+                            background-color: #000000;
+                            color: #fff;
+                        }
+                    }
+                    .eg-c-gt:hover{
+                        color: #000;
+                        background-color: #fff;
+                    }
+                }
+                .eg-result{
+                    >div{
+                        width: 31.7%;
+                        margin: 0 1.6% 20px 0;
+                        float: left;   
+                    }
+                    >div:nth-of-type(3){
+                        display: block;
+                    }
+                }
+            }
+            // 
+            .sem-two{
+                .sem-t-gt{
+                    float: right;
+                    width: 64%;
+                }
+                .sem-t-lt{
+                    float: left;
+                    width: 29%;
+                    margin: 0 0 0 3.2%;
+                    padding: 50px 0 0;
+                    h3{
+                        margin: 18px  0 0;
+                        font-size: 16px;
+                        color: #cdcdcd;
+                    }
+                }
+            }
+            // 
+            .society{
+                .society-lt{
+                    width: 64%;
+                    float: left;
+                }
+                .society-gt{
+                    width: 29%;
+                    float: right;
+                    padding: 50px 0 0;
+                    margin: 0 3.9% 0 0;
+                }
+            }
+            // 
+            .difficult{
+                width: 100%;
+                background-color: #fff;
+                overflow: hidden;
+                .dflt-pbc-top{
+                    width: 100%;
+                    .dlt-t-t-lt{
+                        float: left;
+                        overflow: hidden;
+                        h2{
+                            margin: 0;
+                            font-size: 24px;
+                            line-height: 40px;
+                            color: #333;
+    
+                        }
+                        p{
+                            margin: 10px 0 0;
+                            font-size: 16px;
+                            line-height: 32px;
+                            color: #666;
+                        }
+                    }
+                    .dlt-t-t-gt{
+                        display: block;
+                        float: right;
+                        padding: 0 0 0 25px;
+                        margin: 60px 0 0 ;
+                        font-size: 14px;
+                        line-height: 32px;
+                        background-image: url("../../images/home/ico_09.png");
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                    }
+                }
+                .dflt-top{
+                    padding: 85px 0 40px ;
+                    width: 82.8%;
+                    margin: 0 auto;
+                    .dflt-top-nav{
+                        margin: 32px 0 0;
+                        width: 100%;
+                        overflow: hidden;
+                        >div{
+                            width: 31.3%;
+                            margin: 0 2% 0 0;
+                            float: left;
+                            >div{
+                                width: 100%;
+                                overflow: hidden;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            >div:last-of-type{
+                                border: 1px solid #f8f8f8;
+                                padding: 18px 0 10px 0;
+                                width: 90%;
+                                margin: 0 auto;
+                                a{
+                                    display: block;
+                                    color: #1c1c1c;
+                                    line-height: 36px;
+                                    height: 36px;
+                                    font-size: 18px;
+                                }
+                                p{
+                                    line-height: 24px;
+                                    font-size: 14px;
+                                    margin-top: 4px;
+                                    height: 85px;
+                                }
+                                >div{
+                                    border-top: 1px solid #e5e5e5;
+                                    line-height: 46px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1440px){
+    .box{
+        .container-fluid{
+            width: 79%;
+            .sem{
+                .sem-lt{
+                    .nmb{
+                        top: 205px;
+                        .circle{
+                            margin: 98px 0 0;
+                        }
+                    }
+                    .num-box{
+                        width: 210px;
+                        height: 206px;
+                    }
+                }
+                .sem-gt{
+                    .to-up{
+                        padding: 38px 6% 0;
+                    }
+                }
+            }
+            .selution{
+                .slt-lt{
+                    width: 64%;
+                    display: inline-block;
+
+                }
+                .slt-gt{
+                    width: 29%;
+                    float: right;
+                    margin: 0 3.9% 0 0;
+                    padding-top: 88px ;
+                    >div{
+                        margin: 96px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
