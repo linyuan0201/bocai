@@ -45,7 +45,7 @@ body {
   .max-news {
       line-height: 50px;
     color:#fff;
-      top:-50px;
+      margin-top:-50px;
       height: 50px;
     position: relative;
     bottom:0;
@@ -182,5 +182,228 @@ body {
         .fg{
             display: none;
         }
+    }
+}
+
+// 大图下面的四个小方块
+.cgal-bg-f{
+    img{
+        width: 101%;
+        height: 100%;
+        transition: 0.5s;
+       
+    }
+  
+    .col-lg-3{
+        position: relative;
+        overflow: hidden;
+        padding:0;
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .sfbox-f{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        padding-top: 8%;
+        padding-left: 5%;
+        
+    }
+    a{
+        
+        text-decoration: none;
+        color:#fff;
+      
+    }
+    h5,h4{
+        margin: 10px;
+        
+    }
+}
+
+
+// 主体内容部分
+.main-zhutineirong{
+    //页面内容跳转导航
+    margin-top:40px;
+   .xdh{
+       display: flex;
+       margin-top:30px;
+       margin-bottom:20px;
+       justify-content: space-around;
+       a{
+           text-decoration: none;
+           color:#333;
+           &:hover{
+               color:#666;
+           }
+       }
+   }
+
+    
+
+//小内容块
+    ul{
+        padding:0;
+        list-style: none;
+        width: 100%;
+        margin-top:30px;
+        display: flex;
+        
+        justify-content: space-around;  
+        flex-wrap: wrap;
+        li{
+            width: 30%;
+            margin-bottom:25px;
+        }
+    }
+}
+
+@media screen and (min-width:770px) {
+    .main-zhutineirong ul>li{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:770px) {
+    .main-zhutineirong ul>li{
+        width: 40%;
+    }
+}
+@media screen and (max-width:480px) {
+    .main-zhutineirong ul>li{
+        width: 93.5%;
+    }
+}
+
+// 内容分块的图片部分
+   .nr-tu{
+       display: block;
+       text-decoration: none;
+       width: 100%;
+       overflow: hidden;
+       position: relative;
+       .img-responsive{
+           transition: 0.5s;
+       }
+       &:hover{
+           img{
+               transform: scale(1.1);
+           }
+       }
+
+       //隐藏的黑色图层
+       &>div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        background-color:rgba(0,0,0,0.4);
+        opacity: 0;
+        transition: 0.3s;
+            // 文字的盒子
+            div{
+                width: 100%;
+                
+                margin:28% auto;
+                // transition: 0.5s;
+                // border-top:1px solid rgba(255,255,255,0.5);
+                // border-bottom: 1px solid rgba(255,255,255,0.5);
+                &::before,&::after{
+                    content:" ";
+                    transition: 0.5s;
+                    width: 30%;
+                    margin:0 auto;
+                    display: block;
+                    height: 1px;
+                    background-color: #fff; 
+                   
+                }
+                p{
+                    text-align: center;
+                    color:#fff;
+                    font-size: 16px;
+                    margin:0;
+                    line-height: 24px;
+                }
+            }
+        &:hover{
+            opacity: 1;
+            div{
+                &::before,&::after{
+                   transform: scale(0.1);
+                }
+               
+            }
+        }
+    }
+
+}
+
+//内容分块的文字部分
+.main-zhutineirong{
+  .nr-ms{
+      width: 100%;
+      padding:18px 18px 12px;
+      border:1px solid #ccc;
+      >span{
+          color:#666;
+          font-size: 13px;
+      }
+      h4{
+          a{
+              color:#333;
+              text-decoration: none;
+          }
+      }
+      .img{
+         position: absolute;
+         right: 0;
+         top:7px;
+          vertical-align: middle;
+          display: inline-block;
+          width: 30px;
+          height: 10px;
+          background-repeat: no-repeat;
+          background-image: url("../../../images/cgal_img/cgla/ico_08.png");
+      }
+      hr{
+          margin:20px auto 8px;
+      }
+      >a{
+          line-height: 20px;
+          display: block;
+          position: relative;
+          text-decoration: none;
+          color:#666;
+          &:hover{
+              color:#333;
+              .img{
+                  background-image: url("../../../images/cgal_img/cgla/ico_08_h.png");
+              }
+          }
+      }
+  }
+}
+
+//内容部分  加载更多按钮
+#nr-load-more{
+    width: 180px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #ececec;
+    border:0;
+    font-weight: 600;
+    font-size: 16px;
+    color:#999;
+    transition: 0.6s;
+    &:hover{
+        background-color: #333;
+        color:#fff;
     }
 }
