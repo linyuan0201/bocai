@@ -59,6 +59,7 @@ header .navbar .logo {
   left: 100% ;
   width: 66%;
   height: 100%;
+  z-index: 99;
 }
 .phone .header {
   background-color: #000;
@@ -233,8 +234,6 @@ header .navbar .logo {
     width: 100%;
     position: fixed;
     z-index: 99;
-<<<<<<< HEAD
-=======
     background-color: #fff;
     top: 100px;
     left: 0;
@@ -370,7 +369,6 @@ header .navbar .logo {
     position: fixed;
     z-index: 99;
     background-color: #fff;
->>>>>>> 2c7f27c1915007bf40fd842983681334c0d5b893
     top: 100px;
     left: 0;
     overflow: hidden;
@@ -379,6 +377,13 @@ header .navbar .logo {
     border: 0;
     height: 0;
     transition: height 0.5s ease ;
+  }
+  header .navbar .sub-li .rank:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
   }
   header .navbar .sub-li .rank ul {
     list-style-type: none;
