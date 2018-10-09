@@ -1,16 +1,16 @@
 // 调用公共部分
-// $("body .header").load("../../html/public/header.html");
-// $(".home-btm-map").load("../../html/public/btm-map.html");
-// $(".home-btm").load("../../html/public/footer.html");
+$(".header").load("../../html/public/header.html");
+$(".home-btm-map").load("../../html/public/btm-map.html");
+$(".home-btm").load("../../html/public/footer.html");
 
-// banner下的li变色效果
-// var val = $(".banner .carousel ol .active").index();
-// console.log(val);
-// for (var i = 0; i < val; i++) {
-//     $($(".banner .carousel ol li")[i]).children("i").animate({
-//         "width": "100%",
-//     })
-// }
-$(".banner .carousel ol .active i").animate({
-    "width": "100%",
-}, 4000);
+
+// banner的li点击效果
+// $(".banner .carousel ol li").on("click", function() {
+//     $(".banner .carousel ol li").removeClass("active active1");
+//     for (var i = 0; i < $(this).index(); i++) {
+//         $(".banner .carousel ol li:eq(" + i + ")").addClass(function(index, oldval) {
+//             return oldval + "active1";
+//         })
+//     }
+//     $(this).addClass("active");
+// })

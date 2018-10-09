@@ -8,18 +8,21 @@
     $usename=$_REQUEST['usename'];
     $password=$_REQUEST['password'];
 
-    $sql="SELECT * FROM `project_table` WHERE (`t_email`='$username')";
-    $data=myaql_query($sql);
+    $sql="SELECT * FROM `project_table` WHERE (`t_email`='$usename')";
+    $data=mysql_query($sql);
     $_data=mysql_fetch_array($data);
 
     if($_data){
-        echo '{
-            "res":1,
-        }';
+        $sql2="SELECT * FROM `project_table` WHERE (`t_pwd`='$password')";
+        $data2=mysql_query($sql2);
+        $_data2=mysql_fetch_array($data2);
+        if($_data2){
+            echo '{"res":"1","pwd":"1"}';
+        }else{
+            echo '{"res":"1","pwd":"0"}';
+        }
     }else{
-        echo '{
-            "res":0,
-        }';
+        echo '{"res":"0"}';
     }
 
 

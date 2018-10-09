@@ -3,13 +3,12 @@ html,
 body {
   width: 100%;
 }
-header {
-  height: 100px;
+.header {
+  height: 50px;
 }
 .banner {
   width: 100%;
   height: 540px;
-  margin: 100px 0 0;
   position: relative;
 }
 .banner .carousel {
@@ -109,16 +108,24 @@ header {
   background-color: #3a333f;
   border: 0;
 }
-.banner ol .active {
-  width: 50px;
-  height: 2px;
-  margin: 0 10px 0 0;
-}
-.banner ol .active i {
+.banner ol li i {
   display: block;
   height: 100%;
   background-color: #918c94;
   width: 0;
+  transition: all 6s;
+}
+.banner ol .active {
+  width: 50px;
+  height: 2px;
+  margin: 0 10px 0 0;
+  background-color: #3a333f;
+}
+.banner ol .active i {
+  width: 100%;
+}
+.banner ol .active1 {
+  background-color: #918c94;
 }
 .banner .float-Medals {
   position: absolute;
@@ -862,6 +869,10 @@ header {
   max-height: 48px;
 }
 @media (min-width: 480px) {
+  .header {
+    height: 89px;
+    padding: 18px 0;
+  }
   .box .container-fluid .eg-win {
     padding: 32px 7.25% 35px ;
   }
@@ -975,7 +986,7 @@ header {
   }
 }
 @media (min-width: 1050px) {
-  header {
+  .header {
     height: 100px;
   }
   .banner {

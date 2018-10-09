@@ -14,13 +14,14 @@ body::-webkit-scrollbar-thumb {
 }
 header {
   background-color: #fff;
-  padding: 12px 0;
+  padding: 12px 0 0;
   font-size: 12px;
   position: relative;
 }
 header .navbar {
   border: none;
   background-color: #fff;
+  min-height: 38px;
   margin: 0;
 }
 header .navbar .container {
