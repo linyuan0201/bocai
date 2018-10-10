@@ -6,7 +6,7 @@
     mysql_select_db("case",$db);
     mysql_query('set names utf8');
 
-    $sql="SELECT `s_id`, `s_decrition` FROM `sign` WHERE 1";
+    $sql="SELECT * FROM `sign` order by `s_id` asc";
     $data=mysql_query($sql);
     $results = array();
 

@@ -69,6 +69,7 @@ body{
     position: relative;
     opacity: 0;
  }
+
 .right{
     width: 52%;
     // left: 50px;
@@ -88,6 +89,10 @@ body{
     // left: 0;
     // -webkit-transition: left 0.3s,width 0.3s;
     // transition: left 0.3s,width 0.3s;
+}
+.hover2{
+    background: url("../../images/caseimg/n_ico1.png") no-repeat left center;
+    color: #333333;
 }
 .show {
     display: block!important;
@@ -226,6 +231,41 @@ body{
                 content: ".";
             }
         }
+        .div-right{
+            margin-left: 10%;
+            float: right;
+            ul{
+                li{
+                    a{
+                        padding-left: 13px;
+                        // margin-right: 38px;
+                        font-size: 14px;
+                        color: #6c6c6c;
+                        transition: all 0s;
+                    }
+                    &:hover{
+                        background: url("../../images/caseimg/n_ico1.png") no-repeat left center;
+                        color: #333333;
+                    }
+                }
+                &:after{
+                    display: block;
+                    height: 0;
+                    clear: both;
+                    visibility: hidden;
+                    overflow: hidden;
+                    content: ".";
+                }
+            }
+        }
+        &:after{
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+            overflow: hidden;
+            content: ".";
+        }
     }
 }
 }
@@ -302,6 +342,10 @@ body{
                         }
                     }
                 }
+            }
+            .two{
+                width: 25%;
+                margin-right: 30%;
             }
             
             

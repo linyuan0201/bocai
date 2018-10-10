@@ -90,6 +90,10 @@ body {
 .hover {
   border-bottom: 3px solid #313131;
 }
+.hover2 {
+  background: url("../../images/caseimg/n_ico1.png") no-repeat left center;
+  color: #333333;
+}
 .show {
   display: block!important;
 }
@@ -208,6 +212,36 @@ body {
   overflow: hidden;
   content: ".";
 }
+.list .list-nav .nav .div-right {
+  margin-left: 10%;
+  float: right;
+}
+.list .list-nav .nav .div-right ul li a {
+  padding-left: 13px;
+  font-size: 14px;
+  color: #6c6c6c;
+  transition: all 0s;
+}
+.list .list-nav .nav .div-right ul li:hover {
+  background: url("../../images/caseimg/n_ico1.png") no-repeat left center;
+  color: #333333;
+}
+.list .list-nav .nav .div-right ul:after {
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+  content: ".";
+}
+.list .list-nav .nav:after {
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+  content: ".";
+}
 .anchor1 {
   background: #ffffff;
   padding: 84px 0 200px;
@@ -276,6 +310,10 @@ body {
 }
 .anchor1 .anchor1-cont ul li .text p a {
   color: #999;
+}
+.anchor1 .anchor1-cont ul .two {
+  width: 25%;
+  margin-right: 30%;
 }
 .anchor1 .anchor1-cont:after {
   display: block;
