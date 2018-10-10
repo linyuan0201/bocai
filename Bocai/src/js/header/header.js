@@ -46,7 +46,8 @@ $(function() {
             $(this).children().last().animate({
                 "left": "0",
             }, 300);
-            event.stopImmediatePropagation();
+            // event.stoppropagation();
+            event.stopImmediatePropagation()
         })
         // 三级菜单撤销
     $(".fh").on('click', function() {

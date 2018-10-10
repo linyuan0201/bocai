@@ -3,8 +3,12 @@ html,
 body {
   width: 100%;
 }
+a {
+  text-decoration: none!important;
+}
 .header {
-  height: 50px;
+  height: 60px;
+  overflow: hidden;
 }
 .banner {
   width: 100%;
@@ -16,6 +20,9 @@ body {
 }
 .banner .carousel .carousel-inner {
   height: 100%;
+}
+.banner .float-Medals {
+  display: none;
 }
 .banner .item {
   width: 100%;
@@ -211,9 +218,6 @@ body {
   border-radius: 50%;
   transition: background 0.3s ease 0s;
   position: relative;
-  background-image: url("../../images/home/ico_05.png");
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .box .container-fluid .circle-2 span {
   position: absolute;
@@ -221,15 +225,30 @@ body {
   top: 50%;
   width: 0;
   height: 0;
-  background: #333333;
+  background: #fff;
   border-radius: 50%;
   transition: all 0.3s ease 0s;
+}
+.box .container-fluid .circle-2 i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  top: 0;
+  left: 0;
+  background-image: url("../../images/home/ico_05.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .box .container-fluid .circle-2:hover span {
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
+}
+.box .container-fluid .circle-2:hover i {
+  background-image: url("../../images/home/ico_06.png");
 }
 .box .container-fluid .ty-clip {
   width: 100%;
@@ -242,6 +261,8 @@ body {
   width: 100%;
   height: 100%;
   transition: all 0.6s ease 0s;
+  top: 0;
+  left: 0;
   z-index: 3;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -293,9 +314,6 @@ body {
   border: 1px solid #aaa;
   border-radius: 50%;
   position: relative;
-  background-image: url("../../images/home/ico_07.png");
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .box .container-fluid .sem .circle span {
   position: absolute;
@@ -307,11 +325,27 @@ body {
   border-radius: 50%;
   transition: all 0.3s ease 0s;
 }
+.box .container-fluid .sem .circle i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../images/home/ico_07.png");
+}
 .box .container-fluid .sem .circle:hover span {
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
+}
+.box .container-fluid .sem .circle:hover i {
+  background-image: url("../../images/home/ico_07_h.png");
 }
 .box .container-fluid .sem > div {
   width: 100%;
@@ -380,8 +414,11 @@ body {
   line-height: 24px;
   color: #777;
 }
-.box .container-fluid .sem .sem-lt .nmb .circle {
+.box .container-fluid .sem .sem-lt .nmb .circle i {
   background-image: url("../../images/home/ico_06.png");
+}
+.box .container-fluid .sem .sem-lt .nmb .circle:hover i {
+  background-image: url("../../images/home/ico_05.png");
 }
 .box .container-fluid .selution {
   width: 100%;
@@ -624,11 +661,17 @@ body {
   line-height: 40px;
   margin: 0;
 }
+.box .container-fluid .make-h5 > div > div:last-of-type h2 a {
+  color: #000;
+}
 .box .container-fluid .make-h5 > div > div:last-of-type p {
   font-size: 16px;
   line-height: 30px;
   height: 60px;
   margin: 0;
+}
+.box .container-fluid .make-h5 > div > div:last-of-type p a {
+  color: #666;
 }
 .box .container-fluid .make-h5 > div > div:last-of-type > div {
   border-top: 1px solid #e5e5e5;
@@ -992,6 +1035,9 @@ body {
   .banner {
     width: 100%;
     height: 700px;
+  }
+  .banner .float-Medals {
+    display: block;
   }
   .banner .item {
     height: 100%;

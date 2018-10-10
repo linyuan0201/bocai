@@ -4,10 +4,7 @@ body {
   width: 100%;
 }
 a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
+  text-decoration: none!important;
 }
 ul {
   list-style: none;
@@ -22,7 +19,7 @@ p {
   margin: 0;
 }
 .header {
-  height: 100px;
+  height: 60px;
 }
 .banner {
   position: relative;
@@ -72,6 +69,7 @@ p {
 }
 .banner .banner-box .chang-nmb ul li {
   float: left;
+  width: 188px;
   margin: 0 0 0 42px;
   padding: 0 0 0 48px;
   border-left: 1px solid rgba(255, 255, 255, 0.6);
@@ -79,22 +77,30 @@ p {
 .banner .banner-box .chang-nmb ul li .cn-t {
   font-size: 12px;
   line-height: 17px;
+  text-align: center;
 }
 .banner .banner-box .chang-nmb ul li .cn-nav {
   font-size: 60px;
   line-height: 60px;
   margin: 5px 0 0;
+  font-family: "Trump";
+  text-align: center;
 }
 .banner .banner-box .chang-nmb ul li .cn-b {
   font-size: 9px;
   line-height: 21px;
   opacity: .6;
+  text-align: center;
+}
+.banner .banner-box .chang-nmb ul li:first-of-type {
+  border: 0;
 }
 .banner .banner-box .chang-btm {
   display: none;
   margin: 27px 0 0;
   border-top: 1px solid #6b757f;
   padding: 12px 0 0;
+  overflow: hidden;
 }
 .banner .banner-box .chang-btm .cb-h {
   float: left;
@@ -156,9 +162,11 @@ p {
 }
 .banner .banner-box .chang-btm .cb-h ul li > div i:first-of-type span {
   width: 100%;
-  height: 100%;
+  height: 0;
   display: block;
-  background-color: #fff;
+  background-image: url("../../images/about-us/bg_07.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
   position: absolute;
   bottom: 0;
 }
@@ -168,13 +176,23 @@ p {
 }
 .banner .banner-box .chang-btm .cb-h ul li > div i:last-of-type span {
   width: 100%;
-  height: 100%;
+  height: 0;
   display: block;
-  background-image: url("../../images/about-us/bg_07.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  background-color: #fff;
   position: absolute;
   bottom: 0;
+}
+.banner .banner-box .chang-btm .cb-h ul > li:nth-of-type(2) > div i:first-of-type {
+  height: 61px;
+}
+.banner .banner-box .chang-btm .cb-h ul > li:nth-of-type(2) > div i:last-of-type {
+  height: 35px;
+}
+.banner .banner-box .chang-btm .cb-h ul > li:nth-of-type(3) > div i:first-of-type {
+  height: 71px;
+}
+.banner .banner-box .chang-btm .cb-h ul > li:nth-of-type(3) > div i:last-of-type {
+  height: 45px;
 }
 .banner .banner-box .chang-btm .cb-map {
   float: right;
@@ -201,8 +219,6 @@ p {
   transition: all 0.3s ease 0s;
   margin: 0 24px 0 0;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .box .circle i {
   display: block;
@@ -214,6 +230,18 @@ p {
   border-radius: 50%;
   transition: all 0.3s ease 0s;
   background-color: #333333;
+}
+.box .circle span {
+  display: block;
+  height: 100%;
+  z-index: 3;
+  width: 100%;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease 0s;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .box .circle:hover i {
   width: 100%;
@@ -237,6 +265,7 @@ p {
   width: 100%;
   padding: 30px 5%;
   height: 100%;
+  margin: 0 0 16px;
   float: left;
 }
 .box .introduce .itdc-lt h2 {
@@ -253,11 +282,17 @@ p {
 .box .introduce .itdc-lt > div {
   margin: 30px 0 0;
 }
-.box .introduce .itdc-lt > div .circle:first-of-type {
+.box .introduce .itdc-lt > div .circle:first-of-type span {
   background-image: url("../../images/about-us/ico_07.png");
 }
-.box .introduce .itdc-lt > div .circle:last-of-type {
+.box .introduce .itdc-lt > div .circle:first-of-type:hover span {
+  background-image: url("../../images/about-us/ico_07_h.png");
+}
+.box .introduce .itdc-lt > div .circle:last-of-type span {
   background-image: url("../../images/about-us/ico_17.png");
+}
+.box .introduce .itdc-lt > div .circle:last-of-type:hover span {
+  background-image: url("../../images/about-us/ico_17_h.png");
 }
 .box .introduce .itdc-gt {
   width: 100%;
@@ -282,7 +317,12 @@ p {
 }
 .box .introduce .itdc-gt .circle {
   margin: 64px 0 0;
+}
+.box .introduce .itdc-gt .circle span {
   background-image: url("../../images/about-us/ico_06.png");
+}
+.box .introduce .itdc-gt .circle:hover span {
+  background-image: url("../../images/about-us/ico_05.png");
 }
 .box .picture {
   width: 100%;
@@ -309,7 +349,15 @@ p {
   width: 38px;
   height: 38px;
   margin: 30px 0 0;
+}
+.box .picture .circle span {
   background-image: url("../../images/about-us/ico_05.png");
+}
+.box .picture .circle:hover span {
+  background-image: url("../../images/about-us/ico_06.png");
+}
+.box .picture .circle:hover i {
+  background-color: #fff;
 }
 .box .client {
   width: 100%;
@@ -415,6 +463,10 @@ p {
   background-image: url("../../images/home/ico_09.png");
   background-repeat: no-repeat;
   background-position: left center;
+  transition: all .3s;
+}
+.box .more .dflt-top .dflt-pbc-top .dlt-t-t-gt:hover {
+  color: #333;
 }
 .box .more .dflt-top .dflt-top-nav {
   display: none;
@@ -459,6 +511,10 @@ p {
   margin: 18px 0 0;
   background-image: url("../../images/home/ico_08.png");
 }
+.box .abt-us-btm-map,
+.box .abt-us-footer {
+  width: 100%;
+}
 @media (min-width: 480px) {
   .banner img {
     width: 100%;
@@ -470,9 +526,9 @@ p {
     line-height: 48px;
   }
   .banner .banner-box > p:first-of-type {
+    margin: 32px  0 0;
     font-size: 14px;
     line-height: 24px;
-    margin: 10px 0 0;
   }
   .banner .banner-box > p:last-of-type {
     font-size: 14px;
@@ -488,6 +544,7 @@ p {
 @media (min-width: 768px) {
   .box .introduce {
     width: 89%;
+    margin: 0 auto 16px;
   }
   .box .introduce .itdc-lt,
   .box .introduce .itdc-gt {
@@ -517,7 +574,7 @@ p {
   }
   .box .client {
     width: 89%;
-    margin: 0 auto 16px;
+    margin: 0 auto ;
     padding: 75px 5.8%;
   }
   .box .client .client-lt {
@@ -527,8 +584,22 @@ p {
     width: 50.5%;
     margin: 10px 0 0;
   }
+  .box .abt-us-btm-map,
+  .box .abt-us-footer {
+    width: 89%;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 1050px) {
+  .header {
+    height: 100px;
+  }
+  .box .picture,
+  .box .introduce,
+  .box .more,
+  .box .client {
+    opacity: 0;
+  }
   .box .more {
     width: 89%;
     margin: 0 auto;
@@ -537,7 +608,7 @@ p {
     display: none;
   }
   .box .more .dflt-top .dflt-top-nav {
-    margin: 32px 0 0;
+    margin: 66px 0 0;
     width: 100%;
     overflow: hidden;
     display: block;
@@ -546,6 +617,7 @@ p {
     width: 31.3%;
     margin: 0 2% 0 0;
     float: left;
+    cursor: pointer;
   }
   .box .more .dflt-top .dflt-top-nav > div > div {
     width: 100%;
