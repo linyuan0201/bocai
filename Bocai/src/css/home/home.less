@@ -2,12 +2,15 @@
 html,body{
     width: 100%;
 }
-header{
-    height: 100px;
+.header{
+    // height: 100px;
+    height:50px;
 }
 .banner{
     width: 100%;
     height: 540px;
+    // margin: 100px 0 0;
+    position: relative;
     .carousel{
         height: 100%;
         .carousel-inner{
@@ -103,6 +106,13 @@ header{
             margin: 0 10px 0 0;
             background-color: #3a333f;
             border: 0;
+            i{
+                display:block;
+                height: 100%;
+                background-color: #918c94;
+                width: 0;
+                transition: all 6s;
+            } 
         }
         .active{
             width: 50px;
@@ -110,10 +120,44 @@ header{
             margin: 0 10px 0 0;
             background-color: #3a333f;
             i{
-                display: inline-block;
+                width:100%;
+            }
+        }
+        .active1{
+            background-color: #918c94;
+        }
+    }
+    // svg
+    .float-Medals{
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        width: 80px;
+        height: 80px;
+        z-index: 3;
+        a{
+            color: #777;
+            transition: color 0.3s ease 0s;
+            width: 100%;
+            height: 100%;
+            display: block;
+            #cssda-badge{
+                width: 100%;
                 height: 100%;
-                background-color: #918c94;
-            } 
+                border-radius: 50%;
+                background: #fff;
+                transition: all 0.25s cubic-bezier(0.615, 0.19, 0.305, 0.91);
+                cursor: pointer;
+                z-index: 9999;
+                svg{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 80px;
+                    height: 80px;
+                    fill: #212121;
+                }
+            }
         }
     }
 }
@@ -538,14 +582,27 @@ header{
                 margin: 30px 0 0;
                 padding: 0 0 30px 0;
                 .carousel{
-                    position:static;
+                    // position:static;
                     background-color: #fff;
+                    ol{
+                        bottom: -50px;
+                        li{
+                            border: 1px solid #777;
+                        }
+                        .active{
+                            border: 1px solid #000;
+                            width: 10px; 
+                            height: 10px;
+                            margin: 1px;
+                        }
+                    }
                     .item{
                         .ty-clip{
                             vertical-align: middle;
                         }
                         >div{
                             padding: 20px 6.4% 0;
+                            border: 1px solid #eee;
                             h3{
                                 margin: 0;
                                 font-size: 18px;
@@ -752,62 +809,263 @@ header{
                 }
             }
         }
+        // 好多轮播
+        .difficult{
+            background-color: #fff;
+            // 通用
+            ol{
+                bottom: -30px;
+                li{
+                    border: 1px solid #777;
+                }
+                .active{
+                    border: 1px solid #000;
+                    width: 10px; 
+                    height: 10px;
+                    margin: 1px;
+                }
+            }
+            // 通用2
+            .dflt-pbc-top{
+                width: 100%;
+                overflow: hidden;
+                .dlt-t-t-lt{
+                    float: left;
+                    overflow: hidden;
+                    h2{
+                        margin: 0;
+                        font-size: 24px;
+                        line-height: 40px;
+                        color: #333;
+
+                    }
+                    p{
+                        margin: 10px 0 0;
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #666;
+                    }
+                }
+                .dlt-t-t-gt{
+                    display: none;
+                    float: right;
+                    padding: 0 0 0 25px;
+                    margin: 60px 0 0 ;
+                    font-size: 14px;
+                    line-height: 32px;
+                    background-image: url("../../images/home/ico_09.png");
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                }
+            }
+            // 1111111111111111111111
+            .dflt-top{
+                padding: 30px 0 40px 0;
+                width: 88%;
+                margin: 0 auto;
+                .dflt-top-nav{
+                    display: none;
+                }
+                .dflt-top-navx{
+                    margin: 32px 0 20px ;
+                    .item{
+                        img{
+                            width: 100%;
+                        }
+                        >div:last-of-type{
+                            height: 226px;
+                            width:100%;
+                            padding: 18px 5% 10px;
+                            border: 1px solid #f8f8f8;
+                            a{
+                                display: block;
+                                font-size: 18px;
+                                line-height: 30px;
+                                margin: 0;
+                            }
+                            p{
+                                margin: 4px 0 0;
+                                font-size: 14px;
+                                line-height: 24px;
+                                height: 85px;
+                            }
+                            div{
+                                border-top: 1px solid #e5e5e5;
+                                line-height: 46px;
+                                font-size: 14px;
+                                color: #777;
+                                transition: color 0.3s ease 0s;
+                                span:last-of-type{
+                                    float: right;
+                                    width: 24px;
+                                    height: 8px;
+                                    transition: color 0.3s ease 0s;
+                                    margin: 18px 0 0;
+                                    background-image: url("../../images/home/ico_08.png");
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+            // 22222222222222
+            .dflt-mld{
+                padding: 22px 7.6% 44px;
+                width: 100%;
+                .xt{
+                    padding: 3%;
+                    border: 1px solid #ececec;
+                    transition: box-shadow 0.3s;
+                    h2{
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #333;
+                        margin: 0 0 6px;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #666;
+                    }
+                    span{
+                        display:block;
+                        width: 24px;
+                        height: 8px;
+                        background-image: url("../../images/home/ico_08.png");
+                    }
+                }
+                .dlt-mld-nav{
+                    display: none;
+                    margin: 30px 0 0;
+                    overflow: hidden;
+                    .xt{
+                        width: 31.5%;
+                        margin: 0 1.75% 0 0;
+                        float: left;
+                        h2{
+                            overflow: hidden;
+                            height: 22px;
+                        }
+                        &:hover{
+                            box-shadow: 0 0 5px rgba(0,0,0,.1);
+                        }
+                    }
+                }
+                .dflt-mld-navx{
+                    margin: 30px 0 48px;
+                    
+                    ol{
+                        bottom: -50px;
+                    }
+                    .item{
+                        div{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            // 3333333
+            .dflt-btm{
+                padding: 20px 6% 50px;
+                width: 100%;
+                .dflt-pbc-top{
+                    p{
+                        margin: 0;
+                    }
+                }
+                .dflt-btm-navx{
+                    width: 100%;
+                    margin: 40px 0 0;
+                    ul{
+                        list-style: none;
+                        overflow: hidden;
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            width: 26%;
+                            min-height: 40px;
+                            float: left;
+                            margin: 0 7.3% 20px 0;
+                            text-align: center;
+                            img{
+                                width: 100%;
+                               max-height: 48px;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media(min-width:480px){
+    .header{
+        height: 89px;
+        padding: 18px 0;
+    }
     .box{
         .container-fluid{
-        .eg-win{
-            padding: 32px 7.25% 35px ;
-            .eg-chose{
-                span{
-                    display: block;
-                    width: 75px;
-                    font-size: 14px;
-                    line-height: 50px;
-                    background-color: #333;
-                    color:#fff;
-                    text-align: center;
+            .eg-win{
+                padding: 32px 7.25% 35px ;
+                .eg-chose{
+                    span{
+                        display: block;
+                        width: 75px;
+                        font-size: 14px;
+                        line-height: 50px;
+                        background-color: #333;
+                        color:#fff;
+                        text-align: center;
+                        float: left;
+                        margin: 0 2px 2px 0;
+                    }
+                    a{
+                        vertical-align: top;
+                        margin: 0 2px 2px 0;
+                        float: left;
+                        padding: 0 30px 0 50px;
+                        background-repeat: no-repeat;
+                        background-position: 25px  center;
+                    }
+                    a:nth-of-type(1){
+                        background-image: url("../../images/home/ico_10.png");
+                    }
+                    a:nth-of-type(2){
+                        background-image: url("../../images/home/ico_12.png");
+                    }
+                }
+            }
+            // 
+            .sem-two{
+                .sem-t-lt{
+                    width: 92%;
+                }
+            }
+            // 
+            .make-h5{
+                >div{
+                    width: 49%;
+                    margin: 0 1% 0 0;
+                }
+                .mh-lt{
                     float: left;
-                    margin: 0 2px 2px 0;
                 }
-                a{
-                    vertical-align: top;
-                    margin: 0 2px 2px 0;
-                    float: left;
-                    padding: 0 30px 0 50px;
-                    background-repeat: no-repeat;
-                    background-position: 25px  center;
+                .mh-gt{
+                    float: right;
                 }
-                a:nth-of-type(1){
-                    background-image: url("../../images/home/ico_10.png");
-                }
-                a:nth-of-type(2){
-                    background-image: url("../../images/home/ico_12.png");
+            }
+        // 在此很困难
+            .difficult{
+                .dflt-mld{
+                    .dflt-pbc-top{
+                        .dlt-t-t-gt{
+                            display: block;
+                        }
+                    }
                 }
             }
         }
-        // 
-        .sem-two{
-            .sem-t-lt{
-                width: 92%;
-            }
-        }
-        // 
-        .make-h5{
-            >div{
-                width: 49%;
-                margin: 0 1% 0 0;
-            }
-            .mh-lt{
-                float: left;
-            }
-            .mh-gt{
-                float: right;
-            }
-        }
-    }
     }
 }
 
@@ -864,13 +1122,41 @@ header{
                     }
                 }
             }
-            
+            // 不对，是在此很困难
+            .difficult{
+                // btm
+                .dflt-btm{
+                    .dflt-pbc-top{
+                        .dlt-t-t-gt{
+                            display: block;
+                            margin: 10px 0 0;
+                        }
+                    }
+                    padding: 50px 8.6% 60px;
+                    width: 100%;
+                    .dflt-btm-navx{
+                        margin: 62px 0 0;
+                        ul{
+                            width: 107%;
+                            li{
+                                width: 10.6%;
+                                margin: 0 6% 40px 0;
+                                min-height: 48px;
+                                img{
+                                    max-width: 100%;
+                                    max-height: 48px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
 @media(min-width:1050px){
-    header{
+    .header{
         height: 100px;
     }
     .banner{
@@ -950,34 +1236,34 @@ header{
             background-repeat: no-repeat;
             background-position: center center;
         }
-        ol{
-            width: 180px;
-            height: 2px;
-            left: 5.5%;
-            bottom: 76px;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            li{
-                float: left;
-                width: 50px;
-                height: 2px;
-                margin: 0 10px 0 0;
-                background-color: #3a333f;
-                border: 0;
-            }
-            .active{
-                width: 50px;
-                height: 2px;
-                margin: 0 10px 0 0;
-                background-color: #3a333f;
-                i{
-                    display: inline-block;
-                    height: 100%;
-                    background-color: #918c94;
-                } 
-            }
-        }
+        // ol{
+        //     width: 180px;
+        //     height: 2px;
+        //     left: 5.5%;
+        //     bottom: 76px;
+        //     margin: 0;
+        //     padding: 0;
+        //     overflow: hidden;
+        //     li{
+        //         float: left;
+        //         width: 50px;
+        //         height: 2px;
+        //         margin: 0 10px 0 0;
+        //         background-color: #3a333f;
+        //         border: 0;
+        //     }
+        //     .active{
+        //         width: 50px;
+        //         height: 2px;
+        //         margin: 0 10px 0 0;
+        //         background-color: #3a333f;
+        //         i{
+        //             display: inline-block;
+        //             height: 100%;
+        //             background-color: #918c94;
+        //         } 
+        //     }
+        // }
     }
     .box{
         position: relative;
@@ -1084,7 +1370,7 @@ header{
                     }
                 }
             }
-            // 
+            // 社会化营销
             .society{
                 .society-lt{
                     width: 64%;
@@ -1097,13 +1383,14 @@ header{
                     margin: 0 3.9% 0 0;
                 }
             }
-            // 
+            // 好多轮播
             .difficult{
                 width: 100%;
                 background-color: #fff;
                 overflow: hidden;
                 .dflt-pbc-top{
                     width: 100%;
+                    overflow: hidden;
                     .dlt-t-t-lt{
                         float: left;
                         overflow: hidden;
@@ -1137,10 +1424,14 @@ header{
                     padding: 85px 0 40px ;
                     width: 82.8%;
                     margin: 0 auto;
+                    .dflt-top-navx{
+                        display: none;
+                    }
                     .dflt-top-nav{
                         margin: 32px 0 0;
                         width: 100%;
                         overflow: hidden;
+                        display: block;
                         >div{
                             width: 31.3%;
                             margin: 0 2% 0 0;
@@ -1150,6 +1441,7 @@ header{
                                 overflow: hidden;
                                 img{
                                     width: 100%;
+                                    transition: all 0.3s ease 0s;
                                 }
                             }
                             >div:last-of-type{
@@ -1163,17 +1455,72 @@ header{
                                     line-height: 36px;
                                     height: 36px;
                                     font-size: 18px;
+                                    overflow: hidden;
+
                                 }
                                 p{
                                     line-height: 24px;
                                     font-size: 14px;
-                                    margin-top: 4px;
+                                    margin: 4px 0 0; 
                                     height: 85px;
+                                    color: #777;
                                 }
                                 >div{
                                     border-top: 1px solid #e5e5e5;
                                     line-height: 46px;
                                     font-size: 14px;
+                                    color: #777;
+                                    transition: color 0.3s ease 0s;
+                                    span:last-of-type{
+                                        float: right;
+                                        width: 24px;
+                                        height: 8px;
+                                        transition: color 0.3s ease 0s;
+                                        margin: 18px 0 0;
+                                        background-image: url("../../images/home/ico_08.png");
+                                    }                                    
+                                }
+                            }
+                            &:hover{
+                               img{
+                                   transform: scale(1.1);
+                               } 
+                               >div:last-of-type{
+                                   >div{
+                                        color:#000;
+                                        span:last-of-type{
+                                            background-image: url("../../images/home/ico_08_h.png");
+                                        }
+                                   }
+                               }
+                            }
+                        }
+                    }
+                }
+                // mld
+                .dflt-mld{
+                    .dlt-mld-nav{
+                        display: block;
+                    }
+                    .dflt-mld-navx{
+                        display: none;
+                    }
+                }
+                // btm
+                .dflt-btm{
+                    padding: 50px 8.6% 60px;
+                    width: 100%;
+                    .dflt-btm-navx{
+                        margin: 62px 0 0;
+                        ul{
+                            width: 107%;
+                            li{
+                                width: 10.6%;
+                                margin: 0 6% 40px 0;
+                                min-height: 48px;
+                                img{
+                                    max-width: 100%;
+                                    max-height: 48px;
                                 }
                             }
                         }

@@ -2,12 +2,21 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "bootstrap": "^3.3.7",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "jquery": "^3.3.1",
+    "swiper": "^4.4.1"
+  }
+=======
+>>>>>>> 759e8477560ad9d2492a725352f926f09aad9868
     "jquery": "^3.3.1"
   },
   "name": "bocai",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
+<<<<<<< HEAD
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,4 +31,12 @@
     "url": "https://github.com/linyuan0201/bocai/issues"
   },
   "homepage": "https://github.com/linyuan0201/bocai#readme"
+=======
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+>>>>>>> ed3120a83766721452ad19c1141ac78b85655a2c
+>>>>>>> 759e8477560ad9d2492a725352f926f09aad9868
 }

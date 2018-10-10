@@ -9,9 +9,7 @@ $(function() {
     setTimeout(function() {
         maxShuzi.addClass('animated fadeInUp');
     }, 700);
-    console.log(maxH2.html());
-    console.log(maxH1.offset().top);
-    console.log()
 
-    // $('cgla_lb1').
+    $('.cgla-mp').load('../../html/public/btm-map.html');
+    $('.cgla-footer').load('../../html/public/footer.html');
 });

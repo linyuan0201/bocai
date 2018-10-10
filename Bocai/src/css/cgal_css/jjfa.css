@@ -1,0 +1,86 @@
+@charset "utf-8";
+.main-tu-jjfa {
+  margin-top: 100px;
+  padding-top: 70px;
+  background-position: center center;
+  background-image: url('../../images/cgal_img/jjfa/sol1.jpg');
+}
+.main-tu-jjfa .main-tu-jjfa-top h2 {
+  text-shadow: 2px 2px 1px #020f7c;
+  color: #fff;
+  font-size: 40px;
+}
+.main-tu-jjfa .main-tu-jjfa-top h3 {
+  color: #999;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.main-tu-jjfa .main-tu-jjfa-top h3::before {
+  display: inline-block;
+  content: " ";
+  height: 1px;
+  width: 100px;
+  margin-right: 20px;
+  opacity: 0.5;
+  vertical-align: middle;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, #ffffff 100%);
+}
+.main-tu-jjfa .main-tu-jjfa-top h3::after {
+  display: inline-block;
+  content: " ";
+  height: 1px;
+  width: 100px;
+  opacity: 0.5;
+  margin-left: 20px;
+  vertical-align: middle;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.main-tu-jjfa ul {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.main-tu-jjfa ul li {
+  display: inline-block;
+  margin: 0 3%;
+  color: #fff;
+  text-align: center;
+}
+.main-tu-jjfa ul li p {
+  font-size: 50px;
+  color: #fff;
+  font-family: "sans-serif";
+}
+.main-tu-jjfa ul li span {
+  color: #999;
+}
+@media screen and (min-width: 780px) and (max-width: 980px) {
+  .main-tu-jjfa .main-tu-jjfa-top h2 {
+    font-size: 34px;
+  }
+  .main-tu-jjfa .main-tu-jjfa-top h3 {
+    font-size: 20px;
+  }
+  .main-tu-jjfa .main-tu-jjfa-sz p {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .main-tu-jjfa .main-tu-jjfa-top h2 {
+    font-size: 24px;
+  }
+  .main-tu-jjfa .main-tu-jjfa-top h3 {
+    font-size: 14px;
+  }
+  .main-tu-jjfa .main-tu-jjfa-top h3::before,
+  .main-tu-jjfa .main-tu-jjfa-top h3::after {
+    width: 80px;
+  }
+  .main-tu-jjfa .main-tu-jjfa-sz p {
+    font-size: 27px;
+  }
+}
+/*通用类名样式*/
