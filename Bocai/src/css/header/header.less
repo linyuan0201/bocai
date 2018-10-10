@@ -13,7 +13,7 @@ body::-webkit-scrollbar-thumb{
 }
 header{
     background-color: #fff;
-    padding: 12px 0;
+    padding: 12px 0 0;
     font-size: 12px;
     position: fixed;
     top:0;
@@ -22,6 +22,7 @@ header{
     .navbar{
         border: none;
         background-color: #fff;
+        min-height: 38px;
         margin: 0;
         .container{
             width: 89%;
@@ -60,8 +61,13 @@ header{
     top:0;
     left: 100%;
     width: 66%;
+<<<<<<< HEAD
     background-color: #fff;
     // height:100%;
+=======
+    height:100%;
+    z-index: 99;
+>>>>>>> ed3120a83766721452ad19c1141ac78b85655a2c
     .header{
         background-color: #000;
         color: #fff;
@@ -247,6 +253,10 @@ header{
                     width: 100%;
                     position: fixed;
                     z-index: 99;
+<<<<<<< HEAD
+=======
+
+>>>>>>> ed3120a83766721452ad19c1141ac78b85655a2c
                     background-color: #fff;
                     top: 100px;
                     left: 0;
@@ -399,6 +409,12 @@ header{
                     border: 0;
                     height: 0;
                     transition: height 0.5s ease ;
+                    &:after{
+                        display:block;
+                        clear:both;content:"";  
+                        visibility:hidden;
+                        height:0;
+                    }
                     ul{
                         list-style-type: none;
                         float: right;

@@ -1,0 +1,142 @@
+@charset "utf-8";
+body,html{
+    background-color: #eeebe4;
+    color:#38362f;
+    width: 100%;
+}
+.navbar-default{
+    background-color: #eeebe4;
+    margin: 0;
+    height: 70px;
+    border-bottom: 2px solid #e0dad0;
+    position: relative;
+    .container-fluid{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        a{
+            display: inline-block;
+            width: 95px;
+            height: 100%;
+            margin: 0!important;
+            position: absolute;
+            left: 30px;
+            top: 0;
+            background-image: url("../../images/new/cssda-logo-s.svg");
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+            background-size: contain;
+        }
+    }
+}
+.form{
+    >div{
+        position: relative;
+    }
+    width: 100%;
+    padding: 70px 30px 70px;
+    h2{
+        width: 100%;
+        margin: 0 0 25px;
+        text-align: center;
+        font-weight: 700;
+    }
+    input{ 
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border: 0;
+        font-size: 20px;
+        color: #2d2b24;
+        outline: 0;
+        background-color: #eeebe4;
+        font-weight: 700;
+        padding: 0;
+        margin: 0 0 20px;
+        border-bottom: 2px solid #d4d0c7;
+        transition: border .15s ease;
+    }
+    p{
+        font-size: 15px;
+        padding: 0 0 10px;
+        margin: 0;
+        color: #e64949;
+        font-weight: 600;
+        text-align: left;
+        display: none;
+    }
+    span{
+        position: absolute;
+        left: 0;
+        top: 26px;
+        font-size: 13px;
+        line-height: 32px;
+        padding: 0 14px;
+        color: #fff;
+        font-weight: 600;
+        display: none;
+        background-color: rgba(230,73,73,.95);
+        i{
+            border-top-color: rgba(230,73,73,.95);
+            position: absolute;
+            left: 14px;
+            top: 100%;
+            margin: 0;
+        }
+    }
+    span:last-of-type{
+        top: 96px;
+    }
+    button{
+        width: 100%;
+        font-size: 15px;
+        line-height: 48px;
+        height: 48px;
+        margin: 22px 0 ;
+        background-color: #38362f;
+        color: #fff;
+        font-weight: 700;
+        &:hover{
+            background-color: #673ab7;
+        }
+    }
+    button:first-of-type{
+        margin: 22px 0 0;
+    }
+    a{
+        display: block;
+        font-size: 1em;
+        color: #38362f;
+        line-height: 1.1;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        text-align: left;
+        text-decoration: none;
+        &:hover{
+            color: #673ab7;
+        }
+    }
+}
+
+@media(min-width:480px){
+    .form{
+        div{
+            width: 420px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(min-width:768px){
+    .navbar-default{
+        height: 80px;
+        .container-fluid{
+            a{
+                background-image: url("../../images/new/cssda-logo.svg");
+                left: 44px;
+                width: 200px;
+            }
+        }
+    }
+}

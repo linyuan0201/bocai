@@ -1,7 +1,7 @@
 $(function() {
     // $(".header").load("../../html/public/header.html");
     $(window).scroll(function() {
-        var top = $(window).scrollTop();
+        var top = $(window).scrollTop() / 2;
 
         $(".banner>.img").css({
             // "top": top++,

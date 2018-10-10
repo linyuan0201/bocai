@@ -2,7 +2,21 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "bootstrap": "^3.3.7",
+<<<<<<< HEAD
     "jquery": "^3.3.1",
     "swiper": "^4.4.1"
   }
+=======
+    "jquery": "^3.3.1"
+  },
+  "name": "bocai",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+>>>>>>> ed3120a83766721452ad19c1141ac78b85655a2c
 }

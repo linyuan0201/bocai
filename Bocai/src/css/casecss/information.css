@@ -39,6 +39,44 @@ a {
     position: relative;
 }
 
+.container-fluid {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* .padding-l {
+    padding-left: 0;
+}
+
+.padding-r {
+    padding-right: 0;
+} */
+
+.item {
+    margin-bottom: 20px;
+}
+
+
+/* .grid-sizer,
+.grid-item {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.grid-item>.container-fluid {
+    padding: 0;
+}
+
+.grid-item img {
+    width: 100%;
+} */
+
+.margin {
+    margin-top: 42px;
+}
+
 .img {
     width: 100%;
     max-width: 100%;
@@ -70,10 +108,6 @@ a {
     height: 4px;
     background-color: #fff;
     margin-top: 16px;
-}
-
-.col-lg-4 {
-    padding: 0;
 }
 
 
@@ -138,7 +172,7 @@ a {
     /* width: 31.5%; */
     background-color: #fff;
     /* float: left; */
-    padding: 0;
+    /* padding: 0; */
 }
 
 .sign-a {
@@ -241,9 +275,28 @@ a {
     background-image: url("../../images/caseimg/ico_08_h.png");
 }
 
-.margin {
-    margin-top: 22px;
+.more-load {
+    display: block;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #999;
+    background-color: #fff;
+    font-size: 18px;
+    margin: 100px auto 0;
+    cursor: pointer;
 }
+
+.more-load:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* .margin {
+    margin-top: 22px;
+} */
 
 @media(max-width:1550px) {
     .dec {
