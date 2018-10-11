@@ -10,6 +10,8 @@ $(function() {
     //     })
     // })
     // console.log($("btn"));
+
+
     //首页按钮点击事件
     btn.on('click', function() {
             console.log(headerphone);
