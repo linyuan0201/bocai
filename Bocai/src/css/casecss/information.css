@@ -293,6 +293,20 @@ a {
     color: #fff;
 }
 
+.search1::after {
+    display: block;
+    /* height: 0; */
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+    content: ".";
+}
+
+
+/* .col-xs-12 {
+    padding;
+} */
+
 
 /* .margin {
     margin-top: 22px;
@@ -351,5 +365,9 @@ a {
     }
     .search1 {
         float: left;
+    }
+    .col-xs-12 {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
