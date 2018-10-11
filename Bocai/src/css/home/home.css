@@ -12,7 +12,7 @@ a {
 }
 .banner {
   width: 100%;
-  height: 540px;
+  height: 500px;
   position: relative;
 }
 .banner .carousel {
@@ -1041,7 +1041,7 @@ a {
   }
   .banner {
     width: 100%;
-    height: 700px;
+    height: 526px;
   }
   .banner .float-Medals {
     display: block;

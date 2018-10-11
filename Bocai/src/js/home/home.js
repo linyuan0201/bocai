@@ -7,9 +7,12 @@ $(".rm-rm").load("../../html/public/right_menu.html");
 
 // banner的li点击效果
 var liall = $("#carousel-example-generic .carousel-indicators li");
-$('#carousel-example-generic').carousel({
-    pause: null
-})
+$('#carousel-example-generic').carousel({ //设置轮播效果：鼠标hover不停止
+        pause: null
+    })
+    // 加载页面的时候清除li的active类名
+liall.removeClass("active");
+// liall.first().addClass("active");
 
 $("#carousel-example-generic").on('slide.bs.carousel', function() {
     var num = $("#carousel-example-generic .carousel-indicators .active").index();

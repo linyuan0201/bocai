@@ -16,7 +16,9 @@ header {
   background-color: #fff;
   padding: 12px 0 0;
   font-size: 12px;
-  position: relative;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
 }
 header .navbar {
   border: none;
@@ -93,6 +95,7 @@ header .navbar .logo {
   border-bottom: 1px solid #eee;
   color: #777;
   font-size: 16px;
+  cursor: pointer;
 }
 .phone ul li > a {
   text-decoration: none;
