@@ -179,6 +179,10 @@ a {
   margin: 0 auto;
   padding: 0;
 }
+.box .container-fluid .rm-rm {
+  width: 100%;
+  overflow: hidden;
+}
 .box .container-fluid .title-btm {
   display: block;
   margin: 20px 0 0;

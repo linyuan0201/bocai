@@ -2,6 +2,7 @@
 $(".header").load("../../html/public/header.html");
 $(".abt-us-btm-map").load("../../html/public/btm-map.html");
 $(".abt-us-footer").load("../../html/public/footer.html");
+$(".rm-rm").load("../../html/public/right_menu.html");
 
 // 屏幕上跳动的数字可能是我的信仰
 var li = $(".banner .banner-box .chang-nmb ul li"),
