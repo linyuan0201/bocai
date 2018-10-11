@@ -9,15 +9,15 @@ $(function() {
         // console.log(anch1, anch2, anch3, anch4);
         // console.log(Math.floor($(".gundong").offset().top));
         if (t >= anch1 && t < anch2) {
-            $(".list-nav>.nav>ul>li:first").addClass("hover").siblings().removeClass("hover");
+            $(".list-nav>.nav1>ul>li:first").addClass("hover").siblings().removeClass("hover");
         } else if (t >= anch2 && t < anch3) {
-            $(".list-nav>.nav>ul>li:eq(1)").addClass("hover").siblings().removeClass("hover");
+            $(".list-nav>.nav1>ul>li:eq(1)").addClass("hover").siblings().removeClass("hover");
         } else if (t >= anch3 && t < anch4) {
-            $(".list-nav>.nav>ul>li:eq(2)").addClass("hover").siblings().removeClass("hover");
+            $(".list-nav>.nav1>ul>li:eq(2)").addClass("hover").siblings().removeClass("hover");
         } else if (t >= anch4 && t < 5598) {
-            $(".list-nav>.nav>ul>li:eq(3)").addClass("hover").siblings().removeClass("hover");
+            $(".list-nav>.nav1>ul>li:eq(3)").addClass("hover").siblings().removeClass("hover");
         } else {
-            $(".list-nav>.nav>ul>li").removeClass("hover");
+            $(".list-nav>.nav1>ul>li").removeClass("hover");
         }
     });
 });

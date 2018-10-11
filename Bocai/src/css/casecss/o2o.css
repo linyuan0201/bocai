@@ -44,13 +44,13 @@ body {
   line-height: 2;
   color: #333;
 }
-.nav {
+.nav1 {
   min-width: 1200px;
   padding: 0 40px;
   max-width: 1520px;
   margin: 0 auto 0;
 }
-.line {
+.line1 {
   display: inline-block;
   width: 100px;
   height: 1px;
@@ -69,15 +69,11 @@ body {
   filter: alpha(opacity=0);
   -webkit-transition: top 0.35s,opacity 0.35s;
   transition: top 0.35s,opacity 0.35s;
-  z-index: 20;
+  z-index: 100;
 }
 .active {
   top: 0px;
   opacity: 1;
-}
-.header {
-  background-color: #fff;
-  height: 100px;
 }
 .left {
   width: 40%;
@@ -133,14 +129,14 @@ body {
 .list .list-nav {
   border-bottom: 1px solid #e5e5e5;
 }
-.list .list-nav .nav ul {
+.list .list-nav .nav1 ul {
   float: left;
 }
-.list .list-nav .nav ul li {
+.list .list-nav .nav1 ul li {
   float: left;
   margin-right: 50px;
 }
-.list .list-nav .nav ul li a {
+.list .list-nav .nav1 ul li a {
   display: block;
   position: relative;
   height: 118px;
@@ -149,7 +145,7 @@ body {
   color: #666666;
   white-space: nowrap;
 }
-.list .list-nav .nav ul li a i {
+.list .list-nav .nav1 ul li a i {
   position: absolute;
   left: 50%;
   width: 0;
@@ -157,19 +153,19 @@ body {
   background: #313131;
   bottom: -1px;
 }
-.list .list-nav .nav ul li:hover a > i {
+.list .list-nav .nav1 ul li:hover a > i {
   width: 100%;
   left: 0;
   -webkit-transition: left 0.3s,width 0.3s;
   transition: left 0.3s,width 0.3s;
 }
-.list .list-nav .nav ul .bar {
+.list .list-nav .nav1 ul .bar {
   position: relative;
 }
-.list .list-nav .nav ul .bar a {
+.list .list-nav .nav1 ul .bar a {
   padding: 0 24px;
 }
-.list .list-nav .nav ul .bar a span {
+.list .list-nav .nav1 ul .bar a span {
   display: inline-block;
   width: 10px;
   height: 6px;
@@ -177,7 +173,7 @@ body {
   margin-left: 10px;
   vertical-align: 2px;
 }
-.list .list-nav .nav ul .bar .slide {
+.list .list-nav .nav1 ul .bar .slide {
   position: absolute;
   top: 118px;
   left: 0;
@@ -189,11 +185,11 @@ body {
   transition: height 0.6s;
   z-index: 10;
 }
-.list .list-nav .nav ul .bar .slide dl {
+.list .list-nav .nav1 ul .bar .slide dl {
   padding: 10px 0;
   border: 1px solid #e5e5e5;
 }
-.list .list-nav .nav ul .bar .slide dl dd > a {
+.list .list-nav .nav1 ul .bar .slide dl dd > a {
   display: block;
   padding-left: 24px;
   font-size: 14px;
@@ -201,10 +197,10 @@ body {
   line-height: 42px;
   height: 42px;
 }
-.list .list-nav .nav ul .bar:hover .slide {
+.list .list-nav .nav1 ul .bar:hover .slide {
   height: 358px;
 }
-.list .list-nav .nav ul .bar:after {
+.list .list-nav .nav1 ul .bar:after {
   display: block;
   height: 0;
   clear: both;
@@ -212,7 +208,7 @@ body {
   overflow: hidden;
   content: ".";
 }
-.list .list-nav .nav ul:after {
+.list .list-nav .nav1 ul:after {
   display: block;
   height: 0;
   clear: both;
@@ -220,21 +216,21 @@ body {
   overflow: hidden;
   content: ".";
 }
-.list .list-nav .nav .div-right {
+.list .list-nav .nav1 .div-right {
   margin-left: 10%;
   float: right;
 }
-.list .list-nav .nav .div-right ul li a {
+.list .list-nav .nav1 .div-right ul li a {
   padding-left: 13px;
   font-size: 14px;
   color: #6c6c6c;
   transition: all 0s;
 }
-.list .list-nav .nav .div-right ul li:hover {
+.list .list-nav .nav1 .div-right ul li:hover {
   background: url("../../images/caseimg/n_ico1.png") no-repeat left center;
   color: #333333;
 }
-.list .list-nav .nav .div-right ul:after {
+.list .list-nav .nav1 .div-right ul:after {
   display: block;
   height: 0;
   clear: both;
@@ -242,7 +238,7 @@ body {
   overflow: hidden;
   content: ".";
 }
-.list .list-nav .nav:after {
+.list .list-nav .nav1:after {
   display: block;
   height: 0;
   clear: both;
@@ -579,7 +575,7 @@ body {
 .anchor4 .content1 .content-co ul li .img:hover .show-content {
   opacity: 1;
 }
-.anchor4 .content1 .content-co ul li .img:hover .line {
+.anchor4 .content1 .content-co ul li .img:hover .line1 {
   width: 6px;
   margin-left: -3px;
   opacity: 0.6;

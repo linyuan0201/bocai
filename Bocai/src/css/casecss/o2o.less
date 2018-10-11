@@ -31,13 +31,13 @@ body{
     line-height: 2;
     color: #333;
 }
-.nav{
+.nav1{
     min-width: 1200px;
     padding: 0 40px;
     max-width: 1520px;
     margin: 0 auto 0;
 }
-.line{
+.line1{
     display: inline-block;
     width: 100px;
     height: 1px;
@@ -56,16 +56,16 @@ body{
     filter: alpha(opacity=0);
     -webkit-transition: top 0.35s,opacity 0.35s;
     transition: top 0.35s,opacity 0.35s;
-    z-index: 20;
+    z-index: 100;
 }
 .active{
     top: 0px;
     opacity: 1;
 }
-.header{
-    background-color: #fff;
-    height: 100px;
-}
+// .header{
+//     background-color: #fff;
+//     height: 100px;
+// }
  .left{
     width: 40%;
     // left: -50px;
@@ -136,7 +136,7 @@ body{
         // height: 118px;
         // overflow: hidden;
         border-bottom: 1px solid #e5e5e5;
-        .nav{
+        .nav1{
             // overflow: hidden;
          ul{
             float: left;
@@ -613,7 +613,7 @@ body{
                         &:hover .show-content{
                             opacity: 1;
                         }
-                        &:hover .line{
+                        &:hover .line1{
                             width: 6px;
                             margin-left: -3px;
                             opacity: 0.6;

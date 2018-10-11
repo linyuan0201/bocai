@@ -1,5 +1,5 @@
 $(function() {
-    $(".header").load("../../html/public/header.html");
+    // $(".header").load("../../html/public/header.html");
     $(window).scroll(function() {
         var top = $(window).scrollTop() / 2;
 
@@ -16,5 +16,8 @@ $(function() {
     // $(".banner>.img").css({
     //     width: wid,
     // })
-    $(".footer1").load("../../html/public/btm-map.html");
+    $(".cebian").load("../../html/public/right_menu.html");
+    $(".footer").load("../../html/public/btm-map.html");
+    $(".footer2").load("../../html/public/footer.html");
+
 });
