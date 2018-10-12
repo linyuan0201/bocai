@@ -3,6 +3,25 @@ var reg = /^\w{4,24}@[A-Za-z]{2,3}\.[A-Za-z]{2,3}$/,
     flag = 0,
     flag1 = 0;
 
+
+// cookie的记录值
+if (document.cookie) {
+    var cooke_arr = document.cookie.split("; ");
+    var cooke_arr_2 = cooke_arr[cooke_arr.length - 1].split("=");
+    // 获取cookie的值并且赋值给input
+    $(".form input:eq(0)").val(cooke_arr_2[0]);
+    $(".form input:eq(1)").val(cooke_arr_2[1]);
+}
+// 当再次点击账号的input的时候，密码清空
+$(".form input:eq(0)").on("focus", function() {
+        $(".form input:eq(1)").val("");
+    })
+    // 配合上文的正则验证，使得点击登陆的时候可以直接跳转页面
+if ($(".form input:eq(0)").val() && $(".form input:eq(0)").val()) {
+    if (reg.test($(".form input:eq(0)").val())) { flag = 1; }
+    if (reg2.test($(".form input:eq(1)").val())) { flag1 = 1; }
+
+}
 // 账户验证
 $(".form input:eq(0)").on("keyup", function() {
     if (!reg.test(this.value)) {
@@ -84,10 +103,14 @@ $(".form>div button:eq(1)").on("click", function() {
         password = $(".form input:eq(1)").val(),
         url = "../../php/new/register2.php",
         output = $(".form div p");
+
     var data = {
         "usename": usename,
         "password": password,
     }
+    var dat = new Date();
+    dat.setDate(dat.getDate() + 1);
+    document.cookie = usename + "=" + password + ";expires=" + dat;
     if (flag == 1 && flag1 == 1) {
         $.ajax({
             type: "post",

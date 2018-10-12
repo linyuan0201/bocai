@@ -27,6 +27,23 @@
 
 .menu-r>a:hover {
     margin-left: -10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-r>a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-r>a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-r>a:focus {
+    color: #fff;
+    text-decoration: none;
 }
 
 .menu-r>a .iconfont {
