@@ -1,0 +1,91 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #eaeaea;
+  padding: 0;
+  margin: 0;
+}
+.ssgl-max-tu {
+  margin-top: 100px;
+  background-position: -200px center;
+  background-repeat: no-repeat;
+  background-image: url("../../images/cgal_img/ssgl/14842057176977rrjib.jpg");
+  overflow: hidden;
+}
+.ssgl-max-tu .ssgl-tu-con {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  color: #fff;
+}
+.ssgl-max-tu .ssgl-tu-con h2 {
+  font-size: 36px;
+}
+.ssgl-max-tu .ssgl-tu-con .ssgl-tu-i {
+  margin: 20px 0 30px;
+  height: 4px;
+  width: 35px;
+  background-color: #fff;
+}
+.ssgl-max-tu .ssgl-tu-con .ssgl-tu-p {
+  font-size: 30px;
+}
+.ssgl-max-tu .ssgl-tu-con .ssgl-cir {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+.ssgl-max-tu .ssgl-tu-con .ssgl-cir:hover {
+  cursor: pointer;
+}
+.ssgl-max-tu .ssgl-tu-con .ssgl-cir img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 13px;
+  animation: jtdh 1.5s infinite;
+}
+@keyframes jtdh {
+  0% {
+    top: -2px;
+    opacity: 0;
+  }
+  35% {
+    top: 13px;
+    opacity: 1;
+  }
+  65% {
+    top: 13px;
+    opacity: 1;
+  }
+  100% {
+    top: 28px;
+    opacity: 0;
+  }
+}
+.ssgl-ssjg {
+  background-color: #fff;
+  padding: 40px 20px 50px;
+  position: relative;
+}
+.ssgl-ssjg .ssgl-bt {
+  font-size: 26px;
+  padding-left: 50px;
+}
+.ssgl-ssjg .ssgl-share {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.ssgl-ssjg .ssgl-zwxx {
+  margin-top: 50px;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
