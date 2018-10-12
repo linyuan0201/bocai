@@ -10,6 +10,34 @@ $(function() {
     //     })
     // })
     // console.log($("btn"));
+
+    // search遮罩层
+    $(".tab-li:last a").on("click", function() {
+        $(".tab-li-search").css({
+            "display": "block",
+        })
+    })
+    $(".tab-li-search .tls-close").on("click", function() {
+        $(".tab-li-search").css({
+            "display": "none",
+        })
+    })
+    $(".tab-li-search p input").on("focus", function() {
+        $(this).attr("placeholder", "");
+        $(this).on("keyup", function(event) {
+            if (event.keyCode == 13) {
+                location.href = "";
+            } else {
+                $(this).html(function(index, old) {
+                    return old + event.key;
+                })
+            }
+        })
+    })
+    $(".tab-li-search p button").on("click", function() {
+        location.href = "";
+    })
+
     //首页按钮点击事件
     btn.on('click', function() {
             console.log(headerphone);
@@ -46,7 +74,8 @@ $(function() {
             $(this).children().last().animate({
                 "left": "0",
             }, 300);
-            event.stoppropagation();
+            // event.stoppropagation();
+            event.stopImmediatePropagation()
         })
         // 三级菜单撤销
     $(".fh").on('click', function() {

@@ -27,6 +27,23 @@
 
 .menu-r>a:hover {
     margin-left: -10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-r>a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-r>a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-r>a:focus {
+    color: #fff;
+    text-decoration: none;
 }
 
 .menu-r>a .iconfont {
@@ -37,22 +54,22 @@
     display: inline-block;
 }
 
-.menu-r>.phone {
+.menu-r>.right_menu_phone {
     width: 200px;
     margin-right: -110px;
 }
 
-.menu-r>.phone strong {
+.menu-r>.right_menu_phone strong {
     position: relative;
     font-size: 16px;
     top: -15px;
 }
 
-.menu-r>.phone:hover {
+.menu-r>.right_menu_phone:hover {
     margin-left: -120px;
 }
 
-.menu-r>.phone .left {
+.menu-r>.right_menu_phone .left {
     margin-right: 10px;
     display: inline-block;
     vertical-align: center;

@@ -16,4 +16,8 @@ $(function() {
     // $(".banner>.img").css({
     //     width: wid,
     // })
+    $(".cebian").load("../../html/public/right_menu.html");
+    $(".footer").load("../../html/public/btm-map.html");
+    $(".footer2").load("../../html/public/footer.html");
+
 });

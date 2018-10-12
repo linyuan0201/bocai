@@ -8,19 +8,15 @@
     $usename=$_REQUEST['usename'];
     $password=$_REQUEST['password'];
 
-    $sql="SELECT * FROM `project_table` WHERE (`t_email`='$username')";
+    $sql="SELECT * FROM `project_table` WHERE (`t_email`='$usename')";
     $data=mysql_query($sql);
     $_data=mysql_fetch_array($data);
 
     if($_data){
-        echo '{
-            "res":1,
-        }';
+        echo '{"res":"1"}';
     }else{
-        $inset="INSERT INTO `project_table`(`t_id`, `t_email`, `t_pwd`) VALUES (null,'$username','$pwd')";
-        mysql_query($inset);
-        echo '{
-            "res:0,
-        }';
+        $inset="INSERT INTO `project_table`(`t_id`, `t_email`, `t_pwd`) VALUES (null,'$usename','$password')";
+        $_inset=mysql_query($inset);
+        echo '{"res":"0"}';
     }
 ?>

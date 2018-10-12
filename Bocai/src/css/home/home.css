@@ -3,13 +3,16 @@ html,
 body {
   width: 100%;
 }
-header {
-  height: 100px;
+a {
+  text-decoration: none!important;
+}
+.header {
+  height: 60px;
+  overflow: hidden;
 }
 .banner {
   width: 100%;
-  height: 540px;
-  margin: 100px 0 0;
+  height: 500px;
   position: relative;
 }
 .banner .carousel {
@@ -17,6 +20,9 @@ header {
 }
 .banner .carousel .carousel-inner {
   height: 100%;
+}
+.banner .float-Medals {
+  display: none;
 }
 .banner .item {
   width: 100%;
@@ -46,7 +52,7 @@ header {
   margin: 0;
   text-align: left;
 }
-.banner .item .carousel-caption span {
+.banner .item .carousel-caption a {
   display: inline-block;
   width: 42px;
   position: relative;
@@ -56,7 +62,7 @@ header {
   margin: 50px 0 0;
   cursor: pointer;
 }
-.banner .item .carousel-caption span i {
+.banner .item .carousel-caption a i {
   display: inline-block;
   width: 42px;
   height: 42px;
@@ -109,16 +115,24 @@ header {
   background-color: #3a333f;
   border: 0;
 }
-.banner ol .active {
-  width: 50px;
-  height: 2px;
-  margin: 0 10px 0 0;
-}
-.banner ol .active i {
+.banner ol li i {
   display: block;
   height: 100%;
   background-color: #918c94;
   width: 0;
+  transition: all 6s;
+}
+.banner ol .active {
+  width: 50px;
+  height: 2px;
+  margin: 0 10px 0 0;
+  background-color: #3a333f;
+}
+.banner ol .active i {
+  width: 100%;
+}
+.banner ol .active1 {
+  background-color: #918c94;
 }
 .banner .float-Medals {
   position: absolute;
@@ -165,6 +179,10 @@ header {
   margin: 0 auto;
   padding: 0;
 }
+.box .container-fluid .rm-rm {
+  width: 100%;
+  overflow: hidden;
+}
 .box .container-fluid .title-btm {
   display: block;
   margin: 20px 0 0;
@@ -204,9 +222,6 @@ header {
   border-radius: 50%;
   transition: background 0.3s ease 0s;
   position: relative;
-  background-image: url("../../images/home/ico_05.png");
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .box .container-fluid .circle-2 span {
   position: absolute;
@@ -214,15 +229,30 @@ header {
   top: 50%;
   width: 0;
   height: 0;
-  background: #333333;
+  background: #fff;
   border-radius: 50%;
   transition: all 0.3s ease 0s;
+}
+.box .container-fluid .circle-2 i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  top: 0;
+  left: 0;
+  background-image: url("../../images/home/ico_05.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .box .container-fluid .circle-2:hover span {
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
+}
+.box .container-fluid .circle-2:hover i {
+  background-image: url("../../images/home/ico_06.png");
 }
 .box .container-fluid .ty-clip {
   width: 100%;
@@ -235,6 +265,8 @@ header {
   width: 100%;
   height: 100%;
   transition: all 0.6s ease 0s;
+  top: 0;
+  left: 0;
   z-index: 3;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -286,9 +318,6 @@ header {
   border: 1px solid #aaa;
   border-radius: 50%;
   position: relative;
-  background-image: url("../../images/home/ico_07.png");
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .box .container-fluid .sem .circle span {
   position: absolute;
@@ -300,11 +329,27 @@ header {
   border-radius: 50%;
   transition: all 0.3s ease 0s;
 }
+.box .container-fluid .sem .circle i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../images/home/ico_07.png");
+}
 .box .container-fluid .sem .circle:hover span {
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
+}
+.box .container-fluid .sem .circle:hover i {
+  background-image: url("../../images/home/ico_07_h.png");
 }
 .box .container-fluid .sem > div {
   width: 100%;
@@ -373,8 +418,11 @@ header {
   line-height: 24px;
   color: #777;
 }
-.box .container-fluid .sem .sem-lt .nmb .circle {
+.box .container-fluid .sem .sem-lt .nmb .circle i {
   background-image: url("../../images/home/ico_06.png");
+}
+.box .container-fluid .sem .sem-lt .nmb .circle:hover i {
+  background-image: url("../../images/home/ico_05.png");
 }
 .box .container-fluid .selution {
   width: 100%;
@@ -617,11 +665,17 @@ header {
   line-height: 40px;
   margin: 0;
 }
+.box .container-fluid .make-h5 > div > div:last-of-type h2 a {
+  color: #000;
+}
 .box .container-fluid .make-h5 > div > div:last-of-type p {
   font-size: 16px;
   line-height: 30px;
   height: 60px;
   margin: 0;
+}
+.box .container-fluid .make-h5 > div > div:last-of-type p a {
+  color: #666;
 }
 .box .container-fluid .make-h5 > div > div:last-of-type > div {
   border-top: 1px solid #e5e5e5;
@@ -733,6 +787,9 @@ header {
   background-image: url("../../images/home/ico_09.png");
   background-repeat: no-repeat;
   background-position: left center;
+}
+.box .container-fluid .difficult .dflt-pbc-top .dlt-t-t-gt:hover {
+  color: #000;
 }
 .box .container-fluid .difficult .dflt-top {
   padding: 30px 0 40px 0;
@@ -862,6 +919,10 @@ header {
   max-height: 48px;
 }
 @media (min-width: 480px) {
+  .header {
+    height: 89px;
+    padding: 18px 0;
+  }
   .box .container-fluid .eg-win {
     padding: 32px 7.25% 35px ;
   }
@@ -975,12 +1036,15 @@ header {
   }
 }
 @media (min-width: 1050px) {
-  header {
+  .header {
     height: 100px;
   }
   .banner {
     width: 100%;
-    height: 700px;
+    height: 526px;
+  }
+  .banner .float-Medals {
+    display: block;
   }
   .banner .item {
     height: 100%;
@@ -1061,6 +1125,17 @@ header {
   }
   .box .container-fluid {
     width: 89%;
+  }
+  .box .container-fluid .sem,
+  .box .container-fluid .selution,
+  .box .container-fluid .eg-win,
+  .box .container-fluid .sem-two,
+  .box .container-fluid .make-h5,
+  .box .container-fluid .society,
+  .box .container-fluid .dflt-top,
+  .box .container-fluid .dflt-mld,
+  .box .container-fluid .dflt-btm {
+    opacity: 0;
   }
   .box .container-fluid .sem {
     margin: 0 0 16px 0;
@@ -1219,6 +1294,7 @@ header {
     width: 31.3%;
     margin: 0 2% 0 0;
     float: left;
+    cursor: pointer;
   }
   .box .container-fluid .difficult .dflt-top .dflt-top-nav > div > div {
     width: 100%;

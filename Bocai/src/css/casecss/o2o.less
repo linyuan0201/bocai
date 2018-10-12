@@ -31,13 +31,13 @@ body{
     line-height: 2;
     color: #333;
 }
-.nav{
+.nav1{
     min-width: 1200px;
     padding: 0 40px;
     max-width: 1520px;
     margin: 0 auto 0;
 }
-.line{
+.line1{
     display: inline-block;
     width: 100px;
     height: 1px;
@@ -56,12 +56,16 @@ body{
     filter: alpha(opacity=0);
     -webkit-transition: top 0.35s,opacity 0.35s;
     transition: top 0.35s,opacity 0.35s;
-    z-index: 20;
+    z-index: 100;
 }
 .active{
     top: 0px;
     opacity: 1;
 }
+// .header{
+//     background-color: #fff;
+//     height: 100px;
+// }
  .left{
     width: 40%;
     // left: -50px;
@@ -69,6 +73,7 @@ body{
     position: relative;
     opacity: 0;
  }
+
 .right{
     width: 52%;
     // left: 50px;
@@ -77,17 +82,15 @@ body{
     opacity: 0;
     }
 .hover{
-    // position: absolute;
-    // left: 50%;
-    // width: 0;
-    // height: 3px;
-    // background: #313131;
-    // bottom: -1px;
     border-bottom: 3px solid #313131;
-    // width: 100%;
-    // left: 0;
-    // -webkit-transition: left 0.3s,width 0.3s;
-    // transition: left 0.3s,width 0.3s;
+}
+@font-face{
+    font-family: "Trump";
+    src:url("../../css/casecss/Bobcaygeon\ Plain\ BRK.ttf");
+}
+.hover2{
+    background: url("../../images/caseimg/n_ico1.png") no-repeat left center;
+    color: #333333;
 }
 .show {
     display: block!important;
@@ -133,7 +136,7 @@ body{
         // height: 118px;
         // overflow: hidden;
         border-bottom: 1px solid #e5e5e5;
-        .nav{
+        .nav1{
             // overflow: hidden;
          ul{
             float: left;
@@ -226,6 +229,41 @@ body{
                 content: ".";
             }
         }
+        .div-right{
+            margin-left: 10%;
+            float: right;
+            ul{
+                li{
+                    a{
+                        padding-left: 13px;
+                        // margin-right: 38px;
+                        font-size: 14px;
+                        color: #6c6c6c;
+                        transition: all 0s;
+                    }
+                    &:hover{
+                        background: url("../../images/caseimg/n_ico1.png") no-repeat left center;
+                        color: #333333;
+                    }
+                }
+                &:after{
+                    display: block;
+                    height: 0;
+                    clear: both;
+                    visibility: hidden;
+                    overflow: hidden;
+                    content: ".";
+                }
+            }
+        }
+        &:after{
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+            overflow: hidden;
+            content: ".";
+        }
     }
 }
 }
@@ -302,6 +340,10 @@ body{
                         }
                     }
                 }
+            }
+            .two{
+                width: 25%;
+                margin-right: 30%;
             }
             
             
@@ -571,7 +613,7 @@ body{
                         &:hover .show-content{
                             opacity: 1;
                         }
-                        &:hover .line{
+                        &:hover .line1{
                             width: 6px;
                             margin-left: -3px;
                             opacity: 0.6;

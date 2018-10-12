@@ -2,19 +2,27 @@
 html,body{
     width: 100%;
 }
-header{
-    height: 100px;
+a{
+    text-decoration: none!important;
+}
+.header{
+    // height: 100px;
+    height:60px;
+    overflow: hidden;
 }
 .banner{
     width: 100%;
-    height: 540px;
-    margin: 100px 0 0;
+    height: 500px;
+    // margin: 100px 0 0;
     position: relative;
     .carousel{
         height: 100%;
         .carousel-inner{
             height: 100%;
         }
+    }
+    .float-Medals{
+        display: none;
     }
     .item{
         // position: relative;
@@ -44,7 +52,7 @@ header{
                 margin: 0;
                 text-align: left;
             }
-            span{
+            a{
                 display: inline-block;
                 width: 42px;
                 position: relative;
@@ -105,17 +113,25 @@ header{
             margin: 0 10px 0 0;
             background-color: #3a333f;
             border: 0;
-        }
-        .active{
-                width: 50px;
-                height: 2px;
-                margin: 0 10px 0 0;
             i{
                 display:block;
                 height: 100%;
                 background-color: #918c94;
                 width: 0;
+                transition: all 6s;
             } 
+        }
+        .active{
+            width: 50px;
+            height: 2px;
+            margin: 0 10px 0 0;
+            background-color: #3a333f;
+            i{
+                width:100%;
+            }
+        }
+        .active1{
+            background-color: #918c94;
         }
     }
     // svg
@@ -163,6 +179,11 @@ header{
         width: 100%;
         margin: 0 auto;
         padding: 0;
+        //public 
+        .rm-rm{
+            width: 100%;
+            overflow: hidden;
+        }
         // 底部通用
         .title-btm{
             display: block;
@@ -207,18 +228,27 @@ header{
             border-radius: 50%;
             transition: background 0.3s ease 0s;
             position: relative;
-            background-image: url("../../images/home/ico_05.png");
-            background-repeat: no-repeat;
-            background-position: center center;
             span{
                 position: absolute;
                 left: 50%;
                 top: 50%;
                 width: 0;
                 height: 0;
-                background: #333333;
+                background: #fff;
                 border-radius: 50%;
                 transition: all 0.3s ease 0s;
+            }
+            i{
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: all 0.3s ease 0s;
+                top: 0;
+                left: 0;
+                background-image: url("../../images/home/ico_05.png");
+                background-repeat: no-repeat;
+                background-position: center center;
             }
             &:hover{
                 span{
@@ -226,6 +256,9 @@ header{
                     width: 100%;
                     left: 0;
                     top: 0;
+                }
+                i{
+                    background-image: url("../../images/home/ico_06.png");
                 }
             }
         }
@@ -240,6 +273,8 @@ header{
                 width: 100%;
                 height: 100%;
                 transition: all 0.6s ease 0s;
+                top: 0;
+                left: 0;
                 z-index: 3;
                 background-color: rgba(0, 0, 0, 0);
                 >span{
@@ -297,10 +332,6 @@ header{
                 border: 1px solid #aaa;
                 border-radius: 50%;
                 position: relative;
-                background-image: url(".././../images/home/ico_07.png");
-                background-repeat: no-repeat;
-                background-position: center center;
-                // background-color: #000000;
                 span{
                     position: absolute;
                     left: 50%;
@@ -311,12 +342,28 @@ header{
                     border-radius: 50%;
                     transition: all 0.3s ease 0s;
                 }
+                i{
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    transition: all 0.3s ease 0s;
+                    top: 0;
+                    left: 0;
+                    z-index: 3;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-image: url("../../images/home/ico_07.png");
+                }
                 &:hover{
                     span{
                         height: 100%;
                         width: 100%;
                         left: 0;
                         top: 0;
+                    }
+                    i{
+                        background-image: url("../../images/home/ico_07_h.png");
                     }
                 }
             }
@@ -343,37 +390,6 @@ header{
                         margin: 12px 0 0;
                         color: #777;
                     }
-                    // .circle{
-                    //     display: block;
-                    //     margin:40px 0 0;
-                    //     width:38px;
-                    //     height:38px;
-                    //     border: 1px solid #aaa;
-                    //     border-radius: 50%;
-                    //     position: relative;
-                    //     background-image: url(".././../images/home/ico_07.png");
-                    //     background-repeat: no-repeat;
-                    //     background-position: center center;
-                    //     // background-color: #000000;
-                    //     span{
-                    //         position: absolute;
-                    //         left: 50%;
-                    //         top: 50%;
-                    //         width: 0;
-                    //         height: 0;
-                    //         background: #333333;
-                    //         border-radius: 50%;
-                    //         transition: all 0.3s ease 0s;
-                    //     }
-                    //     &:hover{
-                    //         span{
-                    //             height: 100%;
-                    //             width: 100%;
-                    //             left: 0;
-                    //             top: 0;
-                    //         }
-                    //     }
-                    // }
                 }
                 >a{
                     display: inline-block;
@@ -419,7 +435,14 @@ header{
                         color: #777;
                     }
                     .circle{
-                        background-image: url("../../images/home/ico_06.png");
+                        i{
+                            background-image: url("../../images/home/ico_06.png");
+                        }
+                        &:hover{
+                            i{
+                                background-image: url("../../images/home/ico_05.png"); 
+                            }
+                        }
                     }
                 }
             }
@@ -429,58 +452,6 @@ header{
             width: 100%;
             background-color: #2f2f2f;
             margin: 0 0 16px;
-            // >a{
-            //     width: 100%;
-            //     position: relative;
-            //     overflow: hidden;
-            //     .ty-clip{
-            //         position: absolute;
-            //         width: 100%;
-            //         height: 100%;
-            //         transition: all 0.6s ease 0s;
-            //         z-index: 3;
-            //         background-color: rgba(0, 0, 0, 0);
-            //         >span{
-            //             position: absolute;
-            //             left: 50%;
-            //             top: 50%;
-            //             transform: translate(-50%,-50%);
-            //             font-size: 16px;
-            //             line-height: 30px;
-            //             color: #fff;
-            //             opacity: 0;
-            //             transition: all 0.6s;
-            //             i{
-            //                 position: absolute;
-            //                 left:50%;
-            //                 transform: translateX(-50%);
-            //                 transition: all 0.6s ease 0s;
-            //                 background-color: #f2f2f2;
-            //                 width: 100px;
-            //                 height: 1px;
-            //             }
-            //         }
-                    
-            //     }
-            //     img{
-            //         width: 100%;
-            //         transition: all 0.6s ease 0s;
-            //     }
-            //     &:hover{
-            //         img{
-            //             transform: scale(1.1);
-            //         }
-            //         >div{
-            //             background-color:rgba(0,0,0,.3);
-            //             span{
-            //                 opacity: 1;
-            //                 i{
-            //                     width: 10px;
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
             .slt-gt{
                 width:86%;
                 margin: 0 auto;
@@ -723,12 +694,18 @@ header{
                         font-size: 24px;
                         line-height: 40px;
                         margin: 0;
+                        a{
+                            color: #000;
+                        }
                     }
                     p{
                         font-size: 16px;
                         line-height: 30px;
                         height: 60px;
                         margin:0;
+                        a{
+                            color: #666;
+                        }
                     }
                     >div{
                         border-top: 1px solid #e5e5e5;
@@ -847,6 +824,9 @@ header{
                     background-image: url("../../images/home/ico_09.png");
                     background-repeat: no-repeat;
                     background-position: left center;
+                    &:hover{
+                        color: #000;
+                    }
                 }
             }
             // 1111111111111111111111
@@ -907,6 +887,8 @@ header{
                     padding: 3%;
                     border: 1px solid #ececec;
                     transition: box-shadow 0.3s;
+              
+              
                     h2{
                         font-size: 16px;
                         line-height: 22px;
@@ -991,6 +973,10 @@ header{
 }
 
 @media(min-width:480px){
+    .header{
+        height: 89px;
+        padding: 18px 0;
+    }
     .box{
         .container-fluid{
             .eg-win{
@@ -1143,12 +1129,15 @@ header{
 }
 
 @media(min-width:1050px){
-    header{
+    .header{
         height: 100px;
     }
     .banner{
         width: 100%;
-        height: 700px;
+        height: 526px;
+        .float-Medals{
+            display: block;
+        }
         .item{
             // position: relative;
             // width: 100%;
@@ -1257,6 +1246,9 @@ header{
         z-index: 9;
         .container-fluid{
             width: 89%;
+            .sem,.selution,.eg-win,.sem-two,.make-h5,.society,.dflt-top,.dflt-mld,.dflt-btm{
+                opacity: 0;
+            }
             .sem{
                 margin: 0 0 16px 0;
                 &:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; };
@@ -1423,6 +1415,7 @@ header{
                             width: 31.3%;
                             margin: 0 2% 0 0;
                             float: left;
+                            cursor: pointer;
                             >div{
                                 width: 100%;
                                 overflow: hidden;

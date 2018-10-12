@@ -5,22 +5,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+    <meta name="Keywords" content="博采网络">
+    <meta name="Description" content="博采网络">
+    <title>行业资讯</title>
     <script src="../../../../node_modules/jquery/dist/jquery.min.js"></script>
     <link href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/casecss/information.css">
+    <link rel="stylesheet" href="../../css/header/header.css">
     <script src="../../js/casejs/information.js"></script>
+    <script src="../../js/casejs/information_ajax.js"></script>
 </head>
 
 <body>
-    <div class="header"></div>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class=" navbar-toggle ">
+                                <!-- data-toggle="collapse" aria-expanded="false" collapsed-->
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                    <a class="./index.html" href="../home/home.html">
+                        <img src="../../images/header/logo.png " alt=" " class="logo">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="header-ul">
+                    <ul class="nav navbar-nav navbar-right gl">
+                        <li class="tab-li">
+                            <a href="# ">
+                                <img src="../../images/header/ico_01.png " alt=" ">
+                            </a>
+                        </li>
+                        <li class="tab-li">
+                            <a href="# ">
+                                <img src="../../images/header/ico_02.png " alt=" ">
+                            </a>
+                        </li>
+                        <li class="tab-li">
+                            <a href="# ">
+                                <img src="../../images/header/ico_03.png " alt=" ">
+                            </a>
+                        </li>
+                        <li class="tab-li">
+                            <a href="# ">
+                                <img src="../../images/header/ico_04.png " alt=" ">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right tl ">
+                        <li class="spc-li">全网价值营销服务商<span class="line1"></span></li>
+                        <li class="sub-li"><a href="# ">成功案例</a>
+                            <div class="rank">
+                                <ul>
+                                    <li><a href="#">高端网站建设<i></i></a></li>
+                                    <li><a href="#">H5开发<i></i></a></li>
+                                    <li><a href="#">宣传片制作<i></i></a></li>
+                                    <li><a href="#">APP开发<i></i></a></li>
+                                    <li><a href="#">全景摄影<i></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sub-li"><a href="# ">解决方案</a>
+                            <div class="rank">
+                                <ul class="short">
+                                    <li><a href="#">汽车行业数字解决方案<i></i></a></li>
+                                    <li><a href="#">商城解决方案<i></i></a></li>
+                                    <li><a href="#">O2O解决方案<i></i></a></li>
+                                    <li><a href="#">网贷解决方案<i></i></a></li>
+                                    <li><a href="#">智慧医疗<i></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sub-li"><a href="# ">智慧数据</a></li>
+                        <li class="sub-li"><a href="# ">关于我们</a>
+                            <div class="rank">
+                                <ul class="lang">
+                                    <li><a href="#">公司简介<i></i></a></li>
+                                    <li><a href="#">企业文化<i></i></a></li>
+                                    <li><a href="#">发展历程<i></i></a></li>
+                                    <li><a href="#">团队介绍<i></i></a></li>
+                                    <li><a href="#">未来&愿景<i></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <span class="line1 info-right"></span>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <!-- 右端隐藏的导航 -->
+    <div class="phone">
+        <div class="header-header">
+            <a href="#">SEARCH</a>
+            <span class="clo"></span>
+        </div>
+        <ul>
+            <li>关于我们 <span></span>
+                <ul>
+                    <li class="fh">
+                        <a href="#"> <span></span> 关于我们</a>
+                    </li>
+                    <li><a href="#">公司简介</a></li>
+                    <li><a href="#">企业文化</a></li>
+                    <li><a href="#">发展历程</a></li>
+                    <li><a href="#">团队介绍</a></li>
+                    <li><a href="#">未来&愿景</a></li>
+                    <li class="footer">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </li>
+            <li>成功案例 <span></span>
+                <ul>
+                    <li class="fh">
+                        <a href="#"> <span></span> 成功案例</a>
+                    </li>
+                    <li><a href="#">高端网站建设</a></li>
+                    <li><a href="#">影视广告</a></li>
+                    <li><a href="#">H5开发</a></li>
+                    <li><a href="#">全景摄影</a></li>
+                    <li class="footer">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </li>
+            <li>解决方案 <span></span>
+                <ul>
+                    <li class="fh">
+                        <a href="#"> <span></span> 解决方案</a>
+                    </li>
+                    <li><a href="#">解决方案</a></li>
+                    <li><a href="#">汽车行业数字解决方案</a></li>
+                    <li class="li-empty"></li>
+                    <li class="footer">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">智慧数据</a> </li>
+        </ul>
+        <div class="footer">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </div>
+
+
+
     <div class="content">
         <div class="banner">
             <img src="../../images/caseimg/job.jpg" alt="行业资讯" class="img">
             <div class="title">
                 <h4>行业资讯</h4>
-                <span class="line"></span>
+                <span class="line1"></span>
             </div>
         </div>
         <div class="news">
@@ -30,7 +186,7 @@
                     <span>签约信息</span>
                     <div class="search1">
                         <input type="text" placeholder="请输入关键字" class="input">
-                        <span class="iconfont"></span>
+                        <span class="iconfont1"></span>
                     </div>
                 </div>
                 <div class="container-fluid margin">
@@ -292,7 +448,6 @@
                             <div class="container-fluid box">
                                 <a href="#" class="sign-a">
                                 </a>
-
                                 <div class="date">
                                     <span class="day">
                                     <p class="ri">26</p>
@@ -317,41 +472,22 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
                 <div class="more-load" id="loadmore">Load More</div>
             </div>
         </div>
     </div>
+    <div class="cebian"></div>
+    <div class="footer"></div>
+    <div class="footer2"></div>
+
     <script src="../../../../node_modules/jquery/dist/jquery.min.js "></script>
     <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script src="../../js/header/header.js"></script>
     <script src="../../js/casejs/mp.mansory.min.js"></script>
-    <script>
-        jQuery(document).ready(function($) {
-            $(".my-gallery-container").mpmansory({
-                childrenClass: 'item', // default is a div
-                columnClasses: 'padding', //add classes to items
-                breakpoints: {
-                    lg: 4,
-                    md: 4,
-                    sm: 6,
-                    xs: 12
-                },
-                distributeBy: {
-                    order: false,
-                    height: false,
-                    attr: 'data-order',
-                    attrOrder: 'asc'
-                }, //default distribute by order, options => order: true/false, height: true/false, attr => 'data-order', attrOrder=> 'asc'/'desc'
-                onload: function(items) {
-                    //make somthing with items
-                }
-            });
-        });
-    </script>
+    <script src="../../js/casejs/pubuliu.js"></script>
+
 </body>
 
 </html>
