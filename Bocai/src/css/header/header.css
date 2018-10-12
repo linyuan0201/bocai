@@ -65,6 +65,69 @@ header .navbar .logo {
   z-index: 99;
   background-color: #fff;
 }
+.phone .tab-li-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222222;
+  display: none;
+  padding: 0 2.6%;
+  z-index: 1000;
+}
+.phone .tab-li-search .tls-close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 38px;
+  right: 2.6%;
+  display: block;
+  transition: all .5s;
+  background-image: url("../../images/header/ico_37.png");
+}
+.phone .tab-li-search .tls-close:hover {
+  transform: rotate(90deg);
+}
+.phone .tab-li-search p {
+  height: 125px;
+  border-bottom: 1px solid #515151;
+  position: absolute;
+  top: 50%;
+  left: 2.6%;
+  width: 94.8%;
+  transform: translateY(-50%);
+}
+.phone .tab-li-search p input:first-of-type {
+  background-color: #222222;
+  outline: none;
+  border: none;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 35px 60px;
+  font-size: 60px;
+  line-height: 124px;
+  width: 100%;
+  font-weight: 600;
+}
+.phone .tab-li-search p button {
+  border: none;
+  outline: none;
+  height: 100px;
+  margin-top: 24px;
+  font-size: 24px;
+  line-height: 100px;
+  font-weight: 600;
+  color: #555;
+  text-align: right;
+  background: none;
+  font-family: "Base-font";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  text-align: center;
+}
 .phone .header-header {
   background-color: #000;
   color: #fff;
