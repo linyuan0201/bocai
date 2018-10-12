@@ -23,11 +23,16 @@ html {
 }
 a {
   text-decoration: none;
-  color: #333;
+}
+a:hover {
+  text-decoration: none!important;
 }
 li {
   list-style-type: none;
   float: left;
+}
+ul {
+  margin-bottom: 0!important;
 }
 .fl {
   float: left;
@@ -75,7 +80,7 @@ body {
   top: 0px;
   opacity: 1;
 }
-.left {
+.left2 {
   width: 40%;
   top: 0;
   position: relative;
@@ -106,6 +111,7 @@ body {
   overflow: hidden;
   width: 100%;
   z-index: 1;
+  margin-top: 100px;
 }
 .banner .banner-img {
   overflow: hidden;
@@ -118,7 +124,6 @@ body {
   width: 1920px;
   position: absolute;
   left: 50%;
-  top: 100px;
   margin-left: -960px;
 }
 .list {
@@ -350,6 +355,9 @@ body {
   line-height: 24px;
   margin-top: 20px;
 }
+.anchor2 .title p a {
+  color: #fff!important;
+}
 .anchor2 .anchor2-cont {
   margin-top: 125px;
 }
@@ -397,7 +405,9 @@ body {
   height: 36px;
   font-size: 36px;
   font-weight: normal;
-  color: #333333;
+}
+.anchor3 .title h2 a {
+  color: #333333!important;
 }
 .anchor3 .title p {
   font-size: 14px;
@@ -441,8 +451,8 @@ body {
   transition: margin-left 0.3s, width 0.3s;
 }
 .anchor3 .link ul li a:hover i {
-  width: 52px;
-  margin-left: -26px;
+  width: 52px!important;
+  margin-left: -26px !important;
 }
 .anchor3 .anchor3-cont {
   margin-top: 25px;
@@ -640,8 +650,9 @@ body {
   border-radius: 2px;
   border: 1px solid #e5e5e5;
   text-align: center;
-  color: #333333;
+  color: #333333!important;
   position: relative;
+  padding: 0;
 }
 .anchor4 .btn span {
   position: relative;
@@ -661,7 +672,7 @@ body {
   transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 .anchor4 .btn:hover {
-  color: #fff;
+  color: #fff!important;
 }
 .anchor4 .btn:hover:before {
   transform: scaleY(1);
@@ -777,6 +788,8 @@ body {
   border: 1px solid #e5e5e5;
   display: inline-block;
   position: relative;
+  padding: 0;
+  color: #333!important;
 }
 .gundong .more .btn span {
   position: relative;
@@ -796,7 +809,7 @@ body {
   transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 .gundong .more .btn:hover {
-  color: #fff;
+  color: #fff!important;
 }
 .gundong .more .btn:hover:before {
   transform: scaleY(1);
@@ -841,6 +854,10 @@ body {
   margin-top: 60px;
   padding-left: 25px;
   font-size: 14px;
+  color: #777;
+}
+.hangye .main-h .hang-top .read:hover {
+  color: #333!important;
 }
 .hangye .hang-list {
   padding-top: 30px;
@@ -879,4 +896,9 @@ body {
   height: 8px;
   background: url("../../images/caseimg/ico_08.png") no-repeat center;
   margin-top: 38px;
+}
+@media (max-width: 1040px) {
+  .banner {
+    display: none;
+  }
 }
