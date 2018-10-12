@@ -35,7 +35,7 @@ a {
 
 .boweb_body {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #eaeaea;
 }
 
@@ -126,6 +126,34 @@ a {
     position: relative;
 }
 
+.icon_circle:hover {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+.icon_circle:hover i {
+    background: url(../../images/vr/ico_43_h.png) no-repeat center;
+}
+
+.icon_circle .bg {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    transition: all 0.3s ease 0s;
+    border-radius: 50%;
+}
+
+.icon_circle:hover .bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
 
 /* 3.content */
 
@@ -148,7 +176,7 @@ a {
 }
 
 .row {
-    margin: 0;
+    margin: 0!important;
 }
 
 .main_wrap {
@@ -274,6 +302,11 @@ a {
     color: #333;
 }
 
+.cont_img_name a:hover {
+    color: #333!important;
+    cursor: auto;
+}
+
 .cont_img_date {
     display: block;
     line-height: 24px;
@@ -347,7 +380,7 @@ a {
     transition: all 0.3s ease 0s;
 }
 
-.line {
+.line0 {
     display: inline-block;
     width: 120px;
     height: 1px;
@@ -366,7 +399,7 @@ a {
     bottom: 0;
 }
 
-.cont_img_box:hover .line {
+.cont_img_box:hover .line0 {
     width: 6px;
     margin-left: -3px;
     opacity: 0.6;
@@ -463,8 +496,9 @@ a {
         overflow: hidden;
     }
     .border {
-        width: 31.6%;
+        width: 31.6%!important;
         margin-right: 1.7%;
+        padding: 0!important;
     }
     .banner img {
         width: 136%;
