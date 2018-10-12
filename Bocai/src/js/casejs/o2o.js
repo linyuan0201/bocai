@@ -10,15 +10,17 @@ $(function() {
             $(".list-nav").css("display", "none");
         } else {
             $(".list-nav").css("display", "block");
+
         }
         console.log(t);
         if (t >= hei) {
             $(".list-nav").addClass("fixed active");
         } else {
             $(".list-nav").removeClass("fixed active");
-            // console.log(123);
+            $(".list-nav").css("display", "block");
         }
         tt2 = t;
+
     });
     $(".cebian").load("../../html/public/right_menu.html");
     $(".map").load("../../html/public/btm-map.html");
