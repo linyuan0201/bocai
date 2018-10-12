@@ -44,6 +44,7 @@ if ($(window).width() >= 1050) {
     // $(".banner").addClass("animated fadeInUp");
     $(document).scroll(function() {
         var top = $(document).scrollTop();
+        console.log(top);
         if (top >= Math.ceil($(".box .sem").offset().top - $(".box .sem").height())) {
             $(".box .sem").addClass("animated fadeInUp");
         };
