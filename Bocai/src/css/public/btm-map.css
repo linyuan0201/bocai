@@ -12,6 +12,14 @@ body {
   width: 88%;
   margin: 0 auto;
 }
+.btm-map .btm-mapbox:after {
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+  content: ".";
+}
 .btm-map .btm-mapbox > div {
   display: none;
 }
