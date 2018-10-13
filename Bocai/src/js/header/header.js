@@ -3,21 +3,20 @@ $(function() {
         headerphone = $("body header");
     // console.log(btn);
 
-    // // phone的高度调整
-    // $("body").on('resize', function() {
-    //     $("header .phone").css({
-    //         "height": screen.height,
-    //     })
-    // })
-    // console.log($("btn"));
+    // 
+    $(".phone .fh a").on("click", function(event) {
+        event.preventDefault();
+    })
 
     // search遮罩层
-    $(".tab-li:last a").on("click", function() {
+    $(".tab-li:last a").on("click", function(event) {
+        event.preventDefault();
         $(".tab-li-search").css({
             "display": "block",
         })
     });
     $(".tab-li-search .tls-close").on("click", function() {
+        event.preventDefault();
         $(".tab-li-search").css({
             "display": "none",
         })

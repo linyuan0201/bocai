@@ -202,17 +202,17 @@ header .navbar .logo {
   border: none;
   height: 278px;
 }
-.phone ul li ul .footer {
+.phone ul li ul .h-footer {
   margin-top: 14px;
   border: none;
 }
-.phone .footer {
+.phone .h-footer {
   width: 100%;
   overflow: hidden;
   margin: 30px 0 0 0 ;
   padding: 0 7.8% 0 8.2%;
 }
-.phone .footer a {
+.phone .h-footer a {
   margin-right: 20px;
   float: left;
   width: 36px;
@@ -221,10 +221,10 @@ header .navbar .logo {
   background-position: center center;
   background-repeat: no-repeat;
 }
-.phone .footer a:nth-of-type(2) {
+.phone .h-footer a:nth-of-type(2) {
   background-image: url("../../images/header/ico_02.png");
 }
-.phone .footer a:nth-of-type(3) {
+.phone .h-footer a:nth-of-type(3) {
   background-image: url("../../images/header/ico_03.png");
 }
 @media (min-width: 768px) {
@@ -388,6 +388,7 @@ header .navbar .logo {
     height: 100%;
     background-color: #222222;
     display: none;
+    z-index: 99999;
     padding: 0 2.6%;
     z-index: 1000;
   }
