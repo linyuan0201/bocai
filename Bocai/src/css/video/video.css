@@ -36,8 +36,9 @@ a {
 
 .boweb_body {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #eaeaea;
+    overflow: hidden;
 }
 
 
@@ -56,14 +57,11 @@ a {
     top: 0;
     vertical-align: middle;
     left: -50%;
-    /* margin-left: 400px; */
 }
 
 .banner_font {
     position: absolute;
     left: 6%;
-    /* top: 50%; */
-    /* margin-top: -170px; */
     color: #fff;
 }
 
@@ -123,7 +121,6 @@ a {
     width: 100%;
     height: 100%;
     background: url(../../images/info/ico_16.png) no-repeat center;
-    /* animation: downico 1.5s ease-out infinite; */
     position: relative;
 }
 
@@ -133,28 +130,18 @@ a {
 
 /* 3.banner-menu  */
 
-
-/* .cont_box {
-    padding: 0;
-} */
-
 .content {
     width: 100%;
     background-color: #fff;
     margin: 0 auto;
 }
 
-.content .container-fluid {
-    padding: 0;
-}
-
 .row {
-    margin: 0;
+    margin: 0!important;
 }
 
 .main_wrap {
-    margin: 0 auto 90px;
-    width: 93.4%;
+    margin: 0 auto 90px!important;
     position: relative;
 }
 
@@ -198,10 +185,6 @@ a {
     color: #333;
 }
 
-.cont_menu_select ul li:active {
-    border-bottom: 2px solid #000;
-}
-
 .cont_menu_select ul li a {
     color: #666;
 }
@@ -211,34 +194,23 @@ a {
 }
 
 
-/* 3.banner-video */
+/* 3.content-video */
 
 .cont_video {
-    margin-top: 54px;
+    margin-top: 54px!important;
     position: relative;
-    /* overflow: hidden; */
 }
-
-
-/* .cont_video ul {
-    width: 101.7%;
-    overflow: hidden;
-} */
 
 .border {
     margin-bottom: 30px;
     margin-right: 1.7%;
-    /*width: 31.6%;
-    float: left; */
-    /*有width会影响bootstrap*/
     padding: 0;
     border: 1px solid #f2f2f2;
 }
 
 .cont_img_box {
-    /* 没有display，img会在框外放大 ？？？？？？？？？？？？？？？？？？？？？？？？？？？？？*/
     display: block;
-    width: 100%;
+    width: 100%!important;
     position: relative;
     transform: scale(1);
     overflow: hidden;
@@ -246,16 +218,11 @@ a {
 }
 
 .cont_img {
-    width: 100%;
-    /* vertical-align: middle; */
-    /* position: absolute;
-    left: 0;
-    top: 0; */
+    width: 100%!important;
     transition: all 0.8s;
 }
 
 .cont_video_play {
-    /* display: block; */
     background: url(../../images/video/ico_31.png) no-repeat center;
     width: 64px;
     height: 64px;
@@ -289,19 +256,22 @@ a {
     color: #333;
 }
 
+.cont_img_name a:hover {
+    color: #333!important;
+    cursor: auto;
+}
+
 .cont_img_date {
     display: block;
     line-height: 24px;
     font-size: 12px;
     color: #777;
-    /* min-height: 24px; */
 }
 
 .cont_img_btm {
     margin-top: 28px;
     border-top: 1px solid #e5e5e5;
     line-height: 36px;
-    /* display: block; */
 }
 
 .cont_img_btm a {
@@ -336,6 +306,7 @@ a {
     font-family: "Base-font";
     color: #999;
     background-color: #eee;
+    margin-bottom: 90px;
 }
 
 .content_load:hover {
@@ -344,15 +315,16 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+    .header {
+        height: 60px;
+    }
     .cont_box {
-        padding: 0;
+        padding: 0!important;
     }
     .border {
         width: 100%;
         overflow: hidden;
-    }
-    .cont_box {
-        padding: 0;
+        padding: 0!important;
     }
     .cont_menu_select ul li {
         padding: 0;
@@ -364,7 +336,8 @@ a {
     }
     .banner_font {
         margin-top: 0;
-        top: 50px;
+        top: 50%;
+        margin-top: -224px;
     }
     .banner_font h4 {
         line-height: 50px;
@@ -387,15 +360,20 @@ a {
     .icon_circle {
         display: none;
     }
+    .cont_img {
+        width: 100%;
+    }
+    .main_wrap {
+        width: 100%;
+    }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1200px) {
     .cont_box {
         padding: 0;
     }
-    .cont_menu_select ul li {
+    .content .container-fluid {
         padding: 0;
-        margin-right: 32px;
     }
     .cont_menu h3 {
         font-size: 26px;
@@ -426,15 +404,16 @@ a {
     .banner img {
         margin-left: 384px;
     }
-}
-
-@media screen and (min-width:1200px) {
+    .header {
+        height: 100px;
+    }
     .cont_video ul {
         width: 101.7%;
         overflow: hidden;
     }
     .border {
-        width: 31.6%;
+        padding: 0!important;
+        width: 31.6%!important;
         margin-right: 1.7%;
     }
     .banner img {
@@ -450,7 +429,7 @@ a {
         top: 50%;
         margin-top: -170px;
     }
-    .banner img {
-        margin-left: 400px;
+    .main_wrap {
+        width: 93.4%;
     }
 }

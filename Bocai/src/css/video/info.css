@@ -35,7 +35,7 @@ a {
 
 .boweb_body {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #eaeaea;
 }
 
@@ -135,26 +135,19 @@ a {
 }
 
 .row {
-    margin: 0;
+    margin: 0!important;
 }
-
-
-/* .content {
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 12px;
-} */
 
 .cont_first {
     background-color: #fff;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 16px;
+    margin-bottom: 16px!important;
 }
 
 .fir_left {
     /* width: 48.2%; */
-    padding-left: 5.7%;
+    padding-left: 5.7%!important;
     background-color: #fff;
     padding-top: 120px;
 }
@@ -189,7 +182,7 @@ a {
     width: 43px;
     height: 43px;
     border-radius: 50%;
-    float: left;
+    /* float: left; */
     margin-right: 24px;
     position: relative;
     overflow: hidden;
@@ -198,19 +191,13 @@ a {
 }
 
 .link1 i {
+    position: relative;
+    z-index: 1;
     background: url(../../images/info/ico_07.png) no-repeat center;
 }
 
 .link2 i {
     background: url(../../images/info/ico_17.png) no-repeat center;
-}
-
-.link1:hover i {
-    background: url(../../images/info/ico_07_h.png) no-repeat center;
-}
-
-.link2:hover i {
-    background: url(../../images/info/ico_17_h.png) no-repeat center;
 }
 
 .link_icon .bg {
@@ -224,12 +211,26 @@ a {
     border-radius: 50%;
 }
 
+
+/* .link1::before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333;
+}
+
+.link1:hover::before {
+    transform-origin: center center;
+} */
+
 .link1:hover .bg {
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     background-color: #333;
+    /* z-index: 1; */
 }
 
 .link2:hover .bg {
@@ -247,6 +248,16 @@ a {
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.link1:hover i {
+    background: url(../../images/info/ico_07_h.png) no-repeat center;
+    z-index: 2;
+}
+
+.link2:hover i {
+    background: url(../../images/info/ico_17_h.png) no-repeat center;
+    z-index: 2;
 }
 
 
@@ -320,7 +331,7 @@ a {
 }
 
 .sec_left {
-    padding-left: 5.78%;
+    padding-left: 5.78%!important;
     padding-top: 40px;
 }
 
@@ -661,6 +672,11 @@ a {
     padding-bottom: 3px;
 }
 
+.six_tit a:hover {
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
 .six_word {
     display: block;
     line-height: 24px;
@@ -682,6 +698,7 @@ a {
     border-top: 1px solid #e5e5e5;
     display: block;
     width: 100%;
+    overflow: hidden;
 }
 
 .bot-link:hover .more {
@@ -704,7 +721,23 @@ a {
 }
 
 .bot-link:hover .link_point {
-    background: url(../../images/info/ico_08_h.png) no-repeat right center;
+    background: url(../../images/info/ico_08_h.png) no-repeat center;
+}
+
+.info_one,
+.info_two,
+.info_three,
+.info_four,
+.info_five,
+.info_six {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.show {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s ease 0s;
 }
 
 @media(max-width:768px) {
@@ -904,9 +937,9 @@ a {
         line-height: 62px;
         margin-top: 32px;
     }
-    .sec_left {
+    /* .sec_left {
         padding-bottom: 30px;
-    }
+    } */
     .fir_left {
         padding-bottom: 32px;
     }
@@ -938,15 +971,15 @@ a {
     }
     .sec_right,
     .fou_left {
-        padding: 0;
+        padding: 0!important;
     }
     .sec_right img {
         width: 100%;
     }
-    .fou_right {
+    /* .fou_right {
         padding: 30px 5%;
         margin: 0 auto;
-    }
+    } */
     .carousel {
         overflow: hidden;
     }
@@ -979,6 +1012,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+    .header {
+        height: 60px;
+    }
     .cont_box {
         padding: 0;
     }
@@ -1058,6 +1094,9 @@ a {
 }
 
 @media screen and (min-width:1200px) {
+    .header {
+        height: 100px;
+    }
     .cont_box {
         width: 89%;
         margin: 0 auto;
@@ -1103,8 +1142,8 @@ a {
         width: 100%;
     }
     .fir_right {
-        padding: 140px 1.5% 0 5%;
-        min-height: 710px;
+        padding: 140px 1.5% 0 5%!important;
+        min-height: 710px!important;
         height: auto;
     }
     .thi_tit,
@@ -1112,6 +1151,9 @@ a {
         font-size: 20px;
     }
     .fou_left {
-        padding: 0;
+        padding: 0!important;
+    }
+    .sec_right {
+        width: 70.2%!important;
     }
 }

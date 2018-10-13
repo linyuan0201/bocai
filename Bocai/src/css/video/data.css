@@ -150,20 +150,26 @@ a {
     position: relative;
 }
 
-.cont_first {
+.cont_one,
+.cont_three {
     background-color: #26272c;
     width: 100%;
     overflow: hidden;
-    /* transform: translateY(30px);
-    opacity: 0; */
 }
 
+.cont_one,
+.cont_two,
+.cont_three,
+.cont_four {
+    transform: translateY(30px);
+    opacity: 0;
+}
 
-/* .show {
+.show {
     transform: translateY(0);
     opacity: 1;
     transition: all 0.3s ease 0s;
-} */
+}
 
 .cont_system img {
     width: 100%;
@@ -210,8 +216,15 @@ a {
     position: relative;
     overflow: hidden;
     margin-bottom: 16px;
-    /* transform: translateY(30px);
-    opacity: 0; */
+}
+
+.cont_two ul,
+.cont_four ul {
+    background-color: #fff;
+}
+
+.shadow {
+    margin-bottom: 20px;
 }
 
 .cont_second li {

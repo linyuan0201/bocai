@@ -1,18 +1,14 @@
 $(function() {
-    $(window).scroll(function() {
+    $(document).scroll(function() {
         var top = $(window).scrollTop();
-        console.log(top);
         if (top > 125 && top < 499) {
-            $('.cont_first').addClass("show");
-        } else if (top > 500 && top < 1385) {
-            $('.cont_second:nth-of-type(1)').addClass("show");
-            console.log("asdfh");
-        } else if (top > 1386) {
-            $('.cont_first:nth-of-type(2)').addClass("show");
-            console.log("asdfh");
-        } else if (top > 2200) {
-            $('.cont_second:nth-of-type(2)').addClass("show");
-            console.log("asdfh")
+            $('.cont_one').addClass("show");
+        } else if (top > 500 && top < 1199) {
+            $('.cont_two').addClass("show");
+        } else if (top > 1200 && top < 1664) {
+            $('.cont_three').addClass("show");
+        } else if (top > 1665) {
+            $('.cont_four').addClass("show");
         }
     })
 })

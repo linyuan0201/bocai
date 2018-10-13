@@ -16,11 +16,34 @@ $(function() {
         $(".tab-li-search").css({
             "display": "block",
         })
-    })
+    });
     $(".tab-li-search .tls-close").on("click", function() {
+<<<<<<< HEAD
             $(".tab-li-search").css({
                 "display": "none",
             })
+=======
+        $(".tab-li-search").css({
+            "display": "none",
+        })
+    });
+    $(".phone .header-header>a").on("click", function() {
+        console.log($(".phone  .tab-li-search"));
+        $(".phone .tab-li-search").css({
+            "display": "block",
+        })
+    });
+    $(".tab-li-search p input").on("focus", function() {
+        $(this).attr("placeholder", "");
+        $(this).on("keyup", function(event) {
+            if (event.keyCode == 13) {
+                location.href = "";
+            } else {
+                $(this).html(function(index, old) {
+                    return old + event.key;
+                })
+            }
+>>>>>>> 4581f304f368d848c139e138aff12b921807d7f1
         })
         // $(".tab-li-search p input").on("focus", function() {
         //     $(this).attr("placeholder", "");
@@ -40,7 +63,7 @@ $(function() {
 
     //首页按钮点击事件
     btn.on('click', function() {
-            console.log(headerphone);
+            // console.log(headerphone);
             headerphone.animate({
                 "left": "-66%",
                 // "background-color": "#000",

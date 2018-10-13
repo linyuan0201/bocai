@@ -12,6 +12,14 @@ body {
   width: 88%;
   margin: 0 auto;
 }
+.btm-map .btm-mapbox:after {
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+  content: ".";
+}
 .btm-map .btm-mapbox > div {
   display: none;
 }
@@ -92,7 +100,7 @@ body {
   }
   .btm-map .btm-mapbox .mbox1 {
     width: 166px;
-    margin: 0 100px 0 0;
+    margin: 0 30px 0 0;
   }
   .btm-map .btm-mapbox .mbox1 ul {
     list-style: none;
