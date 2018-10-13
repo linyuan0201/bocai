@@ -10,8 +10,13 @@ $(function() {
         maxShuzi.addClass('animated fadeInUp');
     }, 700);
 
+    // 引入公共部分
+    $('.cgal-header').load('../../html/public/header.html');
     $('.cgla-mp').load('../../html/public/btm-map.html');
+    $('.cgla-right-menu').load("../../html/public/right_menu.html")
     $('.cgla-footer').load('../../html/public/footer.html');
+
+
     $('.many-xfk').append('');
     $('#nr-load-more').on('click', function() {
         $('#nr-load-more').css('display', 'none');

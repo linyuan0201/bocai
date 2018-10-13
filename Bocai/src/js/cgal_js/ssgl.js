@@ -1,9 +1,9 @@
 $(function() {
     // 引入公共样式
     $('.ssgl-head').load("../../html/public/header.html");
-    $('.menu-right').load('../public/right_menu.html');
-    $('.jjfa-map').load('../public/btm-map.html');
-    $('.jjfa-footer').load('../public/footer.html');
+    $('.ssgl-right').load('../public/right_menu.html');
+    $('.ssgl-map').load('../public/btm-map.html');
+    $('.ssgl-footer').load('../public/footer.html');
 
     $(".ssgl-cir").on("click", function() {
         var top = $('.ssgl-ssjg').offset().top;
