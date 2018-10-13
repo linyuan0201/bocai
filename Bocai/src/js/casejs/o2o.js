@@ -29,6 +29,7 @@ $(function() {
             scrollTop: top
         }, 1000)
     });
+    $(".header").load("../../html/public/header.html")
     $(".cebian").load("../../html/public/right_menu.html");
     $(".map").load("../../html/public/btm-map.html");
     $(".footer").load("../../html/public/footer.html");
