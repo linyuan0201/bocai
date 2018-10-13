@@ -12,3 +12,37 @@ $(function() {
         }
     })
 })
+
+// $(function() {
+//     var top = $(document).scrollTop();
+//     if ($(window).width() > 1050) {
+//         $(document).scroll(function() {
+//             var top = $(document).scrollTop();
+//             if (top >= Math.ceil($(".cont_one").offset().top - $(".cont_one").height())) {
+//                 $('.cont_one').addClass("show");
+//             } else if (top >= Math.ceil($(".cont_two").offset().top - $(".cont_two").height())) {
+//                 $('.cont_two').addClass("show");
+//             } else if (top >= Math.ceil($(".cont_three").offset().top - $(".cont_three").height())) {
+//                 $('.cont_three').addClass("show");
+//             } else if (top >= Math.ceil($(".cont_four").offset().top - $(".cont_four").height())) {
+//                 $('.cont_four').addClass("show");
+//             }
+//             if ($(document).scrollTop() > 0) {
+//                 if (top >= Math.ceil($(".cont_one").offset().top - $(".cont_one").height())) {
+//                     $('.cont_one').addClass("show");
+//                 } else if (top >= Math.ceil($(".cont_two").offset().top - $(".cont_two").height())) {
+//                     $('.cont_two').addClass("show");
+//                 } else if (top >= Math.ceil($(".cont_three").offset().top - $(".cont_three").height())) {
+//                     $('.cont_three').addClass("show");
+//                 } else if (top >= Math.ceil($(".cont_four").offset().top - $(".cont_four").height())) {
+//                     $('.cont_four').addClass("show");
+//                 }
+//             }
+//         })
+//     } else if ($(window).width() < 1050) {
+//         $('.cont_one').addClass("show");
+//         $('.cont_two').addClass("show");
+//         $('.cont_three').addClass("show");
+//         $('.cont_four').addClass("show");
+//     }
+// })
