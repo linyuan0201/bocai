@@ -23,4 +23,11 @@ $(function() {
             $(".list-nav>.nav1>.div-right>ul>li").removeClass("hover2");
         }
     });
+    $(".div-right>ul>li>a").on("click", function(event) {
+        event.preventDefault();
+        var top = $("." + $(this).attr("id")).offset().top;
+        $("body,html").animate({
+            scrollTop: top
+        }, 1000)
+    });
 });

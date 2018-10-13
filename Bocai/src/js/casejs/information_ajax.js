@@ -138,7 +138,6 @@ $.ajax({
 
             }, 500)
         });
-        $(".iconfont1").on("click", infor_search);
     },
     error: function(err) {
         console.log(err);
