@@ -22,6 +22,13 @@ $(function() {
         tt2 = t;
 
     });
+    $(".nav1>ul>li>a").on("click", function(event) {
+        event.preventDefault();
+        var top = $("." + $(this).attr("id")).offset().top;
+        $("body,html").animate({
+            scrollTop: top
+        }, 1000)
+    });
     $(".cebian").load("../../html/public/right_menu.html");
     $(".map").load("../../html/public/btm-map.html");
     $(".footer").load("../../html/public/footer.html");
