@@ -365,8 +365,8 @@ a {
         background-size: auto 100% !important;
     }
     .banner_font {
-        margin-top: 0;
-        top: 50px;
+        margin-top: -296px;
+        top: 50%;
     }
     .banner_font h4 {
         line-height: 50px;

@@ -637,6 +637,9 @@ a {
   line-height: 46px;
   font-weight: bold;
 }
+.box .container-fluid .sem-two .sem-t-lt h2 a {
+  color: #fff;
+}
 .box .container-fluid .sem-two .sem-t-lt h3 {
   font-size: 16px;
   line-height: 36px;
@@ -729,6 +732,9 @@ a {
   width: 100%;
   position: relative;
 }
+.box .container-fluid .society .society-lt .ty-clip {
+  vertical-align: middle;
+}
 .box .container-fluid .society .society-gt {
   width: 100%;
   padding: 26px 7% 38px;
@@ -739,6 +745,9 @@ a {
   line-height: 46px;
   font-weight: bold;
   margin: 0;
+}
+.box .container-fluid .society .society-gt h2 a {
+  color: #fff;
 }
 .box .container-fluid .society .society-gt h3 {
   margin: 6px 0 0;
