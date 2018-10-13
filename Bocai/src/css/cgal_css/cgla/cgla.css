@@ -823,18 +823,14 @@ header .navbar .logo {
 .nr-hyzx .hyzx-r:hover {
   color: #333;
 }
-行业资讯轮播部分 .hyzx-lb-box {
-  overflow: hidden;
-}
 .hyzx-lb {
   margin-top: 30px;
   list-style: none;
-  padding: 0 0 0 15px;
-  width: 280%;
+  padding: 5%;
+  padding-bottom: 30px;
 }
 .hyzx-lb li {
-  width: 11%;
-  margin: 0.5%;
+  margin: 5%;
   display: inline-block;
 }
 .hyzx-lb li a {
@@ -858,38 +854,38 @@ header .navbar .logo {
   background-repeat: no-repeat;
   background-image: url("../../../images/cgal_img/cgla/ico_08.png");
 }
-.pagination-lb {
-  width: 50%;
-  height: 20px;
-  margin-top: 35px;
-  margin: 0 auto;
-}
 .pagination-lb span {
-  display: inline-block;
   width: 8px;
   height: 8px;
-  border: 1px solid #999;
-  border-radius: 50%;
 }
-.pagination-lb .pag-lb-active {
-  border: 1px solid #000;
+.hyzx-daping {
+  margin-top: 30px;
+  list-style: none;
+  padding-bottom: 30px;
 }
-@media screen and (max-width: 1028px) {
-  .hyzx-lb li {
-    width: 17%;
-  }
+.hyzx-daping li {
+  width: 30%;
+  margin: 0.5%;
+  display: inline-block;
 }
-@media screen and (min-width: 1028px) {
-  .pagination-lb {
-    display: none;
-  }
+.hyzx-daping li a {
+  border: 1px solid #ccc;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 12px;
 }
-@media screen and (max-width: 780px) {
-  .hyzx-lb {
-    padding-left: 5%;
-  }
-  .hyzx-lb li {
-    width: 30%;
-    margin: 0 0 0 3%;
-  }
+.hyzx-daping li a h5 {
+  font-size: 16px;
+}
+.hyzx-daping li a p {
+  font-size: 12px;
+  margin: 5% 0 8%;
+}
+.hyzx-daping li a span {
+  display: block;
+  width: 30px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-image: url("../../../images/cgal_img/cgla/ico_08.png");
 }

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../css/public/btm-map.css">
     <link rel="stylesheet" href="../../css/public/right_menu.css">
     <link rel="stylesheet" href="../../css/cgal_css/cgla/cgla.css">
-
+    <script src="../../../../node_modules/swiper/dist/js/swiper.min.js"></script>
     <!--[if lt IE 9]>
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -733,7 +733,7 @@
         </div>
 
         <!-- 行业资讯部分 -->
-        <div class="row nr-hyzx">
+        <div class="row nr-hyzx ">
             <div class="hyzx-l">
                 <h3>行业资讯</h3>
                 <p></p>
@@ -742,41 +742,80 @@
             </div>
             <a href="" class="hyzx-r">Read more</a>
         </div>
-        <div class="hyzx-lb-box swiper-container">
+        <div class="hyzx-lb-box swiper-container hidden-lg hidden-md hidden-sm">
             <ul class="row hyzx-lb swiper-wrapper">
-                <li class="swiper-slide">
-                    <a href="">
-                        <h5>自适应网站建设时需要了解哪些问...</h5>
-                        <p>为客户设定后期限，让你获得某些信息或完结他们的作业，这是合理的，这将有助于坚持作业有条有理…</p>
-                        <span></span>
-                    </a>
+                <div class="swiper-slide">
+                    <li>
+                        <a href="">
+                            <h5>自适应网站建设时需要了解哪些问...</h5>
+                            <p>为客户设定后期限，让你获得某些信息或完结他们的作业，这是合理的，这将有助于坚持作业有条有理…</p>
+                            <span></span>
+                        </a>
 
-                </li>
-                <li class="swiper-slide">
-                    <a href="">
-                        <h5>网站定制需要注意哪些问题,有哪些…</h5>
-                        <p>一个网站是有不同页面组成的，由不同的元素结合而成。许多企业会挑选定制网站模板，这样做出来的…</p>
-                        <span></span>
-                    </a>
+                    </li>
+                </div>
 
-                </li>
-                <li class="swiper-slide">
-                    <a href="">
-                        <h5>B2C电子商务网站建设应该注意什…</h5>
-                        <p>B2C是电子商务依照买卖目标来分类的一种企业对个人的电商方法，即表明商业机构直接面临消费者的…</p>
-                        <span></span>
-                    </a>
-                </li>
+                <div class="swiper-slide">
+                    <li>
+                        <a href="">
+                            <h5>网站定制需要注意哪些问题,有哪些…</h5>
+                            <p>一个网站是有不同页面组成的，由不同的元素结合而成。许多企业会挑选定制网站模板，这样做出来的…</p>
+                            <span></span>
+                        </a>
+
+                    </li>
+                </div>
+
+                <div class="swiper-slide">
+                    <li>
+                        <a href="">
+                            <h5>B2C电子商务网站建设应该注意什…</h5>
+                            <p>B2C是电子商务依照买卖目标来分类的一种企业对个人的电商方法，即表明商业机构直接面临消费者的…</p>
+                            <span></span>
+                        </a>
+                    </li>
+                </div>
+
             </ul>
 
-            <div class="pagination-lb text-center">
+            <div class=" text-center swiper-pagination pagination-lb">
                 <span class="pag-lb-active"></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
-
     </div>
+
+    <!-- 行业资讯大屏 -->
+    <div class="hyzx-daping hidden-xs container">
+        <ul class="row ">
+            <li>
+                <a href="">
+                    <h5>自适应网站建设时需要了解哪些问...</h5>
+                    <p>为客户设定后期限，让你获得某些信息或完结他们的作业，这是合理的，这将有助于坚持作业有条有理…</p>
+                    <span></span>
+                </a>
+
+            </li>
+            <li>
+                <a href="">
+                    <h5>网站定制需要注意哪些问题,有哪些…</h5>
+                    <p>一个网站是有不同页面组成的，由不同的元素结合而成。许多企业会挑选定制网站模板，这样做出来的…</p>
+                    <span></span>
+                </a>
+
+            </li>
+            <li>
+                <a href="">
+                    <h5>B2C电子商务网站建设应该注意什…</h5>
+                    <p>B2C是电子商务依照买卖目标来分类的一种企业对个人的电商方法，即表明商业机构直接面临消费者的…</p>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+
 
     <!-- 地图部分 -->
     <div class="cgla-mp">
@@ -819,7 +858,7 @@
     </div>
     <script src="../../../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../../../../node_modules/swiper/dist/js/swiper.min.js"></script>
+
     <script src="../../js/cgal_js/cgla/cgla.js"></script>
     <script src="../../js/header/header.js"></script>
 

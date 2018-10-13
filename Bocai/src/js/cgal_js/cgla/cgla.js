@@ -17,7 +17,8 @@ $(function() {
     $('.cgla-footer').load('../../html/public/footer.html');
 
 
-    $('.many-xfk').append('');
+    //加载更多按钮点击
+    // $('.many-xfk').append('');
     $('#nr-load-more').on('click', function() {
         $('#nr-load-more').css('display', 'none');
 
@@ -41,4 +42,68 @@ $(function() {
         });
     });
 
+    // 成功案例的第一个轮播
+    var cgallb1 = {};
+    cgallb1.top = 0;
+
+    function bo1() {
+        cgallb1.top += 50;
+        if (cgallb1.top > 100) {
+            cgallb1.top = 0;
+        }
+        if (cgallb1.top < 0) {
+            cgallb1.top = 100;
+        }
+        $('#cgal_lb1').animate({
+            marginTop: -cgallb1.top + "px",
+        }, 300);
+
+    }
+
+    cgallb1.flag = setInterval(bo1, 2000);
+    $("#cgal_lb1").mouseover(function() {
+        clearInterval(cgallb1.flag); //关闭
+    }).mouseout(function() {
+        cgallb1.flag = setInterval(bo1, 3000); //重新启动
+    });
+    $(".max-news .qiehuan img:first").on("click", function() {
+        cgallb1.top -= 50;
+        if (cgallb1.top > 100) {
+            cgallb1.top = 0;
+        }
+        if (cgallb1.top < 0) {
+            cgallb1.top = 100;
+        }
+        $('#cgal_lb1').animate({
+            marginTop: -cgallb1.top + "px",
+        }, 300);
+        clearInterval(cgallb1.flag); //关闭
+        cgallb1.flag = setInterval(bo1, 3000); //重新启动
+
+    });
+    $(".max-news .qiehuan img:last").on("click", function() {
+        cgallb1.top += 50;
+        if (cgallb1.top > 100) {
+            cgallb1.top = 0;
+        }
+        if (cgallb1.top < 0) {
+            cgallb1.top = 100;
+        }
+        $('#cgal_lb1').animate({
+            marginTop: -cgallb1.top + "px",
+        }, 300);
+        clearInterval(cgallb1.flag); //关闭
+        cgallb1.flag = setInterval(bo1, 3000); //重新启动
+    });
+
+    //第二个轮播 资讯部分轮播
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function(index, className) {
+                return '<span class="' + className + '"></span>';
+            },
+        },
+    });
 });
