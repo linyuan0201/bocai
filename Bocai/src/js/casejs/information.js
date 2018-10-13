@@ -16,6 +16,15 @@ $(function() {
     // $(".banner>.img").css({
     //     width: wid,
     // })
+    // $("#loadmore").on("clink", function() {
+    //     $("#loadmore").css("background", "#333").addClass("animated bounceOutLeft").animate({
+    //         "height": "40px",
+    //         "width": "80px",
+    //         "top": "-150px",
+    //         "left": "-200px"
+    //     }, 1000)
+    //     console.log(1);
+    // });
     $(".cebian").load("../../html/public/right_menu.html");
     $(".footer").load("../../html/public/btm-map.html");
     $(".footer2").load("../../html/public/footer.html");

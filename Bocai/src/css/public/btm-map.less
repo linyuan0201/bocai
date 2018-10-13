@@ -9,6 +9,14 @@ html,body{
     .btm-mapbox{
         width: 88%;
         margin: 0 auto;
+        &:after{
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+            overflow: hidden;
+            content: ".";
+        }
         >div{
             // 在移动端先让每个都消失
             display: none;

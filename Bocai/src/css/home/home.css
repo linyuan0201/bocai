@@ -183,6 +183,16 @@ a {
   width: 100%;
   overflow: hidden;
 }
+.box .container-fluid .h2 {
+  font-size: 26px;
+  line-height: 46px;
+  margin: 0;
+  padding: 0;
+}
+.box .container-fluid .h2 a {
+  color: #333;
+  transition: color 0.3s ease 0s;
+}
 .box .container-fluid .title-btm {
   display: block;
   margin: 20px 0 0;
