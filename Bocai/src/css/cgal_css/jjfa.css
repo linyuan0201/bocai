@@ -143,12 +143,12 @@
 }
 .jsfw-d {
   position: relative;
-  height: 400px;
   color: #fff;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../../images/cgal_img/jjfa/sol6.jpg');
+  padding-bottom: 40px;
 }
 .jsfw-d .jsfw-banner ul {
   list-style: none;
@@ -162,6 +162,7 @@
 }
 .jsfw-d .jsfw-banner ul li a {
   color: #fff;
+  display: block;
 }
 .jsfw-x .nr {
   margin-top: 30px;
