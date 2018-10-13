@@ -18,25 +18,25 @@ $(function() {
         })
     })
     $(".tab-li-search .tls-close").on("click", function() {
-        $(".tab-li-search").css({
-            "display": "none",
+            $(".tab-li-search").css({
+                "display": "none",
+            })
         })
-    })
-    $(".tab-li-search p input").on("focus", function() {
-        $(this).attr("placeholder", "");
-        $(this).on("keyup", function(event) {
-            if (event.keyCode == 13) {
-                location.href = "";
-            } else {
-                $(this).html(function(index, old) {
-                    return old + event.key;
-                })
-            }
-        })
-    })
-    $(".tab-li-search p button").on("click", function() {
-        location.href = "";
-    })
+        // $(".tab-li-search p input").on("focus", function() {
+        //     $(this).attr("placeholder", "");
+        //     $(this).on("keyup", function(event) {
+        //         if (event.keyCode == 13) {
+        //             location.href = "";
+        //         } else {
+        //             $(this).html(function(index, old) {
+        //                 return old + event.key;
+        //             })
+        //         }
+        //     })
+        // })
+        // $(".tab-li-search p button").on("click", function() {
+        //     location.href = "";
+        // })
 
     //首页按钮点击事件
     btn.on('click', function() {
