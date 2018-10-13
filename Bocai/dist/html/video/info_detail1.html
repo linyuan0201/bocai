@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Info_detail</title>
+    <link href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link href="../../css/video/info_detail.min.css" rel="stylesheet">
+    <link href="../../../../node_modules/animate.css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../icon/cgal_icon/font_1hfddlav2gd/iconfont.css">
+    <link rel="stylesheet" href="../../css/header/header.min.css">
+    <link rel="stylesheet" href="../../css/public/btm-map.min.css">
+    <link rel="stylesheet" href="../../css/public/footer.min.css">
+    <link rel="stylesheet" href="../../css/public/right_menu.min.css">
+</head>
+
+<body>
+    <!-- 1.header  -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class=" navbar-toggle ">
+                                <!-- data-toggle="collapse" aria-expanded="false" collapsed-->
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                    <a class="./index.html" href="../home/home.html" title="logo">
+                        <img src="../../images/header/logo.png " alt=" " class="logo">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="header-ul">
+                    <ul class="nav navbar-nav navbar-right gl">
+                        <li class="tab-li">
+                            <a href="../video/video.html" title="vr">
+                                <img src="../../images/header/ico_01.png " alt=" ">
+                            </a>
+                        </li>
+                        <li class="tab-li">
+                            <a href="../video/vr.html" title="摄影">
+                                <img src="../../images/header/ico_02.png " alt=" ">
+                            </a>
+                        </li>
+                        <li class="tab-li">
+                            <a href="../casehtml/information.html" title="文档">
+                                <img src="../../images/header/ico_03.png " alt=" ">
+                            </a>
+                            <!-- 黑色搜索层 -->
+                            <div class="tab-li-search">
+                                <span class="tls-close"></span>
+                                <p>
+                                    <input type="search" placeholder="SEARCH">
+                                    <button>ENTER</button></p>
+                            </div>
+                        </li>
+                        <li class="tab-li">
+                            <a href="#">
+                                <img src="../../images/header/ico_04.png " alt=" ">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right tl ">
+                        <li class="spc-li">全网价值营销服务商<span class="line"></span></li>
+                        <li class="sub-li"><a href="../cgal_html/cgal.html" title="成功案例">成功案例</a>
+                            <div class="rank">
+                                <ul>
+                                    <li><a href="#" title="高端网站建设">高端网站建设<i></i></a></li>
+                                    <li><a href="#" title="H5开发">H5开发<i></i></a></li>
+                                    <li><a href="../video/video.html" title="宣传片制作">宣传片制作<i></i></a></li>
+                                    <li><a href="#" title="APP开发">APP开发<i></i></a></li>
+                                    <li><a href="../video/vr.html" title="全景摄影">全景摄影<i></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sub-li"><a href="../cgal_html/jjfa.html" title="解决方案">解决方案</a>
+                            <div class="rank">
+                                <ul class="short">
+                                    <li><a href="#" title="汽车行业数字解决方案">汽车行业数字解决方案<i></i></a></li>
+                                    <li><a href="#" title="商城解决方案">商城解决方案<i></i></a></li>
+                                    <li><a href="../casehtml/o2o.html" title="O2O解决方案">O2O解决方案<i></i></a></li>
+                                    <li><a href="../casehtml/wangdai.html" title="网贷解决方案">网贷解决方案<i></i></a></li>
+                                    <li><a href="../casehtml/medical.html" title="智慧医疗">智慧医疗<i></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sub-li"><a href="../video/data.html" title="智慧数据">智慧数据</a></li>
+                        <li class="sub-li"><a href="../aboutwe/about-us.html" title="关于我们">关于我们</a>
+                            <div class="rank">
+                                <ul class="lang">
+                                    <li><a href="../video/info.html" title="公司简介">公司简介<i></i></a></li>
+                                    <li><a href="#" title="企业文化">企业文化<i></i></a></li>
+                                    <li><a href="#" title="发展历程">发展历程<i></i></a></li>
+                                    <li><a href="#" title="团队介绍">团队介绍<i></i></a></li>
+                                    <li><a href="#" title="未来&愿景">未来&愿景<i></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <span class="line info-right"></span>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <!-- 右端隐藏的导航 -->
+    <div class="phone">
+        <div class="header-header">
+            <a href="#" title="SEARCH">SEARCH</a>
+            <span class="clo"></span>
+        </div>
+        <!-- 遮罩层 -->
+        <div class="tab-li-search">
+            <span class="tls-close"></span>
+            <p>
+                <input type="search" placeholder="SEARCH">
+                <button>ENTER</button></p>
+        </div>
+        <ul>
+            <li>关于我们 <span></span>
+                <ul>
+                    <li class="fh">
+                        <a href="#" title="关于我们"> <span></span> 关于我们</a>
+                    </li>
+                    <li><a href="../video/info.html" title="公司简介">公司简介</a></li>
+                    <li><a href="#" title="企业文化">企业文化</a></li>
+                    <li><a href="#" title="发展历程">发展历程</a></li>
+                    <li><a href="#" title="团队介绍">团队介绍</a></li>
+                    <li><a href="#" title="未来&愿景">未来&愿景</a></li>
+                    <li class="h-footer">
+                        <a href="../video/video.html" title="vr"></a>
+                        <a href="../video/vr.html" title="摄影"></a>
+                        <a href="../casehtml/information.html" title="文档"></a>
+                    </li>
+                </ul>
+            </li>
+            <li>成功案例 <span></span>
+                <ul>
+                    <li class="fh ">
+                        <a href="# " title="成功案例 "> <span></span> 成功案例</a>
+                    </li>
+                    <li><a href="# " title="高端网站建设 ">高端网站建设</a></li>
+                    <li><a href="../video/video.html " title="影视广告 ">影视广告</a></li>
+                    <li><a href="# " title="H5开发 ">H5开发</a></li>
+                    <li><a href="../video/vr.html " title="全景摄影 ">全景摄影</a></li>
+                    <li class="h-footer ">
+                        <a href="../video/video.html" title="vr"></a>
+                        <a href="../video/vr.html" title="摄影"></a>
+                        <a href="../casehtml/information.html" title="文档"></a>
+                    </li>
+                </ul>
+            </li>
+            <li>解决方案 <span></span>
+                <ul>
+                    <li class="fh ">
+                        <a href="# " title="解决方案 "> <span></span> 解决方案</a>
+                    </li>
+                    <li><a href="../cgal_html/jjfa.html " title="解决方案 ">解决方案</a></li>
+                    <li><a href="# " title="汽车行业数字解决方案 ">汽车行业数字解决方案</a></li>
+                    <li class="li-empty "></li>
+                    <li class="h-footer ">
+                        <a href="../video/video.html" title="vr"></a>
+                        <a href="../video/vr.html" title="摄影"></a>
+                        <a href="../casehtml/information.html" title="文档"></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="../video/data.html " title="智慧数据 ">智慧数据</a> </li>
+        </ul>
+        <div class="h-footer ">
+            <a href="../video/video.html" title="vr"></a>
+            <a href="../video/vr.html" title="摄影"></a>
+            <a href="../casehtml/information.html" title="文档"></a>
+        </div>
+    </div>
+
+    <div class="boweb_body">
+        <!-- 2.banner -->
+        <div class="banner">
+            <img src="../../images/info/detail/14841220048353ufw2v.jpg">
+            <div class="banner_font">
+                <h4>行业资讯</h4>
+                <span class="banner_line"></span>
+            </div>
+
+            <!-- btm_skip_menu -->
+            <div class="skip_btn">
+                <!-- <a class="skip_prev pull-left" href="#">
+                        <span class="skip_ico"><i class="larrow"></i></span>
+                        <span class="skip_tit">Prev Case</span>
+                    </a> -->
+                <a class="skip_return" href="#">
+                    <span class="ret_ico"></span>
+                    <span class="ret_tit">Cases Overview</span>
+                </a>
+                <a class="skip_next pull-right" href="info_detail2.html">
+                    <span class="skip_ico pull-right"><i class="rarrow"></i></span>
+                    <span class="skip_tit">Next Case</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 3.content -->
+        <div class="container cont_box" id="icon_circle">
+            <div class="container-fluid">
+
+                <div class="main-wrap">
+                    <div class="title">
+                        <div class="main_left pull-left">
+                            <h4>四季沐歌集团签约博采网络高端网站建设</h4>
+                            <p>2018-07-25</p>
+                        </div>
+                        <div class="main_right share_icon pull-right">
+                            <a href="javascript:;" class="sina pull-left" data-cmd="tsina"></a>
+                            <a href="javascript:;" class="txwb pull-left" data-cmd="tqq"></a>
+                        </div>
+                    </div>
+                    <div class="info_cont">
+                        <section data-role="outer" style="font-family: 微软雅黑;">
+                            <p>&nbsp; &nbsp; 高端<a href="#" title="网站建设" target="_blank">网站建设</a>服务商博采网络，携手四季沐歌，为其量身定制高端<a href="https://www.bocweb.cn/interact/website.html" title="网站建设" target="_blank">网站建设</a>！</p>
+                            <p><br></p>
+                            <p>&nbsp; &nbsp; 四季沐歌是沪市A股主板上市企业（股票代码：603366）、中国航天事业战略合作伙伴。</p>
+                            <p><br></p>
+                            <p>&nbsp; &nbsp; 四季沐歌专注热水18年，致力于“建立热水新标准、升级热水新体验”，产品横向延伸到太阳能、空气能、电热水器、燃气热水器、壁挂炉、净水、厨电、五金卫浴等业务，纵向延伸到太阳能跨季节蓄热采暖、建筑节能与太阳墙、分布式光伏电站等领域。针对家庭零售市场，创新开发出与家居部品和建筑相结合的集成热水机、多能源互补的热水采暖中心；针对商用市场，创新研发出集成热水采暖站、亲亲水站，以及适合商业用户的智能化、定制化、复合型热水解决方案。形成了从单机到系统、从城市到乡村、从家庭到商用、从线下到线上的全方位、场景化系统解决方案，引领中国消费者迈入舒适热水、健康饮水、清洁采暖新时代。</p>
+                            <p><br></p>
+                            <p>&nbsp; &nbsp; 集团客户遍布全国 31个省市自治区、2000多个县市和近2万个乡镇，产品出口德国、美国等100 多个国家和地区。18年间，四季沐歌扎根中国城市、城镇、乡村多元的建筑与住宅市场，立足中国各地复杂的水质、水情和能源现状，沉淀了1300多万用户数据库，汇聚了20000家专业的客户服务网络，实现由经营客户向经营用户转变。</p>
+                            <p><br></p>
+                            <p>&nbsp; &nbsp; 集团拥有国家发改委、科技部、财政部、海关总署以及国家税务总局联合认定的“企业技术中心”，设有“博士后科研工作站”，与北京大学、清华大学、上海交大等多所国内知名院校建立了横向的“产、学、研”合作关系，拥有多项国家专利技术。此外，还拥有业界前沿的热水及净水CNAS实验室、全球仅2套的太阳能模拟器及全球仅3套的多热水检测系统等科研检测平台资源。为完善全国产业布局，公司分别在江苏、河南、浙江、广东等省份建有现代化的制造基地。</p>
+                            <p><br></p>
+                            <p>连续六年成为中国房地产500强首选供应商，并入选中国品牌价值500强、全球新能源500强榜单，是2017阿斯塔纳世博会指定用品供应商、首批饮用水设备进校园推荐试点单位；连续10年被评为“全国售后服务十佳单位”、连续7年荣获“中国最佳雇主”等荣誉。集团坚持“开放、包容、协同、共赢”的核心价值观和“平等公益”理念，坚持开展“阳光公益行动”、“阳光创业行动”、“阳光助学行动”，助力中国航天事业，联合PICC为经销商及其员工购买保险……在践行社会责任的过程中，树立起了中国企业公民的新典范！</p>
+                            <p><br></p>
+                            <p>&nbsp; &nbsp; 围绕新时代背景下的消费升级和绿色发展，秉持无边界创新整合理念，凡是有利于提升用户体验的技术及商业模式、凡是有利于增强客户竞争力的生态链资源、凡是有利于促进企业健康可持续发展的文化理念，四季沐歌都兼容并蓄、跨界整合、创新迭代。在创造用户价值、提升用户体验的同时重新定义了舒适生活的标准，由此开启了一个热水再定义的新时代，一个用户参与并主导体验的新时代，最终将带来一个热水品牌化的崭新时代。</p>
+                            <p><br></p>
+                            <p>&nbsp; &nbsp; 上市公司<a href="#" title="网站建设" target="_blank">网站建设</a>，<a href="#" title="网站建设" target="_blank">网站建设</a></p>
+                        </section>
+                        <p><br></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 3-4.btm -->
+            <div class="btm-map">
+                <div class="btm-mapbox">
+                    <div class="mbox1">
+                        <ul>
+                            <li class="bld">HangZhou</li>
+                            <li>BeiJing</li>
+                            <li>NanJing</li>
+                            <li>WuHan</li>
+                            <li>QingDao</li>
+                        </ul>
+                    </div>
+                    <div class="mbox2">
+                        <h4>Contact</h4>
+                        <div class="map-show">
+                            <p><span>ADD</span>:杭州市西湖区紫荆花路2号联合大厦B座6楼</p>
+                            <p>TEL:400-800-5790</p>
+                            <a href="http://j.map.baidu.com/fn9Bv" target="_blank"></a>
+
+                        </div>
+                        <div>
+                            <p><span>ADD</span>:北京市朝阳区北苑路金泉广场一单元2015</p>
+                            <p>TEL:400-800-5790</p>
+                            <a href="http://j.map.baidu.com/ApfZj" target="_blank"></a>
+                        </div>
+                        <div>
+                            <p><span>ADD</span>:南京江宁区紫金研创3号楼403号</p>
+                            <p>TEL:400-800-5790</p>
+                            <a href="http://j.map.baidu.com/9sfZj" target="_blank"></a>
+                        </div>
+                        <div>
+                            <p><span>ADD</span>:武汉市硚口区解放大道1007号兴隆大厦14楼</p>
+                            <p>TEL:400-800-5790</p>
+                            <a href="http://j.map.baidu.com/cGy2j" target="_blank"></a>
+                        </div>
+                        <div>
+                            <p><span>ADD</span>:山东省青岛市市南区香港中路52号时代广场32/33/34层</p>
+                            <p>TEL:400-800-5790</p>
+                            <a href="http://j.map.baidu.com/FNy2j" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="mbox3">
+                        <h4>Wechat</h4>
+                        <img src="../../images/btm-map/img_08.jpg" alt="">
+                    </div>
+                    <div class="mbox4">
+                        <h4>Advisory</h4>
+                        <a href="# ">业务咨询</a>
+                        <a href="# ">售后服务</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 3.5footer -->
+            <footer>
+                <div class="footer-up">
+                    <div class="footer-up-top">
+                        <div>
+                            <p>
+                                <a href="#">高端网站建设</a>
+                                <span></span>
+                                <a href="#">平台开放</a>
+                                <span></span>
+                                <a href="#">App开发</a>
+                                <span></span>
+                                <a href="#">影视广告</a>
+                                <span></span>
+                                <a href="#">H5开发</a>
+                                <span></span>
+                                <a href="#">投资合作</a>
+                                <span></span>
+                                <a href="#">付款方式</a>
+                            </p>
+                            <span class="ft-gt text-left">招聘：0571-87651833</span>
+                        </div>
+                    </div>
+                    <div class="footer-up-btm">
+                        <p>热门区域:厦门网站建设、苏州网站建设、合肥网站建设、福州网站建设、上海网站建设 </p>
+                        <p>©2018 博采网络 ALL RIGHTS RESERVED.
+                            <a href="#">浙ICP备07001687号</a>
+                            <a href="#">
+                                <img src="../../images/footer/ico_70.png" alt=""> 浙公网安备 33010602000750号</a>
+                            <a href="#">
+                                <img src="../../images/footer/pic.gif" alt="">
+                            </a>
+                            <span class="ft-gt"> 
+                                    <a href="#">BY</a>
+                                    ：
+                                    <a href="#">BOCWEB</a> 
+                                </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-down">
+                    <ul class="text-center">
+                        <li><a href="#">成都网站建设</a></li>
+                        <li><a href="#">网络推广</a></li>
+                        <li><a href="#">移动开发平台</a></li>
+                        <li><a href="#">网站开发</a></li>
+                        <li><a href="#">网站制作</a></li>
+                        <li><a href="#">互联网营销</a></li>
+                        <li><a href="#">建站公司</a></li>
+                        <li><a href="#">网站建设</a></li>
+                        <li><a href="#">网站建设</a></li>
+                    </ul>
+                </div>
+                <div class="footer-empty"></div>
+            </footer>
+
+        </div>
+
+        <!-- 4.skip-btn -->
+
+    </div>
+    <!-- 4.right_menu -->
+    <!-- 右侧橘黄菜单--fixed定位 -->
+    <div class="hidden-xs text-center menu-r">
+        <a href="javascript:;">
+            <span class="iconfont icon-qq"></span>
+            <p>业务咨询</p>
+        </a>
+        <a href="javascript:;">
+            <span class="iconfont icon-dianhua"></span>
+            <p>售后服务</p>
+        </a>
+        <a href="javascript:;" class="right_menu_phone">
+            <div class="left">
+                <span class="iconfont icon-dunpai"></span>
+                <p>咨询电话 </p>
+            </div>
+            <strong>400-800-5790</strong>
+        </a>
+        <a href="javascript:;" id="rm-huidingbu">
+            <span class="iconfont icon-dingbu"></span>
+            <p>返回顶部</p>
+        </a>
+    </div>
+
+    <!-- 底部橘黄菜单 屏幕小于xs时出现 -->
+    <div class="container-fluid menu-footer navbar-fixed-bottom hidden-sm hidden-md hidden-lg text-center">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="#">
+                    <span class="iconfont icon-qq"></span>
+                    <p>业务咨询</p>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#"> <span class="iconfont icon-dunpai"></span>
+                    <p>售后服务</p>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">
+                    <span class="iconfont icon-dianhua"></span>
+                    <p>咨询电话</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../js/header.min.js"></script>
+    <script src="../../js/btm-map.min.js"></script>
+    <script src="../../js/ssgl-header.min.js"></script>
+    <script src="../../js/scroll.min.js"></script>
+    <script src="../../js/scroll_btn.min.js"></script>
+</body>
+
+</html>

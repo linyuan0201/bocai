@@ -5,6 +5,7 @@ $(function() {
     console.log(btnDiv);
     var line = $(".link>ul>li>a>i");
     console.log(line);
+    var top = $(".anchor3").offset().top;
     $(window).scroll(function() {
         var scr = $(window).scrollTop();
         if (scr >= top - $(".anchor3").height()) {

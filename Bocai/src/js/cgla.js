@@ -24,7 +24,7 @@ $(function() {
 
         $.ajax({
             type: "post",
-            url: "../../php/cgla/cgla.php",
+            url: "../php/cgla/cgla.php",
             dataType: "json",
             success: function(data) {
                 console.log(data.length);

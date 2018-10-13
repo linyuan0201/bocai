@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'Bocai/src/js',
-                    src: '**/*.js',
+                    src: ['*.js', '!*.min.js'],
                     dest: 'Bocai/dist/js',
                     ext: '.min.js'
                 }]
