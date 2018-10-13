@@ -752,278 +752,7 @@ a {
     transition: all 0.3s ease 0s;
 }
 
-@media(max-width:768px) {
-    .cont_box {
-        padding: 0;
-    }
-    .fir_left {
-        padding-bottom: 32px;
-    }
-    .fir_left h4 {
-        font-size: 36px;
-        line-height: 66px;
-    }
-    .fir_left .fir_ltit {
-        line-height: 32px;
-    }
-    .fir_right {
-        min-height: 10px;
-        padding: 30px 5%;
-        margin: 0 auto;
-    }
-    .fir_rnum {
-        margin-top: 30px;
-    }
-    .fir_rnum li {
-        margin-bottom: 24px;
-    }
-    .fir_rnum .r_snum {
-        font-size: 30px;
-        line-height: 58px;
-    }
-    .thi_tit,
-    .fif_tit {
-        font-size: 14px;
-    }
-    .sec_right,
-    .fou_left {
-        padding: 0;
-    }
-    .sec_right img {
-        width: 100%;
-    }
-    .fou_right {
-        padding: 30px 5%;
-        margin: 0 auto;
-    }
-    .carousel {
-        overflow: hidden;
-    }
-    .carousel-indicators li {
-        border: 1px solid #777;
-    }
-    .active {
-        background-color: #333;
-    }
-    .item {
-        min-height: 440px;
-        background-color: #fff;
-    }
-    .carousel-caption {
-        text-shadow: none;
-        text-align: left;
-        left: 5%;
-        right: 5%;
-        top: 45%;
-    }
-    .six_tit a {
-        overflow: visible;
-    }
-    .six_word {
-        margin-top: 40px;
-    }
-}
-
-
-/* @media screen and (max-width: 767px) {
-    .cont_box {
-        padding: 0;
-    }
-    .content {
-        padding: 0;
-    }
-    .banner img {
-        min-height: 200px;
-        left: -500px;
-    }
-    .title {
-        font-size: 22px;
-    }
-    .cont_sec_box {
-        padding: 30px 5%;
-        min-height: 10px;
-    }
-    .ico {
-        height: 40px;
-        background-size: auto 100% !important;
-    }
-    .banner_font {
-        margin-top: 0;
-        top: 50px;
-    }
-    .banner_font h4 {
-        line-height: 50px;
-        font-size: 26px;
-        margin-top: 0px;
-    }
-    .banner_line {
-        width: 20px;
-        height: 2px;
-        margin-top: 30px;
-    }
-    .banner img {
-        width: 600px;
-        left: 50%;
-        margin-left: -300px;
-    }
-    .banner_span {
-        display: none;
-    }
-    .icon_circle {
-        display: none;
-    }
-    .cont_left {
-        width: 40.8%;
-        padding: 36px 3.8% 72px 3.4%;
-        min-height: 240px;
-    }
-    .cont_sec_box {
-        width: 100%;
-        padding: 30px 5%;
-        min-height: 10px;
-    }
-    .fir_left h4 {
-        line-height: 66px;
-        font-size: 32px;
-    }
-    .sec_lnum {
-        font-size: 36px;
-        font-weight: 200;
-        margin-top: 32px;
-        line-height: 62px;
-    }
-    .sec_left {
-        padding-bottom: 20px;
-    }
-} */
-
-@media screen and (min-width:768px) {
-    .cont_box {
-        padding: 0;
-        width: 100%;
-    }
-    .content {
-        padding: 0;
-    }
-    .cont_system {
-        padding: 0;
-    }
-    .banner img {
-        width: 100%;
-    }
-    .banner_font {
-        margin-top: 0;
-        top: 50px;
-    }
-    .banner_font h4 {
-        line-height: 50px;
-        font-size: 42px;
-    }
-    .banner_line {
-        width: 40px;
-        height: 4px;
-        margin-top: 30px;
-    }
-    .banner_span {
-        font-size: 28px;
-    }
-    .banner img {
-        margin-left: 384px;
-    }
-    .cont_left {
-        /* width: 40.8%; */
-        padding: 36px 3.8% 72px 3.4%;
-        /* min-height: 240px; */
-    }
-    .cont_sec_box {
-        width: 100%;
-        padding: 30px 5%;
-        min-height: 10px;
-    }
-    .fir_left h4 {
-        line-height: 66px;
-        font-size: 32px;
-    }
-    .sec_lnum {
-        font-size: 36px;
-        line-height: 62px;
-        margin-top: 32px;
-    }
-    /* .sec_left {
-        padding-bottom: 30px;
-    } */
-    .fir_left {
-        padding-bottom: 32px;
-    }
-    .fir_left h4 {
-        font-size: 36px;
-        line-height: 66px;
-    }
-    .fir_left .fir_ltit {
-        line-height: 32px;
-    }
-    .fir_right {
-        min-height: 10px;
-        padding: 30px 5%;
-        margin: 0 auto;
-    }
-    .fir_rnum {
-        margin-top: 30px;
-    }
-    .fir_rnum li {
-        margin-bottom: 24px;
-    }
-    .fir_rnum .r_snum {
-        font-size: 30px;
-        line-height: 58px;
-    }
-    .thi_tit,
-    .fif_tit {
-        font-size: 14px;
-    }
-    .sec_right,
-    .fou_left {
-        padding: 0!important;
-    }
-    .sec_right img {
-        width: 100%;
-    }
-    /* .fou_right {
-        padding: 30px 5%;
-        margin: 0 auto;
-    } */
-    .carousel {
-        overflow: hidden;
-    }
-    .carousel-indicators li {
-        border: 1px solid #777;
-    }
-    .active {
-        background-color: #333;
-    }
-    .item {
-        min-height: 440px;
-        background-color: #fff;
-    }
-    .carousel-caption {
-        text-shadow: none;
-        text-align: left;
-        left: 5%;
-        right: 5%;
-        top: 45%;
-    }
-    .six_tit a {
-        overflow: visible;
-    }
-    .six_word {
-        margin-top: 40px;
-    }
-    .carousel {
-        margin-top: 40px;
-    }
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .header {
         height: 60px;
     }
@@ -1085,14 +814,32 @@ a {
     }
     .fir_left {
         padding-top: 50px;
+        padding-bottom: 30px;
     }
     .fir_left h4 {
         line-height: 66px;
         font-size: 32px;
     }
+    .fir_left .fir_ltit {
+        line-height: 32px;
+    }
     .fir_rnum .r_snum {
         font-size: 22px;
         line-height: 58px;
+    }
+    .fir_right {
+        min-height: 10px;
+        padding: 30px 5%;
+        margin: 0 auto;
+    }
+    .fir_rnum {
+        margin-top: 30px;
+    }
+    .fir_rnum li {
+        margin-bottom: 24px;
+    }
+    .sec_left {
+        padding-bottom: 20px;
     }
     .sec_lnum {
         font-size: 36px;
@@ -1100,8 +847,46 @@ a {
         margin-top: 32px;
         line-height: 62px;
     }
-    .sec_left {
-        padding-bottom: 20px;
+    .thi_tit,
+    .fif_tit {
+        font-size: 14px;
+    }
+    .sec_right,
+    .fou_left {
+        padding: 0;
+    }
+    .sec_right img {
+        width: 100%;
+    }
+    .fou_right {
+        padding: 30px 5%;
+        margin: 0 auto;
+    }
+    .carousel {
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        border: 1px solid #777;
+    }
+    .active {
+        background-color: #333;
+    }
+    .item {
+        min-height: 440px;
+        background-color: #fff;
+    }
+    .carousel-caption {
+        text-shadow: none;
+        text-align: left;
+        left: 5%;
+        right: 5%;
+        top: 45%;
+    }
+    .six_tit a {
+        overflow: visible;
+    }
+    .six_word {
+        margin-top: 40px;
     }
     .carousel {
         margin-top: 40px;
@@ -1118,6 +903,7 @@ a {
     .cont_box {
         width: 89%;
         margin: 0 auto;
+        padding: 0;
     }
     .content {
         padding-top: 12px;
@@ -1135,8 +921,17 @@ a {
         top: 50%;
         margin-top: -170px;
     }
-    .banner img {
-        margin-left: 400px;
+    .banner_font h4 {
+        line-height: 50px;
+        font-size: 42px;
+    }
+    .banner_span {
+        font-size: 28px;
+    }
+    .banner_line {
+        width: 40px;
+        height: 4px;
+        margin-top: 30px;
     }
     .cont_left {
         /* width: 40.8%; */
@@ -1148,10 +943,14 @@ a {
     }
     .fir_left {
         padding-top: 120px;
+        padding-bottom: 32px;
     }
     .fir_left h4 {
         line-height: 86px;
         font-size: 65px;
+    }
+    fir_left .fir_ltit {
+        line-height: 32px;
     }
     .sec_lnum {
         font-size: 50px;
@@ -1166,6 +965,17 @@ a {
         padding: 140px 1.5% 0 5%!important;
         min-height: 710px!important;
         height: auto;
+        margin: 0 auto;
+    }
+    .fir_rnum {
+        margin-top: 30px;
+    }
+    .fir_rnum li {
+        margin-bottom: 24px;
+    }
+    .fir_rnum .r_snum {
+        font-size: 30px;
+        line-height: 58px;
     }
     .thi_tit,
     .fif_tit {
@@ -1176,5 +986,38 @@ a {
     }
     .sec_right {
         width: 70.2%!important;
+    }
+    .sec_right,
+    .fou_left {
+        padding: 0!important;
+    }
+    .carousel {
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        border: 1px solid #777;
+    }
+    .active {
+        background-color: #333;
+    }
+    .item {
+        min-height: 440px;
+        background-color: #fff;
+    }
+    .carousel-caption {
+        text-shadow: none;
+        text-align: left;
+        left: 5%;
+        right: 5%;
+        top: 45%;
+    }
+    .six_tit a {
+        overflow: visible;
+    }
+    .six_word {
+        margin-top: 40px;
+    }
+    .carousel {
+        margin-top: 40px;
     }
 }

@@ -173,9 +173,10 @@ a {
     margin-right: 50px;
 }
 
-.cont_menu_select ul .hover {
+
+/* .cont_menu_select ul .hover {
     border-bottom: 2px solid #000;
-}
+} */
 
 .cont_menu_select ul .hover a {
     color: #333;
@@ -430,5 +431,8 @@ a {
     }
     .main_wrap {
         width: 93.4%;
+    }
+    .cont_menu_select ul .hover {
+        border-bottom: 2px solid #000;
     }
 }

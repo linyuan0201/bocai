@@ -157,11 +157,12 @@ a {
 
 /*skip*/
 
-.skip_btn {
+
+/* .skip_btn {
     width: 100%;
     position: fixed;
     bottom: 50px;
-}
+} */
 
 .skip_prev,
 .skip_next {
@@ -222,6 +223,8 @@ a {
     padding: 0 55px 0 22px;
 }
 
+
+/* 
 .skip_prev:hover,
 .skip_next:hover {
     width: 145px;
@@ -241,7 +244,7 @@ a {
 .skip_return:hover {
     width: 188px;
     margin-left: -95px;
-}
+} */
 
 .skip_return {
     position: absolute;
@@ -298,8 +301,8 @@ a {
         left: -500px;
     }
     .banner_font {
-        margin-top: 0;
-        top: 50px;
+        margin-top: -262px;
+        top: 50%;
     }
     .banner_font h4 {
         font-size: 32px;
@@ -325,6 +328,8 @@ a {
     }
     .skip_btn {
         position: absolute;
+        width: 100%;
+        bottom: 450px;
     }
 }
 
@@ -362,5 +367,27 @@ a {
     }
     .main_left h4 {
         font-size: 26px;
+    }
+    .skip_btn {
+        width: 100%;
+        position: fixed;
+        bottom: 50px;
+    }
+    .skip_prev:hover,
+    .skip_next:hover {
+        width: 145px;
+    }
+    .skip_prev:hover .skip_ico,
+    .skip_next:hover .skip_ico {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .skip_prev:hover .skip_tit,
+    .skip_next:hover .skip_tit,
+    .skip_return:hover .ret_tit {
+        transform: translateX(0);
+    }
+    .skip_return:hover {
+        width: 188px;
+        margin-left: -95px;
     }
 }

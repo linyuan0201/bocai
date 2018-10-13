@@ -35,7 +35,7 @@ a {
 
 .boweb_body {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #eaeaea;
 }
 
@@ -73,8 +73,6 @@ a {
 .banner_font h4 {
     font-size: 42px;
     line-height: 80px;
-    /* transform: translateY(0px);
-    transition: 2s ease 0s; */
 }
 
 .banner_line {
@@ -145,7 +143,7 @@ a {
 }
 
 .main_wrap {
-    margin: 0 auto 90px;
+    margin: 0 auto;
     width: 100%;
     position: relative;
 }
@@ -195,7 +193,7 @@ a {
     margin-top: 30px;
 }
 
-.line {
+.line0 {
     display: block;
     width: 10px;
     height: 2px;
@@ -399,55 +397,26 @@ a {
         padding: 30px 5%;
         min-height: 10px;
     }
-}
-
-@media screen and (min-width:768px) {
-    .cont_box {
-        padding: 0;
-        width: 100%;
+    .cont_second li {
+        margin-bottom: 14px;
     }
-    .content {
-        padding: 0;
-    }
-    .cont_system {
-        padding: 0;
-    }
-    .banner img {
-        width: 100%;
-    }
-    .banner_font {
-        margin-top: 0;
-        top: 50px;
-    }
-    .banner_font h4 {
-        line-height: 50px;
-        font-size: 30px;
-    }
-    .banner_span {
-        font-size: 28px;
-    }
-    .banner img {
-        margin-left: 384px;
-    }
-    .cont_left {
-        /* width: 40.8%; */
-        padding: 36px 3.8% 72px 3.4%;
-        /* min-height: 240px; */
-    }
-    .cont_sec_box {
-        width: 100%;
-        padding: 30px 5%;
-        min-height: 10px;
+    .shadow,
+    .none_shadow {
+        margin: 0!important;
     }
 }
 
 @media screen and (min-width:1200px) {
     .cont_box {
+        padding: 0;
         width: 89%;
         margin: 0 auto;
     }
     .content {
         padding-top: 12px;
+    }
+    .cont_system {
+        padding: 0;
     }
     .banner img {
         width: 136%;
@@ -462,8 +431,12 @@ a {
         top: 50%;
         margin-top: -170px;
     }
-    .banner img {
-        margin-left: 400px;
+    .banner_font h4 {
+        line-height: 50px;
+        font-size: 30px;
+    }
+    .banner_span {
+        font-size: 28px;
     }
     .cont_left {
         /* width: 40.8%; */
@@ -471,6 +444,8 @@ a {
         /* min-height: 240px; */
     }
     .cont_sec_box {
+        width: 100%;
+        min-height: 10px;
         padding: 52px 21.7% 35px 16.3%;
     }
 }
