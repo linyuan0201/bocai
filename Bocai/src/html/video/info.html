@@ -14,9 +14,10 @@
     <link href="../../css/video/info.css" rel="stylesheet">
     <link href="../../../../node_modules/animate.css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/header/header.css">
+    <link rel="stylesheet" href="../../css/public/btm-map.css">
     <link rel="stylesheet" href="../../css/public/footer.css">
     <link rel="stylesheet" href="../../css/public/right_menu.css">
-    <link rel="stylesheet" href="../../css/public/btm-map.css">
+
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="./index.html" href="# ">
+                    <a class="./index.html" href="../home/home.html">
                         <img src="../../images/header/logo.png " alt=" " class="logo">
                     </a>
                 </div>
@@ -55,6 +56,13 @@
                             <a href="# ">
                                 <img src="../../images/header/ico_03.png " alt=" ">
                             </a>
+                            <!-- 黑色搜索层 -->
+                            <div class="tab-li-search">
+                                <span class="tls-close"></span>
+                                <p>
+                                    <input type="search" placeholder="SEARCH">
+                                    <button>ENTER</button></p>
+                            </div>
                         </li>
                         <li class="tab-li">
                             <a href="# ">
@@ -111,7 +119,7 @@
 
     <!-- 右端隐藏的导航 -->
     <div class="phone">
-        <div class="header">
+        <div class="header-header">
             <a href="#">SEARCH</a>
             <span class="clo"></span>
         </div>
@@ -172,7 +180,6 @@
             <a href="#"></a>
         </div>
     </div>
-
 
     <div class="boweb_body">
         <!-- 2.banner -->
@@ -461,6 +468,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 3.5footer -->
                 <footer>
                     <div class="footer-up">
                         <div class="footer-up-top">
@@ -518,15 +526,60 @@
             </div>
         </div>
     </div>
+    <!-- 4.right_menu -->
+    <!-- 右侧橘黄菜单--fixed定位 -->
+    <div class="hidden-xs text-center menu-r">
+        <a href="javascript:;">
+            <span class="iconfont icon-qq"></span>
+            <p>业务咨询</p>
+        </a>
+        <a href="javascript:;">
+            <span class="iconfont icon-dianhua"></span>
+            <p>售后服务</p>
+        </a>
+        <a href="javascript:;" class="right_menu_phone">
+            <div class="left">
+                <span class="iconfont icon-dunpai"></span>
+                <p>咨询电话 </p>
+            </div>
+            <strong>400-800-5790</strong>
+        </a>
+        <a href="javascript:;" id="rm-huidingbu">
+            <span class="iconfont icon-dingbu"></span>
+            <p>返回顶部</p>
+        </a>
+    </div>
+
+    <!-- 底部橘黄菜单 屏幕小于xs时出现 -->
+    <div class="container-fluid menu-footer navbar-fixed-bottom hidden-sm hidden-md hidden-lg text-center">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="#">
+                    <span class="iconfont icon-qq"></span>
+                    <p>业务咨询</p>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#"> <span class="iconfont icon-dunpai"></span>
+                    <p>售后服务</p>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">
+                    <span class="iconfont icon-dianhua"></span>
+                    <p>咨询电话</p>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script src="../../../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../js/header/header.js"></script>
     <script src="../../js/btm-map/btm-map.js"></script>
-
+    <script src="../../js/cgal_js/ssgl-header.js"></script>
 
     <!-- <script src="../../js/video/load.js"></script> -->
-    <script src="../../js/video/resize.js"></script>
     <script src="../../js/video/scroll.js"></script>
     <script src="../../js/video/click.js"></script>
     <script src="../../js/video/scrollTopii.js"></script>

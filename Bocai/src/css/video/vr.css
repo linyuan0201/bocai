@@ -116,6 +116,7 @@ a {
     margin-top: 60px;
     cursor: pointer;
     overflow: hidden;
+    position: relative;
 }
 
 .icon_circle i {
@@ -133,6 +134,7 @@ a {
 
 .icon_circle:hover i {
     background: url(../../images/vr/ico_43_h.png) no-repeat center;
+    z-index: 2;
 }
 
 .icon_circle .bg {
@@ -237,7 +239,7 @@ a {
 /* 3.banner-video */
 
 .cont_video {
-    margin-top: 54px;
+    margin-top: 54px!important;
     position: relative;
     /* overflow: hidden; */
 }
