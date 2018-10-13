@@ -2,6 +2,7 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "bootstrap": "^3.3.7",
+    "grunt-contrib-uglify": "^4.0.0",
     "jquery": "^3.3.1"
   },
   "name": "bocai",
@@ -12,5 +13,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-uglify": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linyuan0201/bocai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/linyuan0201/bocai/issues"
+  },
+  "homepage": "https://github.com/linyuan0201/bocai#readme"
 }
