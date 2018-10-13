@@ -16,12 +16,18 @@ $(function() {
         $(".tab-li-search").css({
             "display": "block",
         })
-    })
+    });
     $(".tab-li-search .tls-close").on("click", function() {
         $(".tab-li-search").css({
             "display": "none",
         })
-    })
+    });
+    $(".phone .header-header>a").on("click", function() {
+        console.log($(".phone  .tab-li-search"));
+        $(".phone .tab-li-search").css({
+            "display": "block",
+        })
+    });
     $(".tab-li-search p input").on("focus", function() {
         $(this).attr("placeholder", "");
         $(this).on("keyup", function(event) {
@@ -40,7 +46,7 @@ $(function() {
 
     //首页按钮点击事件
     btn.on('click', function() {
-            console.log(headerphone);
+            // console.log(headerphone);
             headerphone.animate({
                 "left": "-66%",
                 // "background-color": "#000",
