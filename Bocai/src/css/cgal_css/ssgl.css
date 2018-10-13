@@ -1,7 +1,7 @@
 @charset "utf-8";
 html,
 body {
-  background-color: #eaeaea;
+  background-color: #eaeaea!important;
   padding: 0;
   margin: 0;
 }
@@ -88,4 +88,89 @@ body {
   font-size: 12px;
   color: #888;
   text-align: center;
+}
+.main-zhutineirong {
+  margin-top: 40px;
+}
+.main-zhutineirong .many-xfk {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main-zhutineirong .many-xfk li {
+  width: 30%;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 770px) {
+  .main-zhutineirong .many-xfk > li {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 770px) {
+  .main-zhutineirong .many-xfk > li {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-zhutineirong .many-xfk > li {
+    width: 93.5%;
+  }
+}
+.nr-tu {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.nr-tu .img-responsive {
+  transition: 0.5s;
+}
+.nr-tu:hover img {
+  transform: scale(1.1);
+}
+.nr-tu > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: 0.3s;
+}
+.nr-tu > div div {
+  width: 100%;
+  margin: 28% auto;
+}
+.nr-tu > div div::before,
+.nr-tu > div div::after {
+  content: " ";
+  transition: 0.5s;
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+  height: 1px;
+  background-color: #fff;
+}
+.nr-tu > div div p {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  line-height: 24px;
+}
+.nr-tu > div:hover {
+  opacity: 1;
+}
+.nr-tu > div:hover div::before,
+.nr-tu > div:hover div::after {
+  transform: scale(0.1);
+}
+.ssgl-bbbb {
+  padding: 0!important;
 }
