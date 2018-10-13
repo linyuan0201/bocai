@@ -146,10 +146,8 @@ a {
 }
 
 .fir_left {
-    /* width: 48.2%; */
     padding-left: 5.7%!important;
     background-color: #fff;
-    padding-top: 120px;
 }
 
 .fir_left h4 {
@@ -600,8 +598,6 @@ a {
 }
 
 .six_list li {
-    /* width: 31.3%; */
-    /* margin-right: 2%; */
     transition: box-shadow 0.3s ease 0s;
 }
 
@@ -618,6 +614,22 @@ a {
 .six_list li:hover .img img {
     transform: scale(1.05, 1.05);
     transition: transform 0.6s ease 0s;
+}
+
+.item .img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.item .img img {
+    width: 100%;
+}
+
+.item:hover .img img {
+    transform: scale(1.05, 1.05);
+    transition: transform 0.6s ease 0s;
+    overflow: hidden;
 }
 
 .up-pic {
@@ -1037,8 +1049,8 @@ a {
         background-size: auto 100% !important;
     }
     .banner_font {
-        margin-top: 0;
-        top: 50px;
+        margin-top: -296px;
+        top: 50%;
     }
     .banner_font h4 {
         line-height: 50px;
@@ -1071,6 +1083,9 @@ a {
         padding: 30px 5%;
         min-height: 10px;
     }
+    .fir_left {
+        padding-top: 50px;
+    }
     .fir_left h4 {
         line-height: 66px;
         font-size: 32px;
@@ -1090,6 +1105,9 @@ a {
     }
     .carousel {
         margin-top: 40px;
+    }
+    .carousel-indicators {
+        bottom: 0!important;
     }
 }
 
@@ -1127,6 +1145,9 @@ a {
     }
     .cont_sec_box {
         padding: 52px 21.7% 35px 16.3%;
+    }
+    .fir_left {
+        padding-top: 120px;
     }
     .fir_left h4 {
         line-height: 86px;

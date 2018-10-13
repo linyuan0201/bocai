@@ -162,6 +162,7 @@ a {
 
 .link_icon {
     margin-top: 70px;
+    position: relative;
 }
 
 .link_icon a {
@@ -188,10 +189,12 @@ a {
 
 .link1:hover i {
     background: url(../../images/vr/detail/ico_07_h.png) no-repeat center;
+    z-index: 2;
 }
 
 .link2:hover i {
     background: url(../../images/vr/detail/ico_17_h.png) no-repeat center;
+    z-index: 2;
 }
 
 .link_icon .bg {
@@ -282,8 +285,8 @@ a {
         left: -500px;
     }
     .banner_font {
-        margin-top: 0;
-        top: 50px;
+        margin-top: -296px;
+        top: 50%;
     }
     .banner_font h4 {
         line-height: 50px;

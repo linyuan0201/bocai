@@ -427,8 +427,8 @@ a {
         line-height: 32px;
     }
     .banner_font {
-        margin-top: 0;
-        top: 50px;
+        margin-top: -296px;
+        top: 50%;
     }
     .banner_font h4 {
         line-height: 50px;

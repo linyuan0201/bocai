@@ -35,7 +35,7 @@ a {
 
 .boweb_body {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #eaeaea;
 }
 
@@ -50,7 +50,6 @@ a {
 }
 
 .banner img {
-    /* width: 100%; */
     position: relative;
     height: auto;
     top: 0;
@@ -312,7 +311,7 @@ a {
         margin-top: 16px;
     }
     .banner img {
-        width: 600px;
+        width: 1300px;
         left: 50%;
         margin-left: -300px;
     }
@@ -323,6 +322,9 @@ a {
         font-size: 22px;
         line-height: 38px;
         color: #333;
+    }
+    .skip_btn {
+        position: absolute;
     }
 }
 
