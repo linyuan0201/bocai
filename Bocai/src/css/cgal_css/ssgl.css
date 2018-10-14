@@ -2,11 +2,12 @@
 html,
 body {
   background-color: #eaeaea!important;
-  padding: 0;
   margin: 0;
 }
+html {
+  padding-top: 60px;
+}
 .ssgl-max-tu {
-  margin-top: 100px;
   background-position: -200px center;
   background-repeat: no-repeat;
   background-image: url("../../images/cgal_img/ssgl/14842057176977rrjib.jpg");
