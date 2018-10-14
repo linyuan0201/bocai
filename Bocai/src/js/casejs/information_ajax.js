@@ -59,6 +59,7 @@ $.ajax({
                 infor_search();
             }
         });
+        $(".iconfont1").on("click", infor_search);
         // 加载更多
         $(".more-load").on("click", function() {
             $("#loadmore").css("background", "#333").addClass("animated bounceOutLeft").animate({
